@@ -1,0 +1,1037 @@
+{
+ "sample": true,
+ "generated_at": "2026-10-05T09:35-04:00",
+ "trading_date": "2026-10-05",
+ "insider_lookback_days": 90,
+ "groups": [
+  {
+   "id": "enterprise-apps",
+   "name": "Enterprise Apps & Workflow",
+   "tickers": [
+    "CRM",
+    "NOW",
+    "WDAY",
+    "IBM"
+   ]
+  },
+  {
+   "id": "cybersecurity",
+   "name": "Cybersecurity",
+   "tickers": [
+    "CRWD",
+    "PANW",
+    "FTNT",
+    "GEN",
+    "CSCO"
+   ]
+  },
+  {
+   "id": "data-ai",
+   "name": "Data, AI & Observability",
+   "tickers": [
+    "PLTR",
+    "DDOG",
+    "ACN"
+   ]
+  },
+  {
+   "id": "cloud-infra",
+   "name": "Cloud Infrastructure & Databases",
+   "tickers": [
+    "ORCL",
+    "MSFT",
+    "AMZN",
+    "GOOGL"
+   ]
+  },
+  {
+   "id": "eda",
+   "name": "Chip Design Software (EDA)",
+   "tickers": [
+    "CDNS",
+    "SNPS"
+   ]
+  },
+  {
+   "id": "design-engineering",
+   "name": "Design & Engineering Software",
+   "tickers": [
+    "ADBE",
+    "ADSK",
+    "PTC",
+    "TRMB"
+   ]
+  },
+  {
+   "id": "hr-payroll",
+   "name": "HR & Payroll",
+   "tickers": [
+    "ADP",
+    "PAYX"
+   ]
+  },
+  {
+   "id": "smb-fintech",
+   "name": "SMB & Consumer Finance Software",
+   "tickers": [
+    "INTU",
+    "XYZ",
+    "PYPL"
+   ]
+  },
+  {
+   "id": "fin-data",
+   "name": "Financial Data & Analytics",
+   "tickers": [
+    "FICO",
+    "MSCI",
+    "FDS",
+    "SPGI",
+    "MCO",
+    "EFX"
+   ]
+  },
+  {
+   "id": "vertical-saas",
+   "name": "Vertical SaaS",
+   "tickers": [
+    "VEEV",
+    "TYL",
+    "ROP",
+    "CSGP",
+    "IQV"
+   ]
+  },
+  {
+   "id": "internet-infra",
+   "name": "Internet Infrastructure",
+   "tickers": [
+    "GDDY",
+    "AKAM",
+    "VRSN"
+   ]
+  },
+  {
+   "id": "adtech",
+   "name": "Ad-Tech & Marketing",
+   "tickers": [
+    "APP",
+    "META"
+   ]
+  }
+ ],
+ "tickers": [
+  {
+   "symbol": "CRM",
+   "name": "Salesforce",
+   "group": "enterprise-apps",
+   "role": "core",
+   "competitors": [
+    "NOW",
+    "MSFT",
+    "ORCL",
+    "WDAY",
+    "ADBE"
+   ],
+   "price": 244.79,
+   "change_pct": -2.21,
+   "market_cap": 1783413530165.1296,
+   "pe": 51.2,
+   "peg": 1.44,
+   "fwd_peg": 0.97
+  },
+  {
+   "symbol": "NOW",
+   "name": "ServiceNow",
+   "group": "enterprise-apps",
+   "role": "core",
+   "competitors": [
+    "CRM",
+    "MSFT",
+    "WDAY",
+    "IBM"
+   ],
+   "price": 503.04,
+   "change_pct": -1.88,
+   "market_cap": 792987791655.4457,
+   "pe": 44.3,
+   "peg": null,
+   "fwd_peg": 0.57
+  },
+  {
+   "symbol": "WDAY",
+   "name": "Workday",
+   "group": "enterprise-apps",
+   "role": "core",
+   "competitors": [
+    "ORCL",
+    "ADP",
+    "PAYX",
+    "CRM",
+    "NOW"
+   ],
+   "price": 66.09,
+   "change_pct": 1.79,
+   "market_cap": 1024288362865.8917,
+   "pe": 78.5,
+   "peg": 2.23,
+   "fwd_peg": 2.39
+  },
+  {
+   "symbol": "IBM",
+   "name": "IBM",
+   "group": "enterprise-apps",
+   "role": "peer",
+   "competitors": [
+    "MSFT",
+    "ORCL",
+    "ACN",
+    "NOW"
+   ],
+   "price": 365.7,
+   "change_pct": 0.69,
+   "market_cap": 1312805436399.1733,
+   "pe": 29.2,
+   "peg": 0.98,
+   "fwd_peg": 0.65
+  },
+  {
+   "symbol": "CRWD",
+   "name": "CrowdStrike",
+   "group": "cybersecurity",
+   "role": "core",
+   "competitors": [
+    "PANW",
+    "FTNT",
+    "MSFT"
+   ],
+   "price": 279.45,
+   "change_pct": -0.93,
+   "market_cap": 2055683094324.1208,
+   "pe": 60.2,
+   "peg": null,
+   "fwd_peg": 1.28
+  },
+  {
+   "symbol": "PANW",
+   "name": "Palo Alto Networks",
+   "group": "cybersecurity",
+   "role": "core",
+   "competitors": [
+    "CRWD",
+    "FTNT",
+    "CSCO",
+    "AKAM"
+   ],
+   "price": 361.68,
+   "change_pct": 0.13,
+   "market_cap": 3064854172073.4,
+   "pe": 33.1,
+   "peg": 1.78,
+   "fwd_peg": 1.33
+  },
+  {
+   "symbol": "FTNT",
+   "name": "Fortinet",
+   "group": "cybersecurity",
+   "role": "core",
+   "competitors": [
+    "PANW",
+    "CSCO",
+    "CRWD"
+   ],
+   "price": 464.0,
+   "change_pct": -1.74,
+   "market_cap": 1719036405158.1826,
+   "pe": 43.9,
+   "peg": 2.5,
+   "fwd_peg": 1.86
+  },
+  {
+   "symbol": "GEN",
+   "name": "Gen Digital",
+   "group": "cybersecurity",
+   "role": "peer",
+   "competitors": [
+    "MSFT",
+    "CRWD"
+   ],
+   "price": 215.7,
+   "change_pct": 0.98,
+   "market_cap": 2086379021710.9893,
+   "pe": 72.3,
+   "peg": 0.7,
+   "fwd_peg": 0.65
+  },
+  {
+   "symbol": "CSCO",
+   "name": "Cisco (Splunk)",
+   "group": "cybersecurity",
+   "role": "peer",
+   "competitors": [
+    "PANW",
+    "FTNT",
+    "DDOG"
+   ],
+   "price": 411.93,
+   "change_pct": -2.2,
+   "market_cap": 2459699694245.9175,
+   "pe": 47.4,
+   "peg": 2.11,
+   "fwd_peg": 1.75
+  },
+  {
+   "symbol": "PLTR",
+   "name": "Palantir",
+   "group": "data-ai",
+   "role": "core",
+   "competitors": [
+    "MSFT",
+    "ORCL",
+    "IBM",
+    "ACN",
+    "DDOG"
+   ],
+   "price": 414.45,
+   "change_pct": -2.39,
+   "market_cap": 1624008072754.684,
+   "pe": 41.9,
+   "peg": 2.28,
+   "fwd_peg": 2.5
+  },
+  {
+   "symbol": "DDOG",
+   "name": "Datadog",
+   "group": "data-ai",
+   "role": "core",
+   "competitors": [
+    "CSCO",
+    "MSFT",
+    "AMZN",
+    "GOOGL"
+   ],
+   "price": 178.66,
+   "change_pct": -0.55,
+   "market_cap": 3051905579830.1533,
+   "pe": 26.0,
+   "peg": null,
+   "fwd_peg": 0.68
+  },
+  {
+   "symbol": "ACN",
+   "name": "Accenture",
+   "group": "data-ai",
+   "role": "peer",
+   "competitors": [
+    "IBM",
+    "PLTR"
+   ],
+   "price": 523.83,
+   "change_pct": -1.11,
+   "market_cap": 1462308362482.7695,
+   "pe": 68.8,
+   "peg": 0.81,
+   "fwd_peg": 0.67
+  },
+  {
+   "symbol": "ORCL",
+   "name": "Oracle",
+   "group": "cloud-infra",
+   "role": "core",
+   "competitors": [
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "CRM",
+    "WDAY"
+   ],
+   "price": 169.9,
+   "change_pct": -1.33,
+   "market_cap": 1705095115239.628,
+   "pe": 28.9,
+   "peg": 1.53,
+   "fwd_peg": 1.59
+  },
+  {
+   "symbol": "MSFT",
+   "name": "Microsoft",
+   "group": "cloud-infra",
+   "role": "peer",
+   "competitors": [
+    "AMZN",
+    "GOOGL",
+    "ORCL",
+    "CRM"
+   ],
+   "price": 357.15,
+   "change_pct": 2.27,
+   "market_cap": 2421370395118.883,
+   "pe": 40.9,
+   "peg": null,
+   "fwd_peg": 1.56
+  },
+  {
+   "symbol": "AMZN",
+   "name": "Amazon (AWS)",
+   "group": "cloud-infra",
+   "role": "peer",
+   "competitors": [
+    "MSFT",
+    "GOOGL",
+    "ORCL"
+   ],
+   "price": 476.78,
+   "change_pct": 1.87,
+   "market_cap": 2795587827370.0327,
+   "pe": 73.8,
+   "peg": 1.94,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "GOOGL",
+   "name": "Alphabet (Google Cloud)",
+   "group": "cloud-infra",
+   "role": "peer",
+   "competitors": [
+    "MSFT",
+    "AMZN",
+    "META"
+   ],
+   "price": 77.71,
+   "change_pct": -1.46,
+   "market_cap": 580626609385.7594,
+   "pe": 21.9,
+   "peg": 1.62,
+   "fwd_peg": 1.3
+  },
+  {
+   "symbol": "CDNS",
+   "name": "Cadence Design Systems",
+   "group": "eda",
+   "role": "core",
+   "competitors": [
+    "SNPS"
+   ],
+   "price": 243.62,
+   "change_pct": -2.37,
+   "market_cap": 3062048335147.761,
+   "pe": 24.3,
+   "peg": null,
+   "fwd_peg": 0.93
+  },
+  {
+   "symbol": "SNPS",
+   "name": "Synopsys",
+   "group": "eda",
+   "role": "core",
+   "competitors": [
+    "CDNS"
+   ],
+   "price": 108.79,
+   "change_pct": 1.74,
+   "market_cap": 3475962985140.928,
+   "pe": 40.6,
+   "peg": 2.2,
+   "fwd_peg": 1.48
+  },
+  {
+   "symbol": "ADBE",
+   "name": "Adobe",
+   "group": "design-engineering",
+   "role": "core",
+   "competitors": [
+    "ADSK",
+    "CRM",
+    "MSFT"
+   ],
+   "price": 188.26,
+   "change_pct": 1.64,
+   "market_cap": 577613557684.6138,
+   "pe": 39.2,
+   "peg": 1.81,
+   "fwd_peg": 1.52
+  },
+  {
+   "symbol": "ADSK",
+   "name": "Autodesk",
+   "group": "design-engineering",
+   "role": "core",
+   "competitors": [
+    "PTC",
+    "TRMB",
+    "ADBE"
+   ],
+   "price": 55.14,
+   "change_pct": 0.14,
+   "market_cap": 3425076830875.62,
+   "pe": 51.7,
+   "peg": 0.66,
+   "fwd_peg": 0.71
+  },
+  {
+   "symbol": "PTC",
+   "name": "PTC",
+   "group": "design-engineering",
+   "role": "core",
+   "competitors": [
+    "ADSK",
+    "TRMB"
+   ],
+   "price": 472.29,
+   "change_pct": 0.16,
+   "market_cap": 2730006296313.5474,
+   "pe": 28.4,
+   "peg": 2.84,
+   "fwd_peg": 2.69
+  },
+  {
+   "symbol": "TRMB",
+   "name": "Trimble",
+   "group": "design-engineering",
+   "role": "peer",
+   "competitors": [
+    "ADSK",
+    "PTC"
+   ],
+   "price": 491.4,
+   "change_pct": 1.59,
+   "market_cap": 2593457476009.364,
+   "pe": 70.9,
+   "peg": 1.46,
+   "fwd_peg": 1.04
+  },
+  {
+   "symbol": "ADP",
+   "name": "Automatic Data Processing",
+   "group": "hr-payroll",
+   "role": "peer",
+   "competitors": [
+    "PAYX",
+    "WDAY",
+    "INTU"
+   ],
+   "price": 196.47,
+   "change_pct": -1.2,
+   "market_cap": 2428438966824.93,
+   "pe": 19.7,
+   "peg": 1.19,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "PAYX",
+   "name": "Paychex",
+   "group": "hr-payroll",
+   "role": "peer",
+   "competitors": [
+    "ADP",
+    "WDAY",
+    "INTU"
+   ],
+   "price": 244.2,
+   "change_pct": -1.4,
+   "market_cap": 805557706156.5869,
+   "pe": 77.2,
+   "peg": 3.09,
+   "fwd_peg": 2.54
+  },
+  {
+   "symbol": "INTU",
+   "name": "Intuit",
+   "group": "smb-fintech",
+   "role": "core",
+   "competitors": [
+    "XYZ",
+    "PYPL",
+    "ADP",
+    "PAYX"
+   ],
+   "price": 308.51,
+   "change_pct": 0.76,
+   "market_cap": 2801758450801.066,
+   "pe": 70.1,
+   "peg": 1.11,
+   "fwd_peg": 0.78
+  },
+  {
+   "symbol": "XYZ",
+   "name": "Block",
+   "group": "smb-fintech",
+   "role": "peer",
+   "competitors": [
+    "PYPL",
+    "INTU"
+   ],
+   "price": 307.7,
+   "change_pct": -1.61,
+   "market_cap": 2765136977105.663,
+   "pe": 64.5,
+   "peg": 0.82,
+   "fwd_peg": 0.76
+  },
+  {
+   "symbol": "PYPL",
+   "name": "PayPal",
+   "group": "smb-fintech",
+   "role": "peer",
+   "competitors": [
+    "XYZ",
+    "INTU"
+   ],
+   "price": 570.21,
+   "change_pct": 1.12,
+   "market_cap": 607462755002.0558,
+   "pe": 42.9,
+   "peg": 1.46,
+   "fwd_peg": 1.46
+  },
+  {
+   "symbol": "FICO",
+   "name": "Fair Isaac",
+   "group": "fin-data",
+   "role": "core",
+   "competitors": [
+    "EFX",
+    "MCO"
+   ],
+   "price": 502.85,
+   "change_pct": 2.4,
+   "market_cap": 2305580000185.0293,
+   "pe": 27.1,
+   "peg": 0.93,
+   "fwd_peg": 0.63
+  },
+  {
+   "symbol": "MSCI",
+   "name": "MSCI",
+   "group": "fin-data",
+   "role": "core",
+   "competitors": [
+    "SPGI",
+    "FDS",
+    "MCO"
+   ],
+   "price": 403.82,
+   "change_pct": 0.13,
+   "market_cap": 3268682445625.1323,
+   "pe": 78.2,
+   "peg": 1.51,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "FDS",
+   "name": "FactSet",
+   "group": "fin-data",
+   "role": "peer",
+   "competitors": [
+    "SPGI",
+    "MSCI"
+   ],
+   "price": 204.06,
+   "change_pct": -1.3,
+   "market_cap": 2058733531058.3765,
+   "pe": 33.6,
+   "peg": 1.73,
+   "fwd_peg": 1.79
+  },
+  {
+   "symbol": "SPGI",
+   "name": "S&P Global",
+   "group": "fin-data",
+   "role": "peer",
+   "competitors": [
+    "MCO",
+    "MSCI",
+    "FDS"
+   ],
+   "price": 296.57,
+   "change_pct": 0.42,
+   "market_cap": 3166474259279.009,
+   "pe": 39.9,
+   "peg": 1.27,
+   "fwd_peg": 1.03
+  },
+  {
+   "symbol": "MCO",
+   "name": "Moody's",
+   "group": "fin-data",
+   "role": "peer",
+   "competitors": [
+    "SPGI",
+    "FICO"
+   ],
+   "price": 50.47,
+   "change_pct": -0.3,
+   "market_cap": 653130987143.6125,
+   "pe": 50.5,
+   "peg": 1.69,
+   "fwd_peg": 1.79
+  },
+  {
+   "symbol": "EFX",
+   "name": "Equifax",
+   "group": "fin-data",
+   "role": "peer",
+   "competitors": [
+    "FICO",
+    "MCO"
+   ],
+   "price": 351.63,
+   "change_pct": -0.87,
+   "market_cap": 1821445263770.0835,
+   "pe": 63.0,
+   "peg": 0.61,
+   "fwd_peg": 0.61
+  },
+  {
+   "symbol": "VEEV",
+   "name": "Veeva Systems",
+   "group": "vertical-saas",
+   "role": "core",
+   "competitors": [
+    "IQV",
+    "CRM"
+   ],
+   "price": 195.07,
+   "change_pct": 1.36,
+   "market_cap": 1784383261396.2373,
+   "pe": 33.4,
+   "peg": 2.04,
+   "fwd_peg": 2.02
+  },
+  {
+   "symbol": "TYL",
+   "name": "Tyler Technologies",
+   "group": "vertical-saas",
+   "role": "core",
+   "competitors": [
+    "ROP"
+   ],
+   "price": 323.11,
+   "change_pct": 0.06,
+   "market_cap": 2429167543880.5786,
+   "pe": 56.0,
+   "peg": 2.06,
+   "fwd_peg": 2.02
+  },
+  {
+   "symbol": "ROP",
+   "name": "Roper Technologies",
+   "group": "vertical-saas",
+   "role": "core",
+   "competitors": [
+    "TYL",
+    "CSGP"
+   ],
+   "price": 530.86,
+   "change_pct": 2.21,
+   "market_cap": 919679145000.1521,
+   "pe": 61.4,
+   "peg": 1.78,
+   "fwd_peg": 1.54
+  },
+  {
+   "symbol": "CSGP",
+   "name": "CoStar Group",
+   "group": "vertical-saas",
+   "role": "core",
+   "competitors": [
+    "ROP"
+   ],
+   "price": 287.59,
+   "change_pct": -2.14,
+   "market_cap": 853626073209.6455,
+   "pe": 25.5,
+   "peg": 2.05,
+   "fwd_peg": 2.2
+  },
+  {
+   "symbol": "IQV",
+   "name": "IQVIA",
+   "group": "vertical-saas",
+   "role": "peer",
+   "competitors": [
+    "VEEV"
+   ],
+   "price": 441.03,
+   "change_pct": 0.8,
+   "market_cap": 513281807765.9666,
+   "pe": 27.6,
+   "peg": 0.79,
+   "fwd_peg": 0.74
+  },
+  {
+   "symbol": "GDDY",
+   "name": "GoDaddy",
+   "group": "internet-infra",
+   "role": "core",
+   "competitors": [
+    "VRSN",
+    "AKAM"
+   ],
+   "price": 312.87,
+   "change_pct": 2.45,
+   "market_cap": 2916069673148.0723,
+   "pe": 42.7,
+   "peg": 2.9,
+   "fwd_peg": 3.14
+  },
+  {
+   "symbol": "AKAM",
+   "name": "Akamai",
+   "group": "internet-infra",
+   "role": "peer",
+   "competitors": [
+    "GDDY",
+    "AMZN",
+    "PANW"
+   ],
+   "price": 218.37,
+   "change_pct": 1.11,
+   "market_cap": 82898004262.59015,
+   "pe": 30.1,
+   "peg": 1.02,
+   "fwd_peg": 0.83
+  },
+  {
+   "symbol": "VRSN",
+   "name": "Verisign",
+   "group": "internet-infra",
+   "role": "peer",
+   "competitors": [
+    "GDDY"
+   ],
+   "price": 326.87,
+   "change_pct": -2.18,
+   "market_cap": 3448015105807.336,
+   "pe": 56.7,
+   "peg": null,
+   "fwd_peg": 1.67
+  },
+  {
+   "symbol": "APP",
+   "name": "AppLovin",
+   "group": "adtech",
+   "role": "core",
+   "competitors": [
+    "META",
+    "GOOGL"
+   ],
+   "price": 476.24,
+   "change_pct": -1.15,
+   "market_cap": 466501124180.2854,
+   "pe": 20.5,
+   "peg": 2.65,
+   "fwd_peg": 2.88
+  },
+  {
+   "symbol": "META",
+   "name": "Meta Platforms",
+   "group": "adtech",
+   "role": "peer",
+   "competitors": [
+    "GOOGL",
+    "APP"
+   ],
+   "price": 554.74,
+   "change_pct": 0.35,
+   "market_cap": 2455954801214.9634,
+   "pe": 27.3,
+   "peg": 1.7,
+   "fwd_peg": 1.79
+  }
+ ],
+ "insider_buys": [
+  {
+   "symbol": "CRWD",
+   "filed": "2026-09-24",
+   "insider": "Sample Insider 6",
+   "role": "CEO",
+   "date": "2026-09-24",
+   "shares": 13517,
+   "price": 422.85,
+   "value": 5715663.45,
+   "owned_after": 40551,
+   "url": null
+  },
+  {
+   "symbol": "FICO",
+   "filed": "2026-09-14",
+   "insider": "Sample Insider 5",
+   "role": "10% Owner",
+   "date": "2026-09-14",
+   "shares": 29798,
+   "price": 88.89,
+   "value": 2648744.22,
+   "owned_after": 89394,
+   "url": null
+  },
+  {
+   "symbol": "META",
+   "filed": "2026-09-11",
+   "insider": "Sample Insider 9",
+   "role": "CEO",
+   "date": "2026-09-11",
+   "shares": 22056,
+   "price": 487.41,
+   "value": 10750314.96,
+   "owned_after": 66168,
+   "url": null
+  },
+  {
+   "symbol": "SNPS",
+   "filed": "2026-09-08",
+   "insider": "Sample Insider 2",
+   "role": "Director",
+   "date": "2026-09-08",
+   "shares": 8968,
+   "price": 59.87,
+   "value": 536914.16,
+   "owned_after": 26904,
+   "url": null
+  },
+  {
+   "symbol": "ACN",
+   "filed": "2026-09-07",
+   "insider": "Sample Insider 4",
+   "role": "10% Owner",
+   "date": "2026-09-07",
+   "shares": 1708,
+   "price": 377.22,
+   "value": 644291.76,
+   "owned_after": 5124,
+   "url": null
+  },
+  {
+   "symbol": "PANW",
+   "filed": "2026-08-18",
+   "insider": "Sample Insider 1",
+   "role": "10% Owner",
+   "date": "2026-08-18",
+   "shares": 8474,
+   "price": 248.74,
+   "value": 2107822.76,
+   "owned_after": 25422,
+   "url": null
+  },
+  {
+   "symbol": "IBM",
+   "filed": "2026-08-15",
+   "insider": "Sample Insider 3",
+   "role": "CEO",
+   "date": "2026-08-15",
+   "shares": 35305,
+   "price": 389.37,
+   "value": 13746707.85,
+   "owned_after": 105915,
+   "url": null
+  },
+  {
+   "symbol": "META",
+   "filed": "2026-08-07",
+   "insider": "Sample Insider 9",
+   "role": "CFO",
+   "date": "2026-08-07",
+   "shares": 2757,
+   "price": 484.21,
+   "value": 1334966.97,
+   "owned_after": 8271,
+   "url": null
+  },
+  {
+   "symbol": "NOW",
+   "filed": "2026-08-02",
+   "insider": "Sample Insider 8",
+   "role": "10% Owner",
+   "date": "2026-08-02",
+   "shares": 39741,
+   "price": 151.42,
+   "value": 6017582.22,
+   "owned_after": 119223,
+   "url": null
+  },
+  {
+   "symbol": "NOW",
+   "filed": "2026-08-01",
+   "insider": "Sample Insider 8",
+   "role": "CFO",
+   "date": "2026-08-01",
+   "shares": 12647,
+   "price": 112.47,
+   "value": 1422408.09,
+   "owned_after": 37941,
+   "url": null
+  },
+  {
+   "symbol": "IBM",
+   "filed": "2026-07-09",
+   "insider": "Sample Insider 3",
+   "role": "Director",
+   "date": "2026-07-09",
+   "shares": 18228,
+   "price": 199.62,
+   "value": 3638673.36,
+   "owned_after": 54684,
+   "url": null
+  },
+  {
+   "symbol": "CRWD",
+   "filed": "2026-07-08",
+   "insider": "Sample Insider 6",
+   "role": "CFO",
+   "date": "2026-07-08",
+   "shares": 33706,
+   "price": 181.58,
+   "value": 6120335.48,
+   "owned_after": 101118,
+   "url": null
+  },
+  {
+   "symbol": "SNPS",
+   "filed": "2026-07-07",
+   "insider": "Sample Insider 2",
+   "role": "CFO",
+   "date": "2026-07-07",
+   "shares": 11080,
+   "price": 160.47,
+   "value": 1778007.6,
+   "owned_after": 33240,
+   "url": null
+  },
+  {
+   "symbol": "PANW",
+   "filed": "2026-07-03",
+   "insider": "Sample Insider 1",
+   "role": "CFO",
+   "date": "2026-07-03",
+   "shares": 5988,
+   "price": 319.76,
+   "value": 1914722.88,
+   "owned_after": 17964,
+   "url": null
+  },
+  {
+   "symbol": "APP",
+   "filed": "2026-07-03",
+   "insider": "Sample Insider 7",
+   "role": "10% Owner",
+   "date": "2026-07-03",
+   "shares": 17250,
+   "price": 238.14,
+   "value": 4107915.0,
+   "owned_after": 51750,
+   "url": null
+  },
+  {
+   "symbol": "APP",
+   "filed": "2026-07-01",
+   "insider": "Sample Insider 7",
+   "role": "Director",
+   "date": "2026-07-01",
+   "shares": 23277,
+   "price": 491.67,
+   "value": 11444602.59,
+   "owned_after": 69831,
+   "url": null
+  }
+ ]
+}
