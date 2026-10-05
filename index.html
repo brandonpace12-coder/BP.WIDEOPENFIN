@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WideOpenFin — SaaS PEG Tracker</title>
+  <meta name="description" content="Daily PEG ratios for S&P 500 growth and SaaS stocks versus their competitors, plus Form 4 insider buying.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">WideOpen<span>Fin</span></div>
+      <div class="tagline">PEG ratios for S&amp;P 500 growth &amp; SaaS stocks vs. their competitors — refreshed each trading morning.</div>
+      <div class="status"><span class="dot" id="dot"></span><span id="updated">Loading…</span></div>
+      <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+  <div class="banner" id="sample" hidden>
+    <div class="wrap"><strong>Sample data.</strong> Numbers shown are placeholders for layout only. Real figures appear after the first morning data run.</div>
+  </div>
+
+  <main class="wrap">
+    <div class="kpis" id="kpis"></div>
+
+    <section>
+      <h2>PEG vs. competitors</h2>
+      <p class="sub">PEG = P/E ÷ expected EPS growth. Below 1 is often read as cheap for the growth; compare within a peer group, not across groups. Click a row for its competitor chart.</p>
+
+      <div class="controls">
+        <div class="seg" id="basis">
+          <button data-b="fwd_peg" class="on">Forward PEG</button>
+          <button data-b="peg">Trailing PEG</button>
+        </div>
+        <input type="search" id="q" placeholder="Search ticker or company" aria-label="Search">
+        <label class="toggle"><input type="checkbox" id="coreOnly"> Growth/SaaS names only</label>
+      </div>
+      <div class="chips" id="chips"></div>
+
+      <div class="tablebox">
+        <table id="tbl">
+          <thead><tr>
+            <th class="sortable" data-k="symbol">Company</th>
+            <th class="sortable left hide-sm" data-k="group">Peer group</th>
+            <th class="sortable hide-sm" data-k="price">Price</th>
+            <th class="sortable hide-sm" data-k="market_cap">Mkt cap</th>
+            <th class="sortable" data-k="pe">P/E</th>
+            <th class="sortable" data-k="basis">PEG</th>
+            <th class="sortable" data-k="vs">vs. peers</th>
+            <th class="sortable hide-sm" data-k="buyval">Insider buys 90d</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="detail" id="detail" hidden>
+        <div>
+          <h3 id="dTitle"></h3>
+          <p class="sub" id="dSub"></p>
+          <div class="bars" id="dBars"></div>
+          <div class="legend">Dashed line = peer-group median. Missing bars mean PEG isn't meaningful (negative or no earnings growth).</div>
+        </div>
+        <div>
+          <h3>Insider purchases</h3>
+          <p class="sub" id="dBuySub"></p>
+          <ul class="mini" id="dBuys"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Insider buying — Form 4</h2>
+      <p class="sub" id="insSub">Open-market purchases (transaction code “P”) only. Grants, option exercises and sales are excluded.</p>
+      <div class="tablebox">
+        <table id="ins">
+          <thead><tr>
+            <th>Ticker</th><th class="left">Insider</th><th class="left hide-sm">Role</th>
+            <th>Trade date</th><th>Shares</th><th>Price</th><th>Value</th><th>Filing</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Valuation data: Financial Modeling Prep. Insider filings: SEC EDGAR Form 4. Universe: S&amp;P 500 constituents only, reviewed quarterly.</p>
+      <p>For information only — not investment advice. Data may be delayed or incomplete; verify before acting.</p>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
