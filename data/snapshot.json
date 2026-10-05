@@ -1,6 +1,6 @@
 {
- "sample": true,
- "generated_at": "2026-10-05T09:35-04:00",
+ "sample": false,
+ "generated_at": "2026-10-05T19:08-04:00",
  "trading_date": "2026-10-05",
  "insider_lookback_days": 90,
  "groups": [
@@ -133,12 +133,12 @@
     "WDAY",
     "ADBE"
    ],
-   "price": 244.79,
-   "change_pct": -2.21,
-   "market_cap": 1783413530165.1296,
-   "pe": 51.2,
-   "peg": 1.44,
-   "fwd_peg": 0.97
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "NOW",
@@ -151,12 +151,12 @@
     "WDAY",
     "IBM"
    ],
-   "price": 503.04,
-   "change_pct": -1.88,
-   "market_cap": 792987791655.4457,
-   "pe": 44.3,
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
    "peg": null,
-   "fwd_peg": 0.57
+   "fwd_peg": null
   },
   {
    "symbol": "WDAY",
@@ -170,12 +170,12 @@
     "CRM",
     "NOW"
    ],
-   "price": 66.09,
-   "change_pct": 1.79,
-   "market_cap": 1024288362865.8917,
-   "pe": 78.5,
-   "peg": 2.23,
-   "fwd_peg": 2.39
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "IBM",
@@ -188,12 +188,12 @@
     "ACN",
     "NOW"
    ],
-   "price": 365.7,
-   "change_pct": 0.69,
-   "market_cap": 1312805436399.1733,
-   "pe": 29.2,
-   "peg": 0.98,
-   "fwd_peg": 0.65
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "CRWD",
@@ -205,12 +205,12 @@
     "FTNT",
     "MSFT"
    ],
-   "price": 279.45,
-   "change_pct": -0.93,
-   "market_cap": 2055683094324.1208,
-   "pe": 60.2,
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
    "peg": null,
-   "fwd_peg": 1.28
+   "fwd_peg": null
   },
   {
    "symbol": "PANW",
@@ -223,12 +223,12 @@
     "CSCO",
     "AKAM"
    ],
-   "price": 361.68,
-   "change_pct": 0.13,
-   "market_cap": 3064854172073.4,
-   "pe": 33.1,
-   "peg": 1.78,
-   "fwd_peg": 1.33
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "FTNT",
@@ -240,12 +240,12 @@
     "CSCO",
     "CRWD"
    ],
-   "price": 464.0,
-   "change_pct": -1.74,
-   "market_cap": 1719036405158.1826,
-   "pe": 43.9,
-   "peg": 2.5,
-   "fwd_peg": 1.86
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "GEN",
@@ -256,12 +256,12 @@
     "MSFT",
     "CRWD"
    ],
-   "price": 215.7,
-   "change_pct": 0.98,
-   "market_cap": 2086379021710.9893,
-   "pe": 72.3,
-   "peg": 0.7,
-   "fwd_peg": 0.65
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "CSCO",
@@ -273,12 +273,12 @@
     "FTNT",
     "DDOG"
    ],
-   "price": 411.93,
-   "change_pct": -2.2,
-   "market_cap": 2459699694245.9175,
-   "pe": 47.4,
-   "peg": 2.11,
-   "fwd_peg": 1.75
+   "price": 112.82,
+   "change_pct": 0.55258,
+   "market_cap": 444672658905.0,
+   "pe": 33.6,
+   "peg": 1.07,
+   "fwd_peg": 1.74
   },
   {
    "symbol": "PLTR",
@@ -292,12 +292,12 @@
     "ACN",
     "DDOG"
    ],
-   "price": 414.45,
-   "change_pct": -2.39,
-   "market_cap": 1624008072754.684,
-   "pe": 41.9,
-   "peg": 2.28,
-   "fwd_peg": 2.5
+   "price": 189.4,
+   "change_pct": 0.34437,
+   "market_cap": 434875658000.0,
+   "pe": 150.3,
+   "peg": 0.53,
+   "fwd_peg": 1.22
   },
   {
    "symbol": "DDOG",
@@ -310,12 +310,12 @@
     "AMZN",
     "GOOGL"
    ],
-   "price": 178.66,
-   "change_pct": -0.55,
-   "market_cap": 3051905579830.1533,
-   "pe": 26.0,
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
    "peg": null,
-   "fwd_peg": 0.68
+   "fwd_peg": null
   },
   {
    "symbol": "ACN",
@@ -326,12 +326,12 @@
     "IBM",
     "PLTR"
    ],
-   "price": 523.83,
-   "change_pct": -1.11,
-   "market_cap": 1462308362482.7695,
-   "pe": 68.8,
-   "peg": 0.81,
-   "fwd_peg": 0.67
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "ORCL",
@@ -345,12 +345,12 @@
     "CRM",
     "WDAY"
    ],
-   "price": 169.9,
-   "change_pct": -1.33,
-   "market_cap": 1705095115239.628,
-   "pe": 28.9,
-   "peg": 1.53,
-   "fwd_peg": 1.59
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "MSFT",
@@ -363,12 +363,12 @@
     "ORCL",
     "CRM"
    ],
-   "price": 357.15,
-   "change_pct": 2.27,
-   "market_cap": 2421370395118.883,
-   "pe": 40.9,
-   "peg": null,
-   "fwd_peg": 1.56
+   "price": 525.18,
+   "change_pct": 1.47818,
+   "market_cap": 3899750349000.0,
+   "pe": 29.2,
+   "peg": 0.93,
+   "fwd_peg": 1.82
   },
   {
    "symbol": "AMZN",
@@ -380,12 +380,12 @@
     "GOOGL",
     "ORCL"
    ],
-   "price": 476.78,
-   "change_pct": 1.87,
-   "market_cap": 2795587827370.0327,
-   "pe": 73.8,
-   "peg": 1.94,
-   "fwd_peg": null
+   "price": 251.4,
+   "change_pct": -0.04770992,
+   "market_cap": 2704334940000.0,
+   "pe": 20.0,
+   "peg": 0.23,
+   "fwd_peg": 0.25
   },
   {
    "symbol": "GOOGL",
@@ -397,12 +397,12 @@
     "AMZN",
     "META"
    ],
-   "price": 77.71,
-   "change_pct": -1.46,
-   "market_cap": 580626609385.7594,
-   "pe": 21.9,
-   "peg": 1.62,
-   "fwd_peg": 1.3
+   "price": 346.47,
+   "change_pct": 0.86463,
+   "market_cap": 4193018497260.0,
+   "pe": 17.1,
+   "peg": 0.15,
+   "fwd_peg": 0.18
   },
   {
    "symbol": "CDNS",
@@ -412,12 +412,12 @@
    "competitors": [
     "SNPS"
    ],
-   "price": 243.62,
-   "change_pct": -2.37,
-   "market_cap": 3062048335147.761,
-   "pe": 24.3,
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
    "peg": null,
-   "fwd_peg": 0.93
+   "fwd_peg": null
   },
   {
    "symbol": "SNPS",
@@ -427,12 +427,12 @@
    "competitors": [
     "CDNS"
    ],
-   "price": 108.79,
-   "change_pct": 1.74,
-   "market_cap": 3475962985140.928,
-   "pe": 40.6,
-   "peg": 2.2,
-   "fwd_peg": 1.48
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "ADBE",
@@ -444,12 +444,12 @@
     "CRM",
     "MSFT"
    ],
-   "price": 188.26,
-   "change_pct": 1.64,
-   "market_cap": 577613557684.6138,
-   "pe": 39.2,
-   "peg": 1.81,
-   "fwd_peg": 1.52
+   "price": 238.785,
+   "change_pct": 0.46068,
+   "market_cap": 94917037500.0,
+   "pe": 13.3,
+   "peg": 1.15,
+   "fwd_peg": 0.76
   },
   {
    "symbol": "ADSK",
@@ -461,12 +461,12 @@
     "TRMB",
     "ADBE"
    ],
-   "price": 55.14,
-   "change_pct": 0.14,
-   "market_cap": 3425076830875.62,
-   "pe": 51.7,
-   "peg": 0.66,
-   "fwd_peg": 0.71
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "PTC",
@@ -477,12 +477,12 @@
     "ADSK",
     "TRMB"
    ],
-   "price": 472.29,
-   "change_pct": 0.16,
-   "market_cap": 2730006296313.5474,
-   "pe": 28.4,
-   "peg": 2.84,
-   "fwd_peg": 2.69
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "TRMB",
@@ -493,12 +493,12 @@
     "ADSK",
     "PTC"
    ],
-   "price": 491.4,
-   "change_pct": 1.59,
-   "market_cap": 2593457476009.364,
-   "pe": 70.9,
-   "peg": 1.46,
-   "fwd_peg": 1.04
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "ADP",
@@ -510,11 +510,11 @@
     "WDAY",
     "INTU"
    ],
-   "price": 196.47,
-   "change_pct": -1.2,
-   "market_cap": 2428438966824.93,
-   "pe": 19.7,
-   "peg": 1.19,
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
    "fwd_peg": null
   },
   {
@@ -527,12 +527,12 @@
     "WDAY",
     "INTU"
    ],
-   "price": 244.2,
-   "change_pct": -1.4,
-   "market_cap": 805557706156.5869,
-   "pe": 77.2,
-   "peg": 3.09,
-   "fwd_peg": 2.54
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "INTU",
@@ -545,12 +545,12 @@
     "ADP",
     "PAYX"
    ],
-   "price": 308.51,
-   "change_pct": 0.76,
-   "market_cap": 2801758450801.066,
-   "pe": 70.1,
-   "peg": 1.11,
-   "fwd_peg": 0.78
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "XYZ",
@@ -561,12 +561,12 @@
     "PYPL",
     "INTU"
    ],
-   "price": 307.7,
-   "change_pct": -1.61,
-   "market_cap": 2765136977105.663,
-   "pe": 64.5,
-   "peg": 0.82,
-   "fwd_peg": 0.76
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "PYPL",
@@ -577,12 +577,12 @@
     "XYZ",
     "INTU"
    ],
-   "price": 570.21,
-   "change_pct": 1.12,
-   "market_cap": 607462755002.0558,
-   "pe": 42.9,
-   "peg": 1.46,
-   "fwd_peg": 1.46
+   "price": 54.41,
+   "change_pct": 3.04924,
+   "market_cap": 46545633010.0,
+   "pe": 10.2,
+   "peg": 0.8,
+   "fwd_peg": 20.97
   },
   {
    "symbol": "FICO",
@@ -593,12 +593,12 @@
     "EFX",
     "MCO"
    ],
-   "price": 502.85,
-   "change_pct": 2.4,
-   "market_cap": 2305580000185.0293,
-   "pe": 27.1,
-   "peg": 0.93,
-   "fwd_peg": 0.63
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "MSCI",
@@ -610,11 +610,11 @@
     "FDS",
     "MCO"
    ],
-   "price": 403.82,
-   "change_pct": 0.13,
-   "market_cap": 3268682445625.1323,
-   "pe": 78.2,
-   "peg": 1.51,
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
    "fwd_peg": null
   },
   {
@@ -626,12 +626,12 @@
     "SPGI",
     "MSCI"
    ],
-   "price": 204.06,
-   "change_pct": -1.3,
-   "market_cap": 2058733531058.3765,
-   "pe": 33.6,
-   "peg": 1.73,
-   "fwd_peg": 1.79
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "SPGI",
@@ -643,12 +643,12 @@
     "MSCI",
     "FDS"
    ],
-   "price": 296.57,
-   "change_pct": 0.42,
-   "market_cap": 3166474259279.009,
-   "pe": 39.9,
-   "peg": 1.27,
-   "fwd_peg": 1.03
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "MCO",
@@ -659,12 +659,12 @@
     "SPGI",
     "FICO"
    ],
-   "price": 50.47,
-   "change_pct": -0.3,
-   "market_cap": 653130987143.6125,
-   "pe": 50.5,
-   "peg": 1.69,
-   "fwd_peg": 1.79
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "EFX",
@@ -675,12 +675,12 @@
     "FICO",
     "MCO"
    ],
-   "price": 351.63,
-   "change_pct": -0.87,
-   "market_cap": 1821445263770.0835,
-   "pe": 63.0,
-   "peg": 0.61,
-   "fwd_peg": 0.61
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "VEEV",
@@ -691,12 +691,12 @@
     "IQV",
     "CRM"
    ],
-   "price": 195.07,
-   "change_pct": 1.36,
-   "market_cap": 1784383261396.2373,
-   "pe": 33.4,
-   "peg": 2.04,
-   "fwd_peg": 2.02
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "TYL",
@@ -706,12 +706,12 @@
    "competitors": [
     "ROP"
    ],
-   "price": 323.11,
-   "change_pct": 0.06,
-   "market_cap": 2429167543880.5786,
-   "pe": 56.0,
-   "peg": 2.06,
-   "fwd_peg": 2.02
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "ROP",
@@ -722,12 +722,12 @@
     "TYL",
     "CSGP"
    ],
-   "price": 530.86,
-   "change_pct": 2.21,
-   "market_cap": 919679145000.1521,
-   "pe": 61.4,
-   "peg": 1.78,
-   "fwd_peg": 1.54
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "CSGP",
@@ -737,12 +737,12 @@
    "competitors": [
     "ROP"
    ],
-   "price": 287.59,
-   "change_pct": -2.14,
-   "market_cap": 853626073209.6455,
-   "pe": 25.5,
-   "peg": 2.05,
-   "fwd_peg": 2.2
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "IQV",
@@ -752,12 +752,12 @@
    "competitors": [
     "VEEV"
    ],
-   "price": 441.03,
-   "change_pct": 0.8,
-   "market_cap": 513281807765.9666,
-   "pe": 27.6,
-   "peg": 0.79,
-   "fwd_peg": 0.74
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "GDDY",
@@ -768,12 +768,12 @@
     "VRSN",
     "AKAM"
    ],
-   "price": 312.87,
-   "change_pct": 2.45,
-   "market_cap": 2916069673148.0723,
-   "pe": 42.7,
-   "peg": 2.9,
-   "fwd_peg": 3.14
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "AKAM",
@@ -785,12 +785,12 @@
     "AMZN",
     "PANW"
    ],
-   "price": 218.37,
-   "change_pct": 1.11,
-   "market_cap": 82898004262.59015,
-   "pe": 30.1,
-   "peg": 1.02,
-   "fwd_peg": 0.83
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "VRSN",
@@ -800,12 +800,12 @@
    "competitors": [
     "GDDY"
    ],
-   "price": 326.87,
-   "change_pct": -2.18,
-   "market_cap": 3448015105807.336,
-   "pe": 56.7,
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
    "peg": null,
-   "fwd_peg": 1.67
+   "fwd_peg": null
   },
   {
    "symbol": "APP",
@@ -816,12 +816,12 @@
     "META",
     "GOOGL"
    ],
-   "price": 476.24,
-   "change_pct": -1.15,
-   "market_cap": 466501124180.2854,
-   "pe": 20.5,
-   "peg": 2.65,
-   "fwd_peg": 2.88
+   "price": null,
+   "change_pct": null,
+   "market_cap": null,
+   "pe": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "META",
@@ -832,206 +832,86 @@
     "GOOGL",
     "APP"
    ],
-   "price": 554.74,
-   "change_pct": 0.35,
-   "market_cap": 2455954801214.9634,
-   "pe": 27.3,
-   "peg": 1.7,
-   "fwd_peg": 1.79
+   "price": 741.9,
+   "change_pct": 1.89814,
+   "market_cap": 1889980286283.0,
+   "pe": 27.6,
+   "peg": null,
+   "fwd_peg": 0.76
   }
  ],
  "insider_buys": [
   {
-   "symbol": "CRWD",
-   "filed": "2026-09-24",
-   "insider": "Sample Insider 6",
-   "role": "CEO",
-   "date": "2026-09-24",
-   "shares": 13517,
-   "price": 422.85,
-   "value": 5715663.45,
-   "owned_after": 40551,
-   "url": null
-  },
-  {
-   "symbol": "FICO",
-   "filed": "2026-09-14",
-   "insider": "Sample Insider 5",
-   "role": "10% Owner",
-   "date": "2026-09-14",
-   "shares": 29798,
-   "price": 88.89,
-   "value": 2648744.22,
-   "owned_after": 89394,
-   "url": null
-  },
-  {
-   "symbol": "META",
-   "filed": "2026-09-11",
-   "insider": "Sample Insider 9",
-   "role": "CEO",
-   "date": "2026-09-11",
-   "shares": 22056,
-   "price": 487.41,
-   "value": 10750314.96,
-   "owned_after": 66168,
-   "url": null
-  },
-  {
-   "symbol": "SNPS",
-   "filed": "2026-09-08",
-   "insider": "Sample Insider 2",
+   "symbol": "ORCL",
+   "filed": "2026-10-01",
+   "insider": "RUSCKOWSKI STEPHEN H",
    "role": "Director",
-   "date": "2026-09-08",
-   "shares": 8968,
-   "price": 59.87,
-   "value": 536914.16,
-   "owned_after": 26904,
-   "url": null
+   "date": "2026-09-29",
+   "shares": 25000.0,
+   "price": 139.352,
+   "value": 3483800.0,
+   "owned_after": 25390.0,
+   "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000099/xslF345X06/form4.xml"
   },
   {
-   "symbol": "ACN",
-   "filed": "2026-09-07",
-   "insider": "Sample Insider 4",
-   "role": "10% Owner",
-   "date": "2026-09-07",
-   "shares": 1708,
-   "price": 377.22,
-   "value": 644291.76,
-   "owned_after": 5124,
-   "url": null
-  },
-  {
-   "symbol": "PANW",
-   "filed": "2026-08-18",
-   "insider": "Sample Insider 1",
-   "role": "10% Owner",
-   "date": "2026-08-18",
-   "shares": 8474,
-   "price": 248.74,
-   "value": 2107822.76,
-   "owned_after": 25422,
-   "url": null
-  },
-  {
-   "symbol": "IBM",
-   "filed": "2026-08-15",
-   "insider": "Sample Insider 3",
-   "role": "CEO",
-   "date": "2026-08-15",
-   "shares": 35305,
-   "price": 389.37,
-   "value": 13746707.85,
-   "owned_after": 105915,
-   "url": null
-  },
-  {
-   "symbol": "META",
-   "filed": "2026-08-07",
-   "insider": "Sample Insider 9",
-   "role": "CFO",
-   "date": "2026-08-07",
-   "shares": 2757,
-   "price": 484.21,
-   "value": 1334966.97,
-   "owned_after": 8271,
-   "url": null
-  },
-  {
-   "symbol": "NOW",
-   "filed": "2026-08-02",
-   "insider": "Sample Insider 8",
-   "role": "10% Owner",
-   "date": "2026-08-02",
-   "shares": 39741,
-   "price": 151.42,
-   "value": 6017582.22,
-   "owned_after": 119223,
-   "url": null
-  },
-  {
-   "symbol": "NOW",
-   "filed": "2026-08-01",
-   "insider": "Sample Insider 8",
-   "role": "CFO",
-   "date": "2026-08-01",
-   "shares": 12647,
-   "price": 112.47,
-   "value": 1422408.09,
-   "owned_after": 37941,
-   "url": null
-  },
-  {
-   "symbol": "IBM",
-   "filed": "2026-07-09",
-   "insider": "Sample Insider 3",
+   "symbol": "CRM",
+   "filed": "2026-09-21",
+   "insider": "Kirk David Blair",
    "role": "Director",
-   "date": "2026-07-09",
-   "shares": 18228,
-   "price": 199.62,
-   "value": 3638673.36,
-   "owned_after": 54684,
-   "url": null
+   "date": "2026-09-18",
+   "shares": 4176.0,
+   "price": 239.3321,
+   "value": 999450.85,
+   "owned_after": 18748.0,
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000212/xslF345X06/form4.xml"
   },
   {
-   "symbol": "CRWD",
-   "filed": "2026-07-08",
-   "insider": "Sample Insider 6",
-   "role": "CFO",
-   "date": "2026-07-08",
-   "shares": 33706,
-   "price": 181.58,
-   "value": 6120335.48,
-   "owned_after": 101118,
-   "url": null
-  },
-  {
-   "symbol": "SNPS",
-   "filed": "2026-07-07",
-   "insider": "Sample Insider 2",
-   "role": "CFO",
-   "date": "2026-07-07",
-   "shares": 11080,
-   "price": 160.47,
-   "value": 1778007.6,
-   "owned_after": 33240,
-   "url": null
-  },
-  {
-   "symbol": "PANW",
-   "filed": "2026-07-03",
-   "insider": "Sample Insider 1",
-   "role": "CFO",
-   "date": "2026-07-03",
-   "shares": 5988,
-   "price": 319.76,
-   "value": 1914722.88,
-   "owned_after": 17964,
-   "url": null
-  },
-  {
-   "symbol": "APP",
-   "filed": "2026-07-03",
-   "insider": "Sample Insider 7",
-   "role": "10% Owner",
-   "date": "2026-07-03",
-   "shares": 17250,
-   "price": 238.14,
-   "value": 4107915.0,
-   "owned_after": 51750,
-   "url": null
-  },
-  {
-   "symbol": "APP",
-   "filed": "2026-07-01",
-   "insider": "Sample Insider 7",
+   "symbol": "MSCI",
+   "filed": "2026-09-04",
+   "insider": "Taneja Rajat",
    "role": "Director",
-   "date": "2026-07-01",
-   "shares": 23277,
-   "price": 491.67,
-   "value": 11444602.59,
-   "owned_after": 69831,
-   "url": null
+   "date": "2026-09-02",
+   "shares": 1786.0,
+   "price": 560.0,
+   "value": 1000160.0,
+   "owned_after": 5404.0,
+   "url": "https://www.sec.gov/Archives/edgar/data/1408198/000153260126000007/xslF345X06/wk-form4_1788552024.xml"
+  },
+  {
+   "symbol": "VRSN",
+   "filed": "2026-08-31",
+   "insider": "Armstrong Courtney D",
+   "role": "Director",
+   "date": "2026-08-27",
+   "shares": 14.401,
+   "price": 293.444,
+   "value": 4225.89,
+   "owned_after": 5231.679,
+   "url": "https://www.sec.gov/Archives/edgar/data/1014473/000186931926000010/xslF345X06/wk-form4_1788208788.xml"
+  },
+  {
+   "symbol": "VRSN",
+   "filed": "2026-08-31",
+   "insider": "Armstrong Courtney D",
+   "role": "Director",
+   "date": "2026-08-27",
+   "shares": 4.91,
+   "price": 294.38,
+   "value": 1445.41,
+   "owned_after": 1789.466,
+   "url": "https://www.sec.gov/Archives/edgar/data/1014473/000186931926000010/xslF345X06/wk-form4_1788208788.xml"
+  },
+  {
+   "symbol": "CSGP",
+   "filed": "2026-08-05",
+   "insider": "FLORANCE ANDREW C",
+   "role": "Director, Founder and CEO",
+   "date": "2026-08-04",
+   "shares": 83300.0,
+   "price": 29.89,
+   "value": 2489837.0,
+   "owned_after": 1806165.03,
+   "url": "https://www.sec.gov/Archives/edgar/data/1057352/000162828026052968/xslF345X06/wk-form4_1785936417.xml"
   }
  ]
 }
