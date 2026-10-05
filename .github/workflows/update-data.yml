@@ -1,0 +1,64 @@
+name: Update data & deploy
+
+on:
+  schedule:
+    - cron: "35 13 * * 1-5"
+    - cron: "35 14 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Run the data pull now, ignoring market hours"
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull PEG + Form 4 data
+        if: github.event_name != 'push'
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.force && '1' || '0' }}
+        run: python scripts/update_data.py
+
+      - name: Commit snapshot
+        if: github.event_name != 'push'
+        run: |
+          git config user.name  "wideopenfin-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Data update $(TZ=America/New_York date +'%Y-%m-%d %H:%M ET')"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
