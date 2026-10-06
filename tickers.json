@@ -1,0 +1,801 @@
+{
+  "as_of": "2026-10-05",
+  "universe": "S&P 500 constituents only",
+  "notes": [
+    "role 'core' = growth/SaaS names the site focuses on; 'peer' = in-index competitor or benchmark",
+    "Look up each ticker's SEC CIK at runtime from https://www.sec.gov/files/company_tickers.json for Form 4 queries",
+    "Re-check membership each quarter: S&P rebalances in Mar/Jun/Sep/Dec",
+    "tags: ['mag7'] marks the Magnificent 7 for the site's Mag 7 filter; it does not change peer groups"
+  ],
+  "recently_removed": {
+    "TTD": "2026-09-21",
+    "PAYC": "2026-03-23",
+    "MTCH": "2026-03-23",
+    "DAY": "taken private (Thoma Bravo), 2026",
+    "EPAM": "removed from S&P 500, 2026",
+    "ANSS": "acquired by SNPS, 2025-07"
+  },
+  "groups": [
+    {
+      "id": "enterprise-apps",
+      "name": "Enterprise Apps & Workflow",
+      "tickers": [
+        "CRM",
+        "NOW",
+        "WDAY",
+        "IBM"
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "tickers": [
+        "CRWD",
+        "PANW",
+        "FTNT",
+        "GEN",
+        "CSCO"
+      ]
+    },
+    {
+      "id": "data-ai",
+      "name": "Data, AI & Observability",
+      "tickers": [
+        "PLTR",
+        "DDOG",
+        "ACN"
+      ]
+    },
+    {
+      "id": "cloud-infra",
+      "name": "Cloud Infrastructure & Databases",
+      "tickers": [
+        "ORCL",
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ]
+    },
+    {
+      "id": "ai-semis",
+      "name": "AI Semis & Networking",
+      "tickers": [
+        "NVDA",
+        "AVGO",
+        "AMD",
+        "ANET",
+        "MU"
+      ]
+    },
+    {
+      "id": "eda",
+      "name": "Chip Design Software (EDA)",
+      "tickers": [
+        "CDNS",
+        "SNPS"
+      ]
+    },
+    {
+      "id": "design-engineering",
+      "name": "Design & Engineering Software",
+      "tickers": [
+        "ADBE",
+        "ADSK",
+        "PTC",
+        "TRMB"
+      ]
+    },
+    {
+      "id": "hr-payroll",
+      "name": "HR & Payroll",
+      "tickers": [
+        "ADP",
+        "PAYX"
+      ]
+    },
+    {
+      "id": "smb-fintech",
+      "name": "Fintech & SMB Software",
+      "tickers": [
+        "INTU",
+        "XYZ",
+        "PYPL",
+        "HOOD",
+        "COIN"
+      ]
+    },
+    {
+      "id": "fin-data",
+      "name": "Financial Data & Analytics",
+      "tickers": [
+        "FICO",
+        "MSCI",
+        "FDS",
+        "SPGI",
+        "MCO",
+        "EFX"
+      ]
+    },
+    {
+      "id": "vertical-saas",
+      "name": "Vertical SaaS",
+      "tickers": [
+        "VEEV",
+        "TYL",
+        "ROP",
+        "CSGP",
+        "IQV"
+      ]
+    },
+    {
+      "id": "internet-infra",
+      "name": "Internet Infrastructure",
+      "tickers": [
+        "GDDY",
+        "AKAM",
+        "VRSN"
+      ]
+    },
+    {
+      "id": "adtech",
+      "name": "Ad-Tech & Marketing",
+      "tickers": [
+        "APP",
+        "META"
+      ]
+    },
+    {
+      "id": "consumer-internet",
+      "name": "Consumer Internet",
+      "tickers": [
+        "NFLX",
+        "UBER",
+        "DASH",
+        "ABNB",
+        "BKNG"
+      ]
+    },
+    {
+      "id": "megacap",
+      "name": "Mega-cap Platforms",
+      "tickers": [
+        "AAPL",
+        "TSLA"
+      ]
+    }
+  ],
+  "tickers": [
+    {
+      "symbol": "CRM",
+      "name": "Salesforce",
+      "group": "enterprise-apps",
+      "role": "core",
+      "competitors": [
+        "NOW",
+        "MSFT",
+        "ORCL",
+        "WDAY",
+        "ADBE"
+      ]
+    },
+    {
+      "symbol": "NOW",
+      "name": "ServiceNow",
+      "group": "enterprise-apps",
+      "role": "core",
+      "competitors": [
+        "CRM",
+        "MSFT",
+        "WDAY",
+        "IBM"
+      ]
+    },
+    {
+      "symbol": "WDAY",
+      "name": "Workday",
+      "group": "enterprise-apps",
+      "role": "core",
+      "competitors": [
+        "ORCL",
+        "ADP",
+        "PAYX",
+        "CRM",
+        "NOW"
+      ]
+    },
+    {
+      "symbol": "IBM",
+      "name": "IBM",
+      "group": "enterprise-apps",
+      "role": "peer",
+      "competitors": [
+        "MSFT",
+        "ORCL",
+        "ACN",
+        "NOW"
+      ]
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "group": "cybersecurity",
+      "role": "core",
+      "competitors": [
+        "PANW",
+        "FTNT",
+        "MSFT"
+      ]
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "group": "cybersecurity",
+      "role": "core",
+      "competitors": [
+        "CRWD",
+        "FTNT",
+        "CSCO",
+        "AKAM"
+      ]
+    },
+    {
+      "symbol": "FTNT",
+      "name": "Fortinet",
+      "group": "cybersecurity",
+      "role": "core",
+      "competitors": [
+        "PANW",
+        "CSCO",
+        "CRWD"
+      ]
+    },
+    {
+      "symbol": "GEN",
+      "name": "Gen Digital",
+      "group": "cybersecurity",
+      "role": "peer",
+      "competitors": [
+        "MSFT",
+        "CRWD"
+      ]
+    },
+    {
+      "symbol": "CSCO",
+      "name": "Cisco (Splunk)",
+      "group": "cybersecurity",
+      "role": "peer",
+      "competitors": [
+        "PANW",
+        "FTNT",
+        "DDOG"
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir",
+      "group": "data-ai",
+      "role": "core",
+      "competitors": [
+        "MSFT",
+        "ORCL",
+        "IBM",
+        "ACN",
+        "DDOG"
+      ]
+    },
+    {
+      "symbol": "DDOG",
+      "name": "Datadog",
+      "group": "data-ai",
+      "role": "core",
+      "competitors": [
+        "CSCO",
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ]
+    },
+    {
+      "symbol": "ACN",
+      "name": "Accenture",
+      "group": "data-ai",
+      "role": "peer",
+      "competitors": [
+        "IBM",
+        "PLTR"
+      ]
+    },
+    {
+      "symbol": "ORCL",
+      "name": "Oracle",
+      "group": "cloud-infra",
+      "role": "core",
+      "competitors": [
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "CRM",
+        "WDAY"
+      ]
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "group": "cloud-infra",
+      "role": "peer",
+      "competitors": [
+        "AMZN",
+        "GOOGL",
+        "ORCL",
+        "CRM"
+      ],
+      "tags": [
+        "mag7"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon (AWS)",
+      "group": "cloud-infra",
+      "role": "peer",
+      "competitors": [
+        "MSFT",
+        "GOOGL",
+        "ORCL"
+      ],
+      "tags": [
+        "mag7"
+      ]
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet (Google Cloud)",
+      "group": "cloud-infra",
+      "role": "peer",
+      "competitors": [
+        "MSFT",
+        "AMZN",
+        "META"
+      ],
+      "tags": [
+        "mag7"
+      ]
+    },
+    {
+      "symbol": "CDNS",
+      "name": "Cadence Design Systems",
+      "group": "eda",
+      "role": "core",
+      "competitors": [
+        "SNPS"
+      ]
+    },
+    {
+      "symbol": "SNPS",
+      "name": "Synopsys",
+      "group": "eda",
+      "role": "core",
+      "competitors": [
+        "CDNS"
+      ]
+    },
+    {
+      "symbol": "ADBE",
+      "name": "Adobe",
+      "group": "design-engineering",
+      "role": "core",
+      "competitors": [
+        "ADSK",
+        "CRM",
+        "MSFT"
+      ]
+    },
+    {
+      "symbol": "ADSK",
+      "name": "Autodesk",
+      "group": "design-engineering",
+      "role": "core",
+      "competitors": [
+        "PTC",
+        "TRMB",
+        "ADBE"
+      ]
+    },
+    {
+      "symbol": "PTC",
+      "name": "PTC",
+      "group": "design-engineering",
+      "role": "core",
+      "competitors": [
+        "ADSK",
+        "TRMB"
+      ]
+    },
+    {
+      "symbol": "TRMB",
+      "name": "Trimble",
+      "group": "design-engineering",
+      "role": "peer",
+      "competitors": [
+        "ADSK",
+        "PTC"
+      ]
+    },
+    {
+      "symbol": "ADP",
+      "name": "Automatic Data Processing",
+      "group": "hr-payroll",
+      "role": "peer",
+      "competitors": [
+        "PAYX",
+        "WDAY",
+        "INTU"
+      ]
+    },
+    {
+      "symbol": "PAYX",
+      "name": "Paychex",
+      "group": "hr-payroll",
+      "role": "peer",
+      "competitors": [
+        "ADP",
+        "WDAY",
+        "INTU"
+      ]
+    },
+    {
+      "symbol": "INTU",
+      "name": "Intuit",
+      "group": "smb-fintech",
+      "role": "core",
+      "competitors": [
+        "XYZ",
+        "PYPL",
+        "ADP",
+        "PAYX"
+      ]
+    },
+    {
+      "symbol": "XYZ",
+      "name": "Block",
+      "group": "smb-fintech",
+      "role": "peer",
+      "competitors": [
+        "PYPL",
+        "INTU"
+      ]
+    },
+    {
+      "symbol": "PYPL",
+      "name": "PayPal",
+      "group": "smb-fintech",
+      "role": "peer",
+      "competitors": [
+        "XYZ",
+        "INTU"
+      ]
+    },
+    {
+      "symbol": "FICO",
+      "name": "Fair Isaac",
+      "group": "fin-data",
+      "role": "core",
+      "competitors": [
+        "EFX",
+        "MCO"
+      ]
+    },
+    {
+      "symbol": "MSCI",
+      "name": "MSCI",
+      "group": "fin-data",
+      "role": "core",
+      "competitors": [
+        "SPGI",
+        "FDS",
+        "MCO"
+      ]
+    },
+    {
+      "symbol": "FDS",
+      "name": "FactSet",
+      "group": "fin-data",
+      "role": "peer",
+      "competitors": [
+        "SPGI",
+        "MSCI"
+      ]
+    },
+    {
+      "symbol": "SPGI",
+      "name": "S&P Global",
+      "group": "fin-data",
+      "role": "peer",
+      "competitors": [
+        "MCO",
+        "MSCI",
+        "FDS"
+      ]
+    },
+    {
+      "symbol": "MCO",
+      "name": "Moody's",
+      "group": "fin-data",
+      "role": "peer",
+      "competitors": [
+        "SPGI",
+        "FICO"
+      ]
+    },
+    {
+      "symbol": "EFX",
+      "name": "Equifax",
+      "group": "fin-data",
+      "role": "peer",
+      "competitors": [
+        "FICO",
+        "MCO"
+      ]
+    },
+    {
+      "symbol": "VEEV",
+      "name": "Veeva Systems",
+      "group": "vertical-saas",
+      "role": "core",
+      "competitors": [
+        "IQV",
+        "CRM"
+      ]
+    },
+    {
+      "symbol": "TYL",
+      "name": "Tyler Technologies",
+      "group": "vertical-saas",
+      "role": "core",
+      "competitors": [
+        "ROP"
+      ]
+    },
+    {
+      "symbol": "ROP",
+      "name": "Roper Technologies",
+      "group": "vertical-saas",
+      "role": "core",
+      "competitors": [
+        "TYL",
+        "CSGP"
+      ]
+    },
+    {
+      "symbol": "CSGP",
+      "name": "CoStar Group",
+      "group": "vertical-saas",
+      "role": "core",
+      "competitors": [
+        "ROP"
+      ]
+    },
+    {
+      "symbol": "IQV",
+      "name": "IQVIA",
+      "group": "vertical-saas",
+      "role": "peer",
+      "competitors": [
+        "VEEV"
+      ]
+    },
+    {
+      "symbol": "GDDY",
+      "name": "GoDaddy",
+      "group": "internet-infra",
+      "role": "core",
+      "competitors": [
+        "VRSN",
+        "AKAM"
+      ]
+    },
+    {
+      "symbol": "AKAM",
+      "name": "Akamai",
+      "group": "internet-infra",
+      "role": "peer",
+      "competitors": [
+        "GDDY",
+        "AMZN",
+        "PANW"
+      ]
+    },
+    {
+      "symbol": "VRSN",
+      "name": "Verisign",
+      "group": "internet-infra",
+      "role": "peer",
+      "competitors": [
+        "GDDY"
+      ]
+    },
+    {
+      "symbol": "APP",
+      "name": "AppLovin",
+      "group": "adtech",
+      "role": "core",
+      "competitors": [
+        "META",
+        "GOOGL"
+      ]
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms",
+      "group": "adtech",
+      "role": "peer",
+      "competitors": [
+        "GOOGL",
+        "APP"
+      ],
+      "tags": [
+        "mag7"
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "group": "ai-semis",
+      "role": "core",
+      "competitors": [
+        "AMD",
+        "AVGO",
+        "MU"
+      ],
+      "tags": [
+        "mag7"
+      ]
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "group": "ai-semis",
+      "role": "core",
+      "competitors": [
+        "NVDA",
+        "AMD",
+        "ANET",
+        "MU"
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices",
+      "group": "ai-semis",
+      "role": "core",
+      "competitors": [
+        "NVDA",
+        "AVGO"
+      ]
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "group": "ai-semis",
+      "role": "core",
+      "competitors": [
+        "CSCO",
+        "AVGO",
+        "NVDA"
+      ]
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron Technology",
+      "group": "ai-semis",
+      "role": "core",
+      "competitors": [
+        "NVDA",
+        "AMD"
+      ]
+    },
+    {
+      "symbol": "NFLX",
+      "name": "Netflix",
+      "group": "consumer-internet",
+      "role": "core",
+      "competitors": [
+        "GOOGL",
+        "AMZN",
+        "AAPL",
+        "META"
+      ]
+    },
+    {
+      "symbol": "UBER",
+      "name": "Uber",
+      "group": "consumer-internet",
+      "role": "core",
+      "competitors": [
+        "DASH",
+        "ABNB",
+        "TSLA"
+      ]
+    },
+    {
+      "symbol": "DASH",
+      "name": "DoorDash",
+      "group": "consumer-internet",
+      "role": "core",
+      "competitors": [
+        "UBER",
+        "AMZN"
+      ]
+    },
+    {
+      "symbol": "ABNB",
+      "name": "Airbnb",
+      "group": "consumer-internet",
+      "role": "core",
+      "competitors": [
+        "BKNG",
+        "UBER"
+      ]
+    },
+    {
+      "symbol": "BKNG",
+      "name": "Booking Holdings",
+      "group": "consumer-internet",
+      "role": "peer",
+      "competitors": [
+        "ABNB",
+        "GOOGL"
+      ]
+    },
+    {
+      "symbol": "HOOD",
+      "name": "Robinhood",
+      "group": "smb-fintech",
+      "role": "core",
+      "competitors": [
+        "COIN",
+        "XYZ",
+        "PYPL"
+      ]
+    },
+    {
+      "symbol": "COIN",
+      "name": "Coinbase",
+      "group": "smb-fintech",
+      "role": "core",
+      "competitors": [
+        "HOOD",
+        "XYZ"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "group": "megacap",
+      "role": "peer",
+      "competitors": [
+        "MSFT",
+        "GOOGL",
+        "META",
+        "NFLX"
+      ],
+      "tags": [
+        "mag7"
+      ]
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "group": "megacap",
+      "role": "core",
+      "competitors": [
+        "NVDA",
+        "GOOGL",
+        "UBER"
+      ],
+      "tags": [
+        "mag7"
+      ]
+    }
+  ]
+}
