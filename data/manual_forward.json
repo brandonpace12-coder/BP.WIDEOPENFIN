@@ -1,0 +1,235 @@
+{
+ "source": "stockanalysis.com (data: S&P Global Market Intelligence)",
+ "collected": "2026-10-06",
+ "note": "Collected manually by Claude from each stock's /statistics page. Used only where Alpha Vantage has no value. null = source shows n/a.",
+ "values": {
+  "CRM": {
+   "fwd_peg": 0.89,
+   "url": "https://stockanalysis.com/stocks/crm/statistics/"
+  },
+  "NOW": {
+   "fwd_peg": 1.23,
+   "url": "https://stockanalysis.com/stocks/now/statistics/"
+  },
+  "WDAY": {
+   "fwd_peg": 0.79,
+   "url": "https://stockanalysis.com/stocks/wday/statistics/"
+  },
+  "IBM": {
+   "fwd_peg": 2.57,
+   "url": "https://stockanalysis.com/stocks/ibm/statistics/"
+  },
+  "CRWD": {
+   "fwd_peg": 6.59,
+   "url": "https://stockanalysis.com/stocks/crwd/statistics/"
+  },
+  "PANW": {
+   "fwd_peg": 5.17,
+   "url": "https://stockanalysis.com/stocks/panw/statistics/"
+  },
+  "FTNT": {
+   "fwd_peg": 3.17,
+   "url": "https://stockanalysis.com/stocks/ftnt/statistics/"
+  },
+  "GEN": {
+   "fwd_peg": null,
+   "url": "https://stockanalysis.com/stocks/gen/statistics/"
+  },
+  "CSCO": {
+   "fwd_peg": 2.23,
+   "url": "https://stockanalysis.com/stocks/csco/statistics/"
+  },
+  "PLTR": {
+   "fwd_peg": 1.87,
+   "url": "https://stockanalysis.com/stocks/pltr/statistics/"
+  },
+  "DDOG": {
+   "fwd_peg": 4.2,
+   "url": "https://stockanalysis.com/stocks/ddog/statistics/"
+  },
+  "ACN": {
+   "fwd_peg": 2.03,
+   "url": "https://stockanalysis.com/stocks/acn/statistics/"
+  },
+  "ORCL": {
+   "fwd_peg": 0.55,
+   "url": "https://stockanalysis.com/stocks/orcl/statistics/"
+  },
+  "MSFT": {
+   "fwd_peg": 1.69,
+   "url": "https://stockanalysis.com/stocks/msft/statistics/"
+  },
+  "AMZN": {
+   "fwd_peg": 1.29,
+   "url": "https://stockanalysis.com/stocks/amzn/statistics/"
+  },
+  "GOOGL": {
+   "fwd_peg": 2.02,
+   "url": "https://stockanalysis.com/stocks/googl/statistics/"
+  },
+  "CDNS": {
+   "fwd_peg": 2.73,
+   "url": "https://stockanalysis.com/stocks/cdns/statistics/"
+  },
+  "SNPS": {
+   "fwd_peg": 1.21,
+   "url": "https://stockanalysis.com/stocks/snps/statistics/"
+  },
+  "ADBE": {
+   "fwd_peg": 0.64,
+   "url": "https://stockanalysis.com/stocks/adbe/statistics/"
+  },
+  "ADSK": {
+   "fwd_peg": 1.05,
+   "url": "https://stockanalysis.com/stocks/adsk/statistics/"
+  },
+  "PTC": {
+   "fwd_peg": 2.47,
+   "url": "https://stockanalysis.com/stocks/ptc/statistics/"
+  },
+  "TRMB": {
+   "fwd_peg": 1.49,
+   "url": "https://stockanalysis.com/stocks/trmb/statistics/"
+  },
+  "ADP": {
+   "fwd_peg": null,
+   "url": "https://stockanalysis.com/stocks/adp/statistics/"
+  },
+  "PAYX": {
+   "fwd_peg": 2.09,
+   "url": "https://stockanalysis.com/stocks/payx/statistics/"
+  },
+  "INTU": {
+   "fwd_peg": 0.9,
+   "url": "https://stockanalysis.com/stocks/intu/statistics/"
+  },
+  "XYZ": {
+   "fwd_peg": 0.51,
+   "url": "https://stockanalysis.com/stocks/xyz/statistics/"
+  },
+  "PYPL": {
+   "fwd_peg": 1.39,
+   "url": "https://stockanalysis.com/stocks/pypl/statistics/"
+  },
+  "FICO": {
+   "fwd_peg": 0.62,
+   "url": "https://stockanalysis.com/stocks/fico/statistics/"
+  },
+  "MSCI": {
+   "fwd_peg": 1.99,
+   "url": "https://stockanalysis.com/stocks/msci/statistics/"
+  },
+  "FDS": {
+   "fwd_peg": 1.39,
+   "url": "https://stockanalysis.com/stocks/fds/statistics/"
+  },
+  "SPGI": {
+   "fwd_peg": 1.66,
+   "url": "https://stockanalysis.com/stocks/spgi/statistics/"
+  },
+  "MCO": {
+   "fwd_peg": 1.97,
+   "url": "https://stockanalysis.com/stocks/mco/statistics/"
+  },
+  "EFX": {
+   "fwd_peg": 1.1,
+   "url": "https://stockanalysis.com/stocks/efx/statistics/"
+  },
+  "VEEV": {
+   "fwd_peg": 0.84,
+   "url": "https://stockanalysis.com/stocks/veev/statistics/"
+  },
+  "TYL": {
+   "fwd_peg": 1.48,
+   "url": "https://stockanalysis.com/stocks/tyl/statistics/"
+  },
+  "ROP": {
+   "fwd_peg": 2.07,
+   "url": "https://stockanalysis.com/stocks/rop/statistics/"
+  },
+  "CSGP": {
+   "fwd_peg": 0.49,
+   "url": "https://stockanalysis.com/stocks/csgp/statistics/"
+  },
+  "IQV": {
+   "fwd_peg": 1.65,
+   "url": "https://stockanalysis.com/stocks/iqv/statistics/"
+  },
+  "GDDY": {
+   "fwd_peg": 0.66,
+   "url": "https://stockanalysis.com/stocks/gddy/statistics/"
+  },
+  "AKAM": {
+   "fwd_peg": 2.64,
+   "url": "https://stockanalysis.com/stocks/akam/statistics/"
+  },
+  "VRSN": {
+   "fwd_peg": null,
+   "url": "https://stockanalysis.com/stocks/vrsn/statistics/"
+  },
+  "APP": {
+   "fwd_peg": 0.49,
+   "url": "https://stockanalysis.com/stocks/app/statistics/"
+  },
+  "META": {
+   "fwd_peg": 1.18,
+   "url": "https://stockanalysis.com/stocks/meta/statistics/"
+  },
+  "NVDA": {
+   "fwd_peg": 0.4,
+   "url": "https://stockanalysis.com/stocks/nvda/statistics/"
+  },
+  "AVGO": {
+   "fwd_peg": 0.38,
+   "url": "https://stockanalysis.com/stocks/avgo/statistics/"
+  },
+  "AMD": {
+   "fwd_peg": 0.88,
+   "url": "https://stockanalysis.com/stocks/amd/statistics/"
+  },
+  "ANET": {
+   "fwd_peg": 1.81,
+   "url": "https://stockanalysis.com/stocks/anet/statistics/"
+  },
+  "MU": {
+   "fwd_peg": 0.03,
+   "url": "https://stockanalysis.com/stocks/mu/statistics/"
+  },
+  "NFLX": {
+   "fwd_peg": 0.92,
+   "url": "https://stockanalysis.com/stocks/nflx/statistics/"
+  },
+  "UBER": {
+   "fwd_peg": 0.63,
+   "url": "https://stockanalysis.com/stocks/uber/statistics/"
+  },
+  "DASH": {
+   "fwd_peg": 0.65,
+   "url": "https://stockanalysis.com/stocks/dash/statistics/"
+  },
+  "ABNB": {
+   "fwd_peg": 1.44,
+   "url": "https://stockanalysis.com/stocks/abnb/statistics/"
+  },
+  "BKNG": {
+   "fwd_peg": 0.82,
+   "url": "https://stockanalysis.com/stocks/bkng/statistics/"
+  },
+  "HOOD": {
+   "fwd_peg": 2.26,
+   "url": "https://stockanalysis.com/stocks/hood/statistics/"
+  },
+  "COIN": {
+   "fwd_peg": 13.29,
+   "url": "https://stockanalysis.com/stocks/coin/statistics/"
+  },
+  "AAPL": {
+   "fwd_peg": 3.26,
+   "url": "https://stockanalysis.com/stocks/aapl/statistics/"
+  },
+  "TSLA": {
+   "fwd_peg": 9.36,
+   "url": "https://stockanalysis.com/stocks/tsla/statistics/"
+  }
+ }
+}
