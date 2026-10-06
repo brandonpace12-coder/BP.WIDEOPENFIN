@@ -3,7 +3,7 @@
 
 Runs once per trading day near the open (see .github/workflows/update-data.yml):
   1. Price + valuation for every ticker in data/tickers.json (Finnhub, free tier)
-     PEG is computed here: trailing P/E / long-run EPS growth (5-yr, falling back to 3-yr)
+     PEG is computed here: trailing P/E / long-run EPS growth (5-yr; 3-yr if 5-yr missing or negative)
   2. Form 4 open-market insider PURCHASES (transaction code "P") from SEC EDGAR
 
 Writes data/snapshot.json, which the static site reads. Standard library only.
@@ -157,10 +157,15 @@ def fetch_valuation(symbols: list[str], api_key: str, previous: dict[str, dict])
             rec["market_cap"] = cap * 1e6 if cap else None  # Finnhub reports millions
             pe = first(m, "peTTM", "peBasicExclExtraTTM", "peExclExtraTTM", "peNormalizedAnnual")
             rec["pe"] = round(pe, 1) if pe and pe > 0 else None
+            # Prefer 5-yr growth; if it's missing or negative, try 3-yr. Keep the 5-yr figure for
+            # display if neither is positive (PEG then shows n/a).
             for key, label in (("epsGrowth5Y", "5y"), ("epsGrowth3Y", "3y")):
                 g = first(m, key)
-                if g is not None:
+                if g is None:
+                    continue
+                if rec["eps_growth"] is None or g > 0:
                     rec["eps_growth"], rec["growth_basis"] = round(g, 1), label
+                if g > 0:
                     break
             rec["peg"] = compute_peg(pe, rec["eps_growth"])
             ok = rec["price"] is not None
@@ -298,7 +303,7 @@ def main() -> None:
     snapshot = {
         "sample": False,
         "valuation_source": "Finnhub",
-        "peg_method": "Trailing P/E / 5-year EPS growth (3-year if 5-year unavailable)",
+        "peg_method": "Trailing P/E / 5-year EPS growth (3-year if 5-year is unavailable or negative)",
         "generated_at": now.isoformat(timespec="minutes"),
         "trading_date": now.strftime("%Y-%m-%d"),
         "insider_lookback_days": INSIDER_LOOKBACK_DAYS,
