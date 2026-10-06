@@ -7,7 +7,7 @@ Runs once per trading day near the open (see .github/workflows/update-data.yml):
   2. Form 4 open-market insider PURCHASES (transaction code "P") from SEC EDGAR
   3. Forward PEG + forward P/E from Alpha Vantage OVERVIEW (free tier: 25 calls/day, so tickers
      rotate - oldest first - and values are cached in data/forward_cache.json between runs)
-     Gaps (no Alpha Vantage value) are looked up weekly by Claude with web search; every estimate
+     Gaps (no Alpha Vantage value) are looked up by Claude with web search, each stock at most weekly; every estimate
      must quote and link its source, is verified in code, and is labeled "est." on the site.
   4. "What's moving it": recent headlines (Finnhub company-news) summarized by Claude into
      three short bullets per stock (Anthropic API). Skipped if ANTHROPIC_API_KEY is not set.
@@ -48,14 +48,14 @@ INSIDER_LOOKBACK_DAYS = 90
 NEWS_LOOKBACK_DAYS = 7
 NEWS_MAX_HEADLINES = 12
 FORWARD_CACHE_FILE = DATA / "forward_cache.json"
+MANUAL_FORWARD_FILE = DATA / "manual_forward.json"  # hand-collected fallback until Alpha Vantage fills in
 AV_BASE = "https://www.alphavantage.co/query"
 AV_DAILY_BUDGET = int(os.environ.get("AV_DAILY_BUDGET", "20"))  # free tier is 25/day; keep headroom
 AV_PAUSE = 13  # free tier is 5 calls/minute
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 GAPFILL_MODEL = os.environ.get("GAPFILL_MODEL", "claude-sonnet-5-5")  # needs web search support
-GAPFILL_WEEKDAY = 0          # Monday; FORCE_GAPFILL=1 runs it any day
-GAPFILL_MAX = 15             # cap on Claude lookups per run
-GAPFILL_TTL_DAYS = 7         # reuse an estimate for a week
+GAPFILL_MAX = int(os.environ.get("GAPFILL_MAX", "60"))  # cap on Claude lookups per run
+GAPFILL_TTL_DAYS = 7         # each stock is re-checked at most once a week
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
 
 # NYSE full-day closures. Update this list each December.
@@ -309,10 +309,10 @@ def update_forward(symbols: list[str], av_key: str) -> dict[str, dict]:
             log(f"  ! AV {sym}: {e}")
             continue
         if "Information" in d or "Note" in d:  # rate-limit / quota message instead of data
-            log(f"  ! Alpha Vantage limit reached after {i} calls: {(d.get('Information') or d.get('Note'))[:120]}")
+            log(f"  ! Alpha Vantage stopped after {i} calls: {(d.get('Information') or d.get('Note'))[:300]}")
             break
         if not d.get("Symbol"):
-            log(f"  ! AV {sym}: no data")
+            log(f"  ! AV {sym}: no data {str(d)[:200]}")
             cache[sym] = {**cache.get(sym, {}), "as_of": today, "missing": True}
             continue
         fpe = num(d.get("ForwardPE"))
@@ -387,13 +387,10 @@ def gapfill_one(t: dict, key: str) -> dict | None:
 
 def gapfill_forward(tickers: list[dict], cache: dict, key: str) -> dict:
     today = datetime.now(ET_TZ)
-    if today.weekday() != GAPFILL_WEEKDAY and os.environ.get("FORCE_GAPFILL") != "1":
-        return cache
     fresh_cut = (today - timedelta(days=GAPFILL_TTL_DAYS)).strftime("%Y-%m-%d")
     gaps = [t for t in tickers
-            if cache.get(t["symbol"], {}).get("as_of")                # Alpha Vantage has tried it
-            and cache[t["symbol"]].get("fwd_peg") is None             # ...and has no value
-            and (cache[t["symbol"]].get("est_as_of") or "0") < fresh_cut][:GAPFILL_MAX]
+            if cache.get(t["symbol"], {}).get("fwd_peg") is None                 # no Alpha Vantage value
+            and (cache.get(t["symbol"], {}).get("est_as_of") or "0") < fresh_cut][:GAPFILL_MAX]
     if not gaps:
         log("Gap-fill: no forward-PEG gaps to look up")
         return cache
@@ -547,8 +544,11 @@ def main() -> None:
     else:
         log("ALPHAVANTAGE_API_KEY not set - skipping forward PEG")
     anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
-    if fwd and anthropic_key:
+    if anthropic_key and os.environ.get("GAPFILL") == "1":  # automatic Claude lookups: off unless enabled
+        if not fwd and FORWARD_CACHE_FILE.exists():
+            fwd = json.loads(FORWARD_CACHE_FILE.read_text())
         fwd = gapfill_forward(universe["tickers"], fwd, anthropic_key)
+    manual = json.loads(MANUAL_FORWARD_FILE.read_text()) if MANUAL_FORWARD_FILE.exists() else {}
     for sym, v in fwd.items():
         if sym not in val:
             continue
@@ -558,7 +558,15 @@ def main() -> None:
             val[sym]["fwd_as_of"] = v.get("as_of")
         elif v.get("fwd_peg_est") is not None:           # Claude-sourced estimate fills the gap
             val[sym].update({"fwd_peg": v["fwd_peg_est"], "fwd_est": True, "fwd_as_of": v.get("est_as_of"),
-                             "fwd_src": v.get("est_source"), "fwd_url": v.get("est_url")})
+                             "fwd_src": v.get("est_source"), "fwd_url": v.get("est_url"), "fwd_tag": "est."})
+    used_manual = 0
+    for sym, m in (manual.get("values") or {}).items():   # hand-collected fallback, lowest priority
+        if sym in val and val[sym].get("fwd_peg") is None and m.get("fwd_peg") is not None:
+            val[sym].update({"fwd_peg": clean_peg(m["fwd_peg"]), "fwd_est": True, "fwd_as_of": manual.get("collected"),
+                             "fwd_src": manual.get("source"), "fwd_url": m.get("url"), "fwd_tag": "manual"})
+            used_manual += 1
+    if manual:
+        log(f"Forward PEG: {used_manual} values from manual file ({manual.get('collected')})")
 
     news = {}
     if anthropic_key:
