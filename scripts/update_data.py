@@ -3,14 +3,17 @@
 
 Runs once per trading day near the open (see .github/workflows/update-data.yml):
   1. Price + valuation for every ticker in data/tickers.json (Finnhub, free tier)
-     PEG is computed here: trailing P/E / long-run EPS growth (5-yr; 3-yr if 5-yr missing or negative)
+     PEG is computed here: trailing P/E / last-12-months EPS growth (year over year)
   2. Form 4 open-market insider PURCHASES (transaction code "P") from SEC EDGAR
+  3. "What's moving it": recent headlines (Finnhub company-news) summarized by Claude into
+     three short bullets per stock (Anthropic API). Skipped if ANTHROPIC_API_KEY is not set.
 
 Writes data/snapshot.json, which the static site reads. Standard library only.
 
 Env vars:
   FINNHUB_API_KEY  required  - Finnhub key (GitHub secret)
   SEC_USER_AGENT   required  - "AppName contact@email" (SEC requires a contact in the User-Agent)
+  ANTHROPIC_API_KEY optional - enables the news bullets
   FORCE_RUN=1      optional  - skip the trading-day / time-window check
 """
 from __future__ import annotations
@@ -37,6 +40,10 @@ ET_TZ = ZoneInfo("America/New_York")
 FINNHUB_BASE = "https://finnhub.io/api/v1"
 FINNHUB_PAUSE = 1.1  # free tier: 60 calls/minute
 INSIDER_LOOKBACK_DAYS = 90
+NEWS_LOOKBACK_DAYS = 7
+NEWS_MAX_HEADLINES = 12
+ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
+ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
 
 # NYSE full-day closures. Update this list each December.
 NYSE_HOLIDAYS = {
@@ -54,14 +61,15 @@ def log(msg: str) -> None:
     print(f"[{datetime.now(ET_TZ):%H:%M:%S}] {msg}", flush=True)
 
 
-def http_json(url: str, headers: dict | None = None, retries: int = 3):
+def http_json(url: str, headers: dict | None = None, retries: int = 3, body: dict | None = None):
+    data = json.dumps(body).encode("utf-8") if body is not None else None
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(url, headers=headers or {})
-            with urllib.request.urlopen(req, timeout=30) as r:
+            req = urllib.request.Request(url, headers=headers or {}, data=data)
+            with urllib.request.urlopen(req, timeout=60) as r:
                 return json.loads(r.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 502, 503) and attempt < retries - 1:
+            if e.code in (429, 500, 502, 503, 529) and attempt < retries - 1:
                 time.sleep(2 ** attempt * 2)
                 continue
             raise
@@ -157,16 +165,10 @@ def fetch_valuation(symbols: list[str], api_key: str, previous: dict[str, dict])
             rec["market_cap"] = cap * 1e6 if cap else None  # Finnhub reports millions
             pe = first(m, "peTTM", "peBasicExclExtraTTM", "peExclExtraTTM", "peNormalizedAnnual")
             rec["pe"] = round(pe, 1) if pe and pe > 0 else None
-            # Prefer 5-yr growth; if it's missing or negative, try 3-yr. Keep the 5-yr figure for
-            # display if neither is positive (PEG then shows n/a).
-            for key, label in (("epsGrowth5Y", "5y"), ("epsGrowth3Y", "3y")):
-                g = first(m, key)
-                if g is None:
-                    continue
-                if rec["eps_growth"] is None or g > 0:
-                    rec["eps_growth"], rec["growth_basis"] = round(g, 1), label
-                if g > 0:
-                    break
+            # Last-12-months EPS growth vs. the prior 12 months, same basis for every stock.
+            g = first(m, "epsGrowthTTMYoy", "epsGrowthTTMYoY")
+            if g is not None:
+                rec["eps_growth"], rec["growth_basis"] = round(g, 1), "1y"
             rec["peg"] = compute_peg(pe, rec["eps_growth"])
             ok = rec["price"] is not None
         except Exception as e:  # keep going; one bad symbol shouldn't sink the run
@@ -276,6 +278,103 @@ def fetch_insider_buys(symbols: list[str]) -> list[dict]:
     return results
 
 
+# --------------------------------------------------------------------------- news + Claude bullets
+NEWS_PROMPT = """You write the "What's moving it" box on a public stock-research website.
+
+Company: {name} ({symbol}). Peer group: {group}.
+Latest price change: {chg}.
+
+Recent headlines (last {days} days), numbered:
+{headlines}
+
+Write exactly 3 short bullets (max 22 words each) on what is currently driving the stock up or down.
+Rules:
+- Use ONLY the headlines above. Do not add facts, numbers or events that are not in them.
+- Each bullet cites the one headline number it is based on.
+- direction is "up" if the item is a positive driver, "down" if negative, "neutral" if mixed or informational.
+- Plain, factual tone. No advice, no predictions, no price targets unless a headline states one.
+- If fewer than 3 headlines are relevant, return fewer bullets.
+
+Reply with JSON only, no other text:
+{{"bullets": [{{"text": "...", "direction": "up|down|neutral", "source": 1}}]}}"""
+
+
+def fetch_news(symbol: str, api_key: str) -> list[dict]:
+    today = date.today()
+    since = (today - timedelta(days=NEWS_LOOKBACK_DAYS)).isoformat()
+    q = urllib.parse.quote(symbol)
+    items = http_json(f"{FINNHUB_BASE}/company-news?symbol={q}&from={since}&to={today.isoformat()}&token={api_key}") or []
+    seen, out = set(), []
+    for it in sorted(items, key=lambda x: x.get("datetime") or 0, reverse=True):
+        head = (it.get("headline") or "").strip()
+        key = head.lower()[:80]
+        if not head or key in seen:
+            continue
+        seen.add(key)
+        out.append({"headline": head[:220], "summary": (it.get("summary") or "").strip()[:280],
+                    "source": it.get("source"), "url": it.get("url"),
+                    "date": datetime.fromtimestamp(it["datetime"], ET_TZ).strftime("%Y-%m-%d") if it.get("datetime") else None})
+        if len(out) >= NEWS_MAX_HEADLINES:
+            break
+    return out
+
+
+def parse_bullets(text: str) -> list[dict]:
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.strip("`")
+        text = text[text.find("{"):]
+    start, end = text.find("{"), text.rfind("}")
+    data = json.loads(text[start:end + 1])
+    return data.get("bullets") or []
+
+
+def summarize(t: dict, group_name: str, headlines: list[dict], change_pct, anthropic_key: str) -> list[dict]:
+    listing = "\n".join(
+        f"{i}. [{h['date'] or ''} · {h['source'] or ''}] {h['headline']}" + (f" — {h['summary']}" if h["summary"] else "")
+        for i, h in enumerate(headlines, 1))
+    chg = f"{change_pct:+.2f}% (prior session)" if change_pct is not None else "unknown"
+    prompt = NEWS_PROMPT.format(name=t["name"], symbol=t["symbol"], group=group_name, chg=chg,
+                                days=NEWS_LOOKBACK_DAYS, headlines=listing)
+    resp = http_json(ANTHROPIC_URL, retries=3, body={
+        "model": ANTHROPIC_MODEL, "max_tokens": 400,
+        "messages": [{"role": "user", "content": prompt}],
+    }, headers={"x-api-key": anthropic_key, "anthropic-version": "2023-06-01",
+                "content-type": "application/json"})
+    text = "".join(b.get("text", "") for b in resp.get("content", []) if b.get("type") == "text")
+    bullets = []
+    for b in parse_bullets(text)[:3]:
+        src = b.get("source")
+        h = headlines[src - 1] if isinstance(src, int) and 1 <= src <= len(headlines) else None
+        if not b.get("text") or h is None:
+            continue  # drop anything not tied to a real headline
+        direction = b.get("direction") if b.get("direction") in ("up", "down", "neutral") else "neutral"
+        bullets.append({"text": str(b["text"])[:200], "direction": direction,
+                        "source": h["source"], "url": h["url"], "date": h["date"]})
+    return bullets
+
+
+def fetch_moves(tickers: list[dict], groups: dict[str, str], val: dict, finnhub_key: str,
+                anthropic_key: str, previous: dict[str, dict]) -> dict[str, dict]:
+    out = {}
+    today = datetime.now(ET_TZ).strftime("%Y-%m-%d")
+    for t in tickers:
+        sym = t["symbol"]
+        try:
+            heads = fetch_news(sym, finnhub_key)
+            time.sleep(FINNHUB_PAUSE)
+            bullets = summarize(t, groups.get(t["group"], ""), heads, val.get(sym, {}).get("change_pct"),
+                                anthropic_key) if heads else []
+            out[sym] = {"as_of": today, "bullets": bullets, "headline_count": len(heads)}
+        except Exception as e:
+            log(f"  ! news {sym}: {e}")
+            if previous.get(sym):
+                out[sym] = {**previous[sym], "stale": True}
+    done = sum(1 for v in out.values() if v.get("bullets"))
+    log(f"News: bullets for {done}/{len(tickers)} tickers (model {ANTHROPIC_MODEL})")
+    return out
+
+
 # --------------------------------------------------------------------------- main
 def main() -> None:
     if not should_run():
@@ -287,10 +386,11 @@ def main() -> None:
     universe = json.loads(TICKERS_FILE.read_text())
     symbols = [t["symbol"] for t in universe["tickers"]]
 
-    previous = {}
+    previous, prev_news = {}, {}
     if SNAPSHOT_FILE.exists():
         prev = json.loads(SNAPSHOT_FILE.read_text())
         if not prev.get("sample"):
+            prev_news = {t["symbol"]: t["news"] for t in prev.get("tickers", []) if t.get("news")}
             previous = {t["symbol"]: {k: t.get(k) for k in ("price", "change_pct", "market_cap", "pe",
                         "eps_growth", "growth_basis", "peg", "fwd_peg")} for t in prev.get("tickers", [])}
 
@@ -299,16 +399,26 @@ def main() -> None:
     log("Form 4 insider purchases...")
     buys = fetch_insider_buys(symbols)
 
+    news = {}
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
+    if anthropic_key:
+        log("News + Claude summaries...")
+        group_names = {g["id"]: g["name"] for g in universe["groups"]}
+        news = fetch_moves(universe["tickers"], group_names, val, api_key, anthropic_key, prev_news)
+    else:
+        log("ANTHROPIC_API_KEY not set - skipping news bullets")
+
     now = datetime.now(ET_TZ)
     snapshot = {
         "sample": False,
         "valuation_source": "Finnhub",
-        "peg_method": "Trailing P/E / 5-year EPS growth (3-year if 5-year is unavailable or negative)",
+        "peg_method": "Trailing P/E / last-12-months EPS growth (year over year)",
         "generated_at": now.isoformat(timespec="minutes"),
         "trading_date": now.strftime("%Y-%m-%d"),
         "insider_lookback_days": INSIDER_LOOKBACK_DAYS,
         "groups": universe["groups"],
-        "tickers": [{**t, **val.get(t["symbol"], {})} for t in universe["tickers"]],
+        "tickers": [{**t, **val.get(t["symbol"], {}), **({"news": news[t["symbol"]]} if t["symbol"] in news else {})}
+                    for t in universe["tickers"]],
         "insider_buys": buys,
     }
     SNAPSHOT_FILE.write_text(json.dumps(snapshot, indent=1))
