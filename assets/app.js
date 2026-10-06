@@ -3,7 +3,7 @@
   const $ = (s, el = document) => el.querySelector(s);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-  const state = { basis: "fwd_peg", group: "all", q: "", coreOnly: false, sortK: "vs", asc: true, sel: null };
+  const state = { basis: "peg", group: "all", q: "", coreOnly: false, sortK: "vs", asc: true, sel: null };
   let D = null, bySym = {}, groupName = {}, buysBySym = {}, medians = {};
 
   // ---------- formatting
@@ -54,6 +54,12 @@
     });
 
     $("#sample").hidden = !D.sample;
+    // Forward PEG needs analyst estimates; hide the toggle when the data source doesn't provide them.
+    const hasFwd = D.tickers.some((t) => t.fwd_peg != null);
+    if (!hasFwd) $("#basis").hidden = true;
+    [...$("#basis").children].forEach((c) => c.classList.toggle("on", c.dataset.b === state.basis));
+    if (D.valuation_source) $("#src").textContent = D.valuation_source;
+    if (D.peg_method) $("#method").textContent = D.peg_method + ".";
     const gen = new Date(D.generated_at);
     $("#updated").textContent = (D.sample ? "Sample · " : "Updated ") +
       gen.toLocaleString(undefined, { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" }) + " ET";

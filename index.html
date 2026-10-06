@@ -25,12 +25,12 @@
 
     <section>
       <h2>PEG vs. competitors</h2>
-      <p class="sub">PEG = P/E ÷ expected EPS growth. Below 1 is often read as cheap for the growth; compare within a peer group, not across groups. Click a row for its competitor chart.</p>
+      <p class="sub">PEG = P/E ÷ EPS growth. <span id="method"></span> Below 1 is often read as cheap for the growth; compare within a peer group, not across groups. Click a row for its competitor chart.</p>
 
       <div class="controls">
         <div class="seg" id="basis">
-          <button data-b="fwd_peg" class="on">Forward PEG</button>
-          <button data-b="peg">Trailing PEG</button>
+          <button data-b="peg" class="on">Trailing PEG</button>
+          <button data-b="fwd_peg">Forward PEG</button>
         </div>
         <input type="search" id="q" placeholder="Search ticker or company" aria-label="Search">
         <label class="toggle"><input type="checkbox" id="coreOnly"> Growth/SaaS names only</label>
@@ -85,7 +85,7 @@
 
   <footer>
     <div class="wrap">
-      <p>Valuation data: Financial Modeling Prep. Insider filings: SEC EDGAR Form 4. Universe: S&amp;P 500 constituents only, reviewed quarterly.</p>
+      <p>Valuation data: <span id="src">Finnhub</span>. Insider filings: SEC EDGAR Form 4. Universe: S&amp;P 500 constituents only, reviewed quarterly.</p>
       <p>For information only — not investment advice. Data may be delayed or incomplete; verify before acting.</p>
     </div>
   </footer>

@@ -2,13 +2,14 @@
 """Morning data pull for WideOpenFin.
 
 Runs once per trading day near the open (see .github/workflows/update-data.yml):
-  1. PEG / valuation data for every ticker in data/tickers.json (Financial Modeling Prep)
+  1. Price + valuation for every ticker in data/tickers.json (Finnhub, free tier)
+     PEG is computed here: trailing P/E / long-run EPS growth (5-yr, falling back to 3-yr)
   2. Form 4 open-market insider PURCHASES (transaction code "P") from SEC EDGAR
 
 Writes data/snapshot.json, which the static site reads. Standard library only.
 
 Env vars:
-  FMP_API_KEY      required  - Financial Modeling Prep key (GitHub secret)
+  FINNHUB_API_KEY  required  - Finnhub key (GitHub secret)
   SEC_USER_AGENT   required  - "AppName contact@email" (SEC requires a contact in the User-Agent)
   FORCE_RUN=1      optional  - skip the trading-day / time-window check
 """
@@ -33,7 +34,8 @@ SNAPSHOT_FILE = DATA / "snapshot.json"
 FORM4_CACHE_FILE = DATA / "form4_cache.json"
 
 ET_TZ = ZoneInfo("America/New_York")
-FMP_BASE = "https://financialmodelingprep.com/stable"
+FINNHUB_BASE = "https://finnhub.io/api/v1"
+FINNHUB_PAUSE = 1.1  # free tier: 60 calls/minute
 INSIDER_LOOKBACK_DAYS = 90
 
 # NYSE full-day closures. Update this list each December.
@@ -120,29 +122,54 @@ def should_run() -> bool:
 
 
 # --------------------------------------------------------------------------- valuation
-def fetch_valuation(symbols: list[str], api_key: str) -> dict[str, dict]:
+def compute_peg(pe, growth_pct):
+    """PEG = P/E / EPS growth (in percent). Meaningless for negative P/E or growth."""
+    if pe is None or growth_pct is None or pe <= 0 or growth_pct <= 0:
+        return None
+    return clean_peg(pe / growth_pct)
+
+
+def fetch_valuation(symbols: list[str], api_key: str, previous: dict[str, dict]) -> dict[str, dict]:
     out: dict[str, dict] = {}
+    logged_keys = False
     for sym in symbols:
         rec = {"price": None, "change_pct": None, "market_cap": None,
-               "pe": None, "peg": None, "fwd_peg": None}
+               "pe": None, "eps_growth": None, "growth_basis": None,
+               "peg": None, "fwd_peg": None}
         q = urllib.parse.quote(sym)
+        ok = False
         try:
-            quote = http_json(f"{FMP_BASE}/quote?symbol={q}&apikey={api_key}")
-            quote = quote[0] if isinstance(quote, list) and quote else {}
-            rec["price"] = first(quote, "price")
-            rec["change_pct"] = first(quote, "changePercentage", "changesPercentage")
-            rec["market_cap"] = first(quote, "marketCap")
+            quote = http_json(f"{FINNHUB_BASE}/quote?symbol={q}&token={api_key}") or {}
+            time.sleep(FINNHUB_PAUSE)
+            price = num(quote.get("c"))
+            rec["price"] = price if price else None  # Finnhub returns 0 for unknown symbols
+            rec["change_pct"] = num(quote.get("dp"))
 
-            ratios = http_json(f"{FMP_BASE}/ratios-ttm?symbol={q}&apikey={api_key}")
-            ratios = ratios[0] if isinstance(ratios, list) and ratios else {}
-            pe = first(ratios, "priceToEarningsRatioTTM", "peRatioTTM")
+            data = http_json(f"{FINNHUB_BASE}/stock/metric?symbol={q}&metric=all&token={api_key}") or {}
+            time.sleep(FINNHUB_PAUSE)
+            m = data.get("metric") or {}
+            if not logged_keys and m:
+                keys = sorted(k for k in m if "pe" in k.lower() or "growth" in k.lower())
+                log(f"  Finnhub metric fields (P/E + growth): {', '.join(keys)}")
+                logged_keys = True
+
+            cap = first(m, "marketCapitalization")
+            rec["market_cap"] = cap * 1e6 if cap else None  # Finnhub reports millions
+            pe = first(m, "peTTM", "peBasicExclExtraTTM", "peExclExtraTTM", "peNormalizedAnnual")
             rec["pe"] = round(pe, 1) if pe and pe > 0 else None
-            rec["peg"] = clean_peg(first(ratios, "priceToEarningsGrowthRatioTTM", "pegRatioTTM"))
-            rec["fwd_peg"] = clean_peg(first(ratios, "forwardPriceToEarningsGrowthRatioTTM"))
+            for key, label in (("epsGrowth5Y", "5y"), ("epsGrowth3Y", "3y")):
+                g = first(m, key)
+                if g is not None:
+                    rec["eps_growth"], rec["growth_basis"] = round(g, 1), label
+                    break
+            rec["peg"] = compute_peg(pe, rec["eps_growth"])
+            ok = rec["price"] is not None
         except Exception as e:  # keep going; one bad symbol shouldn't sink the run
             log(f"  ! {sym}: {e}")
+        if not ok and previous.get(sym, {}).get("price") is not None:
+            rec = {**previous[sym], "fwd_peg": None, "stale": True}  # keep yesterday's numbers rather than blanking
+            log(f"  ~ {sym}: using previous values")
         out[sym] = rec
-        time.sleep(0.3)  # free plans are rate-limited
     return out
 
 
@@ -248,21 +275,30 @@ def fetch_insider_buys(symbols: list[str]) -> list[dict]:
 def main() -> None:
     if not should_run():
         return
-    api_key = os.environ.get("FMP_API_KEY")
+    api_key = os.environ.get("FINNHUB_API_KEY")
     if not api_key:
-        sys.exit("FMP_API_KEY is required")
+        sys.exit("FINNHUB_API_KEY is required")
 
     universe = json.loads(TICKERS_FILE.read_text())
     symbols = [t["symbol"] for t in universe["tickers"]]
 
-    log(f"Valuation for {len(symbols)} tickers...")
-    val = fetch_valuation(symbols, api_key)
+    previous = {}
+    if SNAPSHOT_FILE.exists():
+        prev = json.loads(SNAPSHOT_FILE.read_text())
+        if not prev.get("sample"):
+            previous = {t["symbol"]: {k: t.get(k) for k in ("price", "change_pct", "market_cap", "pe",
+                        "eps_growth", "growth_basis", "peg", "fwd_peg")} for t in prev.get("tickers", [])}
+
+    log(f"Valuation for {len(symbols)} tickers (Finnhub, ~{len(symbols) * 2 * FINNHUB_PAUSE / 60:.0f} min)...")
+    val = fetch_valuation(symbols, api_key, previous)
     log("Form 4 insider purchases...")
     buys = fetch_insider_buys(symbols)
 
     now = datetime.now(ET_TZ)
     snapshot = {
         "sample": False,
+        "valuation_source": "Finnhub",
+        "peg_method": "Trailing P/E / 5-year EPS growth (3-year if 5-year unavailable)",
         "generated_at": now.isoformat(timespec="minutes"),
         "trading_date": now.strftime("%Y-%m-%d"),
         "insider_lookback_days": INSIDER_LOOKBACK_DAYS,
@@ -271,7 +307,7 @@ def main() -> None:
         "insider_buys": buys,
     }
     SNAPSHOT_FILE.write_text(json.dumps(snapshot, indent=1))
-    have = sum(1 for t in snapshot["tickers"] if t.get("peg") or t.get("fwd_peg"))
+    have = sum(1 for t in snapshot["tickers"] if t.get("peg"))
     log(f"Wrote {SNAPSHOT_FILE.name}: PEG for {have}/{len(symbols)} tickers")
 
 

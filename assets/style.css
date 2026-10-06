@@ -72,6 +72,7 @@ section { margin-bottom: 36px; }
 /* controls */
 .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
 .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.seg[hidden] { display: none; }
 .seg button { border: 0; background: transparent; color: var(--muted); padding: 7px 12px; font: inherit; font-size: 13px; cursor: pointer; }
 .seg button.on { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
