@@ -156,7 +156,7 @@
         <td class="hide-sm hide-md">${fmtBig(t.market_cap)}</td>
         <td class="hide-sm">${fmtNum(t.pe, 1)}</td>
         <td class="${state.basis === "peg" ? "peg" : "dim"}">${fmtNum(t.peg)}</td>
-        <td class="${state.basis === "fwd_peg" ? "peg" : "dim"}${t.fwd_est ? " est" : ""}" title="${esc(t.fwd_est ? `Estimate found by Claude via web search (${t.fwd_src || "source"}, ${t.fwd_as_of}). Verify before relying on it.` : (t.fwd_as_of ? "Alpha Vantage, as of " + t.fwd_as_of : ""))}">${fmtNum(t.fwd_peg)}${t.fwd_est && t.fwd_peg != null ? (t.fwd_url ? ` <a class="estmark" href="${esc(t.fwd_url)}" target="_blank" rel="noopener">est.</a>` : ' <span class="estmark">est.</span>') : ""}</td>
+        <td class="${state.basis === "fwd_peg" ? "peg" : "dim"}${t.fwd_est && t.fwd_tag !== "manual" ? " est" : ""}" title="${esc(t.fwd_est ? (t.fwd_tag === "manual" ? `Collected manually from ${t.fwd_src || "source"} on ${t.fwd_as_of}; replaced automatically once Alpha Vantage has a value.` : `Estimate found by Claude via web search (${t.fwd_src || "source"}, ${t.fwd_as_of}). Verify before relying on it.`) : (t.fwd_as_of ? "Alpha Vantage, as of " + t.fwd_as_of : ""))}">${fmtNum(t.fwd_peg)}${t.fwd_est && t.fwd_tag !== "manual" && t.fwd_peg != null ? (t.fwd_url ? ` <a class="estmark" href="${esc(t.fwd_url)}" target="_blank" rel="noopener">${esc(t.fwd_tag || "est.")}</a>` : ` <span class="estmark">${esc(t.fwd_tag || "est.")}</span>`) : ""}</td>
         <td>${vs}</td>
         <td class="hide-sm">${buys}</td>
       </tr>`;
