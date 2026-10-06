@@ -1,6 +1,8 @@
 {
  "sample": false,
- "generated_at": "2026-10-05T19:08-04:00",
+ "valuation_source": "Finnhub",
+ "peg_method": "Trailing P/E / 5-year EPS growth (3-year if 5-year unavailable)",
+ "generated_at": "2026-10-05T20:25-04:00",
  "trading_date": "2026-10-05",
  "insider_lookback_days": 90,
  "groups": [
@@ -133,11 +135,13 @@
     "WDAY",
     "ADBE"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 229.79,
+   "change_pct": -2.0879,
+   "market_cap": 192302190000.0,
+   "pe": 19.9,
+   "eps_growth": 12.2,
+   "growth_basis": "5y",
+   "peg": 1.63,
    "fwd_peg": null
   },
   {
@@ -151,11 +155,13 @@
     "WDAY",
     "IBM"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 136.08,
+   "change_pct": 1.2651,
+   "market_cap": 138948920000.0,
+   "pe": 83.2,
+   "eps_growth": 70.2,
+   "growth_basis": "5y",
+   "peg": 1.19,
    "fwd_peg": null
   },
   {
@@ -170,10 +176,12 @@
     "CRM",
     "NOW"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
+   "price": 188.96,
+   "change_pct": 1.515,
+   "market_cap": 44301023000.0,
+   "pe": 35.4,
+   "eps_growth": null,
+   "growth_basis": null,
    "peg": null,
    "fwd_peg": null
   },
@@ -188,11 +196,13 @@
     "ACN",
     "NOW"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 221.58,
+   "change_pct": -0.4761,
+   "market_cap": 209851020000.0,
+   "pe": 19.6,
+   "eps_growth": 12.4,
+   "growth_basis": "5y",
+   "peg": 1.58,
    "fwd_peg": null
   },
   {
@@ -205,10 +215,12 @@
     "FTNT",
     "MSFT"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
+   "price": 272.67,
+   "change_pct": 0.9739,
+   "market_cap": 278919840000.0,
+   "pe": 4771.1,
+   "eps_growth": null,
+   "growth_basis": null,
    "peg": null,
    "fwd_peg": null
   },
@@ -223,10 +235,12 @@
     "CSCO",
     "AKAM"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
+   "price": 406.76,
+   "change_pct": 0.8729,
+   "market_cap": 329850300000.0,
+   "pe": 1074.4,
+   "eps_growth": -14.5,
+   "growth_basis": "3y",
    "peg": null,
    "fwd_peg": null
   },
@@ -240,11 +254,13 @@
     "CSCO",
     "CRWD"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 184.13,
+   "change_pct": 1.7574,
+   "market_cap": 133653269999.99998,
+   "pe": 63.0,
+   "eps_growth": 33.0,
+   "growth_basis": "5y",
+   "peg": 1.91,
    "fwd_peg": null
   },
   {
@@ -256,11 +272,13 @@
     "MSFT",
     "CRWD"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 22.28,
+   "change_pct": 1.3188,
+   "market_cap": 13348491000.0,
+   "pe": 12.7,
+   "eps_growth": 11.2,
+   "growth_basis": "5y",
+   "peg": 1.13,
    "fwd_peg": null
   },
   {
@@ -274,11 +292,13 @@
     "DDOG"
    ],
    "price": 112.82,
-   "change_pct": 0.55258,
-   "market_cap": 444672658905.0,
-   "pe": 33.6,
-   "peg": 1.07,
-   "fwd_peg": 1.74
+   "change_pct": 0.5526,
+   "market_cap": 444802620000.0,
+   "pe": 33.5,
+   "eps_growth": 5.9,
+   "growth_basis": "5y",
+   "peg": 5.68,
+   "fwd_peg": null
   },
   {
    "symbol": "PLTR",
@@ -293,11 +313,13 @@
     "DDOG"
    ],
    "price": 189.4,
-   "change_pct": 0.34437,
-   "market_cap": 434875658000.0,
-   "pe": 150.3,
-   "peg": 0.53,
-   "fwd_peg": 1.22
+   "change_pct": 0.3444,
+   "market_cap": 455823880000.0,
+   "pe": 151.1,
+   "eps_growth": null,
+   "growth_basis": null,
+   "peg": null,
+   "fwd_peg": null
   },
   {
    "symbol": "DDOG",
@@ -310,10 +332,12 @@
     "AMZN",
     "GOOGL"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
+   "price": 276.415,
+   "change_pct": -0.2904,
+   "market_cap": 99291430000.0,
+   "pe": 559.1,
+   "eps_growth": null,
+   "growth_basis": null,
    "peg": null,
    "fwd_peg": null
   },
@@ -326,11 +350,13 @@
     "IBM",
     "PLTR"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 195.05,
+   "change_pct": -1.9356,
+   "market_cap": 119292000000.0,
+   "pe": 14.3,
+   "eps_growth": 8.2,
+   "growth_basis": "5y",
+   "peg": 1.74,
    "fwd_peg": null
   },
   {
@@ -345,11 +371,13 @@
     "CRM",
     "WDAY"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 142.48,
+   "change_pct": 0.1265,
+   "market_cap": 442009750000.0,
+   "pe": 23.4,
+   "eps_growth": 5.2,
+   "growth_basis": "5y",
+   "peg": 4.49,
    "fwd_peg": null
   },
   {
@@ -364,11 +392,13 @@
     "CRM"
    ],
    "price": 525.18,
-   "change_pct": 1.47818,
-   "market_cap": 3899750349000.0,
-   "pe": 29.2,
-   "peg": 0.93,
-   "fwd_peg": 1.82
+   "change_pct": 1.4782,
+   "market_cap": 3944895500000.0,
+   "pe": 29.5,
+   "eps_growth": 17.4,
+   "growth_basis": "5y",
+   "peg": 1.7,
+   "fwd_peg": null
   },
   {
    "symbol": "AMZN",
@@ -381,11 +411,13 @@
     "ORCL"
    ],
    "price": 251.4,
-   "change_pct": -0.04770992,
-   "market_cap": 2704334940000.0,
+   "change_pct": -0.0477,
+   "market_cap": 2707850200000.0,
    "pe": 20.0,
-   "peg": 0.23,
-   "fwd_peg": 0.25
+   "eps_growth": 28.0,
+   "growth_basis": "5y",
+   "peg": 0.71,
+   "fwd_peg": null
   },
   {
    "symbol": "GOOGL",
@@ -398,11 +430,13 @@
     "META"
    ],
    "price": 346.47,
-   "change_pct": 0.86463,
-   "market_cap": 4193018497260.0,
-   "pe": 17.1,
-   "peg": 0.15,
-   "fwd_peg": 0.18
+   "change_pct": 0.8646,
+   "market_cap": 4242342500000.0,
+   "pe": 17.4,
+   "eps_growth": 29.8,
+   "growth_basis": "5y",
+   "peg": 0.58,
+   "fwd_peg": null
   },
   {
    "symbol": "CDNS",
@@ -412,11 +446,13 @@
    "competitors": [
     "SNPS"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 353.48,
+   "change_pct": 0.6062,
+   "market_cap": 98505330000.0,
+   "pe": 71.5,
+   "eps_growth": 13.9,
+   "growth_basis": "5y",
+   "peg": 5.14,
    "fwd_peg": null
   },
   {
@@ -427,11 +463,13 @@
    "competitors": [
     "CDNS"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 488.47,
+   "change_pct": -0.2919,
+   "market_cap": 96096195000.0,
+   "pe": 89.3,
+   "eps_growth": 13.5,
+   "growth_basis": "5y",
+   "peg": 6.61,
    "fwd_peg": null
   },
   {
@@ -445,11 +483,13 @@
     "MSFT"
    ],
    "price": 238.785,
-   "change_pct": 0.46068,
-   "market_cap": 94917037500.0,
-   "pe": 13.3,
-   "peg": 1.15,
-   "fwd_peg": 0.76
+   "change_pct": 0.4607,
+   "market_cap": 92508950000.0,
+   "pe": 12.7,
+   "eps_growth": 9.0,
+   "growth_basis": "5y",
+   "peg": 1.41,
+   "fwd_peg": null
   },
   {
    "symbol": "ADSK",
@@ -461,10 +501,12 @@
     "TRMB",
     "ADBE"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
+   "price": 221.56,
+   "change_pct": 4.5094,
+   "market_cap": 47056350000.0,
+   "pe": 28.7,
+   "eps_growth": -0.8,
+   "growth_basis": "5y",
    "peg": null,
    "fwd_peg": null
   },
@@ -477,11 +519,13 @@
     "ADSK",
     "TRMB"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 192.26,
+   "change_pct": 33.4861,
+   "market_cap": 20941164000.0,
+   "pe": 17.1,
+   "eps_growth": 40.1,
+   "growth_basis": "5y",
+   "peg": 0.43,
    "fwd_peg": null
   },
   {
@@ -493,10 +537,12 @@
     "ADSK",
     "PTC"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
+   "price": 58.81,
+   "change_pct": 2.2427,
+   "market_cap": 13693486000.0,
+   "pe": 32.3,
+   "eps_growth": -1.9,
+   "growth_basis": "5y",
    "peg": null,
    "fwd_peg": null
   },
@@ -510,11 +556,13 @@
     "WDAY",
     "INTU"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 260.26,
+   "change_pct": 1.0012,
+   "market_cap": 102434984000.0,
+   "pe": 23.2,
+   "eps_growth": 12.5,
+   "growth_basis": "5y",
+   "peg": 1.86,
    "fwd_peg": null
   },
   {
@@ -527,11 +575,13 @@
     "WDAY",
     "INTU"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 99.78,
+   "change_pct": 0.849,
+   "market_cap": 35236727000.0,
+   "pe": 19.5,
+   "eps_growth": 10.0,
+   "growth_basis": "5y",
+   "peg": 1.95,
    "fwd_peg": null
   },
   {
@@ -545,11 +595,13 @@
     "ADP",
     "PAYX"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 284.68,
+   "change_pct": 1.2808,
+   "market_cap": 77306020000.0,
+   "pe": 16.9,
+   "eps_growth": 16.9,
+   "growth_basis": "5y",
+   "peg": 1.0,
    "fwd_peg": null
   },
   {
@@ -561,11 +613,13 @@
     "PYPL",
     "INTU"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 76.23,
+   "change_pct": 2.5562,
+   "market_cap": 45476188000.0,
+   "pe": 127.3,
+   "eps_growth": 36.5,
+   "growth_basis": "5y",
+   "peg": 3.49,
    "fwd_peg": null
   },
   {
@@ -578,11 +632,13 @@
     "INTU"
    ],
    "price": 54.41,
-   "change_pct": 3.04924,
-   "market_cap": 46545633010.0,
-   "pe": 10.2,
-   "peg": 0.8,
-   "fwd_peg": 20.97
+   "change_pct": 3.0492,
+   "market_cap": 46002406000.0,
+   "pe": 9.4,
+   "eps_growth": 8.8,
+   "growth_basis": "5y",
+   "peg": 1.07,
+   "fwd_peg": null
   },
   {
    "symbol": "FICO",
@@ -593,11 +649,13 @@
     "EFX",
     "MCO"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 689.61,
+   "change_pct": 4.2888,
+   "market_cap": 14735095000.0,
+   "pe": 18.1,
+   "eps_growth": 27.4,
+   "growth_basis": "5y",
+   "peg": 0.66,
    "fwd_peg": null
   },
   {
@@ -610,11 +668,13 @@
     "FDS",
     "MCO"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 552.35,
+   "change_pct": 3.06,
+   "market_cap": 39100242000.0,
+   "pe": 28.8,
+   "eps_growth": 17.1,
+   "growth_basis": "5y",
+   "peg": 1.68,
    "fwd_peg": null
   },
   {
@@ -626,11 +686,13 @@
     "SPGI",
     "MSCI"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 276.44,
+   "change_pct": 3.9248,
+   "market_cap": 9402285000.0,
+   "pe": 17.6,
+   "eps_growth": 7.1,
+   "growth_basis": "5y",
+   "peg": 2.48,
    "fwd_peg": null
   },
   {
@@ -643,11 +705,13 @@
     "MSCI",
     "FDS"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 390.92,
+   "change_pct": 1.2038,
+   "market_cap": 114519480000.0,
+   "pe": 23.3,
+   "eps_growth": 8.7,
+   "growth_basis": "5y",
+   "peg": 2.67,
    "fwd_peg": null
   },
   {
@@ -659,11 +723,13 @@
     "SPGI",
     "FICO"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 448.15,
+   "change_pct": 1.5384,
+   "market_cap": 76175086000.0,
+   "pe": 27.3,
+   "eps_growth": 7.8,
+   "growth_basis": "5y",
+   "peg": 3.49,
    "fwd_peg": null
   },
   {
@@ -675,11 +741,13 @@
     "FICO",
     "MCO"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 142.6,
+   "change_pct": 1.8571,
+   "market_cap": 16624113000.000002,
+   "pe": 24.0,
+   "eps_growth": 4.7,
+   "growth_basis": "5y",
+   "peg": 5.12,
    "fwd_peg": null
   },
   {
@@ -691,11 +759,13 @@
     "IQV",
     "CRM"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 283.45,
+   "change_pct": 3.7025,
+   "market_cap": 45831535000.0,
+   "pe": 45.2,
+   "eps_growth": 18.1,
+   "growth_basis": "5y",
+   "peg": 2.5,
    "fwd_peg": null
   },
   {
@@ -706,11 +776,13 @@
    "competitors": [
     "ROP"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 328.32,
+   "change_pct": 1.7069,
+   "market_cap": 13404089000.0,
+   "pe": 41.3,
+   "eps_growth": 8.9,
+   "growth_basis": "5y",
+   "peg": 4.64,
    "fwd_peg": null
   },
   {
@@ -722,11 +794,13 @@
     "TYL",
     "CSGP"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 363.38,
+   "change_pct": 2.557,
+   "market_cap": 35439645000.0,
+   "pe": 14.2,
+   "eps_growth": 9.6,
+   "growth_basis": "5y",
+   "peg": 1.47,
    "fwd_peg": null
   },
   {
@@ -737,10 +811,12 @@
    "competitors": [
     "ROP"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
+   "price": 27.66,
+   "change_pct": 1.0226,
+   "market_cap": 11106466000.0,
+   "pe": 150.9,
+   "eps_growth": -51.1,
+   "growth_basis": "5y",
    "peg": null,
    "fwd_peg": null
   },
@@ -752,11 +828,13 @@
    "competitors": [
     "VEEV"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 266.09,
+   "change_pct": 3.0518,
+   "market_cap": 43313254000.0,
+   "pe": 31.5,
+   "eps_growth": 40.5,
+   "growth_basis": "5y",
+   "peg": 0.78,
    "fwd_peg": null
   },
   {
@@ -768,11 +846,13 @@
     "VRSN",
     "AKAM"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 99.74,
+   "change_pct": 2.6026,
+   "market_cap": 12462134000.0,
+   "pe": 13.7,
+   "eps_growth": 41.8,
+   "growth_basis": "3y",
+   "peg": 0.33,
    "fwd_peg": null
   },
   {
@@ -785,10 +865,12 @@
     "AMZN",
     "PANW"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
+   "price": 107.99,
+   "change_pct": -0.8538,
+   "market_cap": 15468219000.0,
+   "pe": 37.6,
+   "eps_growth": -1.8,
+   "growth_basis": "5y",
    "peg": null,
    "fwd_peg": null
   },
@@ -800,11 +882,13 @@
    "competitors": [
     "GDDY"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
-   "peg": null,
+   "price": 292.26,
+   "change_pct": 1.3665,
+   "market_cap": 25699277000.0,
+   "pe": 30.2,
+   "eps_growth": 4.5,
+   "growth_basis": "5y",
+   "peg": 6.72,
    "fwd_peg": null
   },
   {
@@ -816,10 +900,12 @@
     "META",
     "GOOGL"
    ],
-   "price": null,
-   "change_pct": null,
-   "market_cap": null,
-   "pe": null,
+   "price": 281.97,
+   "change_pct": 5.1264,
+   "market_cap": 94361540000.0,
+   "pe": 21.4,
+   "eps_growth": null,
+   "growth_basis": null,
    "peg": null,
    "fwd_peg": null
   },
@@ -833,11 +919,13 @@
     "APP"
    ],
    "price": 741.9,
-   "change_pct": 1.89814,
-   "market_cap": 1889980286283.0,
-   "pe": 27.6,
-   "peg": null,
-   "fwd_peg": 0.76
+   "change_pct": 1.8981,
+   "market_cap": 1854788200000.0,
+   "pe": 27.2,
+   "eps_growth": 18.4,
+   "growth_basis": "5y",
+   "peg": 1.48,
+   "fwd_peg": null
   }
  ],
  "insider_buys": [
