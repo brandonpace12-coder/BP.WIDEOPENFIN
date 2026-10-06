@@ -2,7 +2,7 @@
  "sample": false,
  "valuation_source": "Finnhub",
  "peg_method": "Trailing P/E / 5-year EPS growth (3-year if 5-year is unavailable or negative)",
- "generated_at": "2026-10-05T20:55-04:00",
+ "generated_at": "2026-10-05T21:07-04:00",
  "trading_date": "2026-10-05",
  "insider_lookback_days": 90,
  "groups": [
@@ -47,6 +47,17 @@
    ]
   },
   {
+   "id": "ai-semis",
+   "name": "AI Semis & Networking",
+   "tickers": [
+    "NVDA",
+    "AVGO",
+    "AMD",
+    "ANET",
+    "MU"
+   ]
+  },
+  {
    "id": "eda",
    "name": "Chip Design Software (EDA)",
    "tickers": [
@@ -74,11 +85,13 @@
   },
   {
    "id": "smb-fintech",
-   "name": "SMB & Consumer Finance Software",
+   "name": "Fintech & SMB Software",
    "tickers": [
     "INTU",
     "XYZ",
-    "PYPL"
+    "PYPL",
+    "HOOD",
+    "COIN"
    ]
   },
   {
@@ -119,6 +132,25 @@
    "tickers": [
     "APP",
     "META"
+   ]
+  },
+  {
+   "id": "consumer-internet",
+   "name": "Consumer Internet",
+   "tickers": [
+    "NFLX",
+    "UBER",
+    "DASH",
+    "ABNB",
+    "BKNG"
+   ]
+  },
+  {
+   "id": "megacap",
+   "name": "Mega-cap Platforms",
+   "tickers": [
+    "AAPL",
+    "TSLA"
    ]
   }
  ],
@@ -391,6 +423,9 @@
     "ORCL",
     "CRM"
    ],
+   "tags": [
+    "mag7"
+   ],
    "price": 525.18,
    "change_pct": 1.4782,
    "market_cap": 3944895500000.0,
@@ -410,6 +445,9 @@
     "GOOGL",
     "ORCL"
    ],
+   "tags": [
+    "mag7"
+   ],
    "price": 251.4,
    "change_pct": -0.0477,
    "market_cap": 2707850200000.0,
@@ -428,6 +466,9 @@
     "MSFT",
     "AMZN",
     "META"
+   ],
+   "tags": [
+    "mag7"
    ],
    "price": 346.47,
    "change_pct": 0.8646,
@@ -918,6 +959,9 @@
     "GOOGL",
     "APP"
    ],
+   "tags": [
+    "mag7"
+   ],
    "price": 741.9,
    "change_pct": 1.8981,
    "market_cap": 1854788200000.0,
@@ -925,6 +969,278 @@
    "eps_growth": 18.4,
    "growth_basis": "5y",
    "peg": 1.48,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "NVDA",
+   "name": "NVIDIA",
+   "group": "ai-semis",
+   "role": "core",
+   "competitors": [
+    "AMD",
+    "AVGO",
+    "MU"
+   ],
+   "tags": [
+    "mag7"
+   ],
+   "price": 238.9,
+   "change_pct": 2.1158,
+   "market_cap": 5725557500000.0,
+   "pe": 29.7,
+   "eps_growth": 95.3,
+   "growth_basis": "5y",
+   "peg": 0.31,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "AVGO",
+   "name": "Broadcom",
+   "group": "ai-semis",
+   "role": "core",
+   "competitors": [
+    "NVDA",
+    "AMD",
+    "ANET",
+    "MU"
+   ],
+   "price": 362.51,
+   "change_pct": 2.0752,
+   "market_cap": 1736002100000.0,
+   "pe": 45.4,
+   "eps_growth": 46.6,
+   "growth_basis": "5y",
+   "peg": 0.97,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "AMD",
+   "name": "Advanced Micro Devices",
+   "group": "ai-semis",
+   "role": "core",
+   "competitors": [
+    "NVDA",
+    "AVGO"
+   ],
+   "price": 631.75,
+   "change_pct": -0.3407,
+   "market_cap": 1031748600000.0,
+   "pe": 160.4,
+   "eps_growth": 5.1,
+   "growth_basis": "5y",
+   "peg": 31.44,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "ANET",
+   "name": "Arista Networks",
+   "group": "ai-semis",
+   "role": "core",
+   "competitors": [
+    "CSCO",
+    "AVGO",
+    "NVDA"
+   ],
+   "price": 206.9,
+   "change_pct": -0.217,
+   "market_cap": 261514940000.0,
+   "pe": 64.7,
+   "eps_growth": 40.7,
+   "growth_basis": "5y",
+   "peg": 1.59,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "MU",
+   "name": "Micron Technology",
+   "group": "ai-semis",
+   "role": "core",
+   "competitors": [
+    "NVDA",
+    "AMD"
+   ],
+   "price": 1063.96,
+   "change_pct": -1.0168,
+   "market_cap": 1201821000000.0,
+   "pe": 14.1,
+   "eps_growth": 70.7,
+   "growth_basis": "5y",
+   "peg": 0.2,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "NFLX",
+   "name": "Netflix",
+   "group": "consumer-internet",
+   "role": "core",
+   "competitors": [
+    "GOOGL",
+    "AMZN",
+    "AAPL",
+    "META"
+   ],
+   "price": 67.5,
+   "change_pct": 0.6561,
+   "market_cap": 279462800000.0,
+   "pe": 20.5,
+   "eps_growth": 33.0,
+   "growth_basis": "5y",
+   "peg": 0.62,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "UBER",
+   "name": "Uber",
+   "group": "consumer-internet",
+   "role": "core",
+   "competitors": [
+    "DASH",
+    "ABNB",
+    "TSLA"
+   ],
+   "price": 69.48,
+   "change_pct": 2.0115,
+   "market_cap": 142489000000.0,
+   "pe": 14.9,
+   "eps_growth": null,
+   "growth_basis": null,
+   "peg": null,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "DASH",
+   "name": "DoorDash",
+   "group": "consumer-internet",
+   "role": "core",
+   "competitors": [
+    "UBER",
+    "AMZN"
+   ],
+   "price": 191.77,
+   "change_pct": 1.3851,
+   "market_cap": 83098520000.0,
+   "pe": 98.8,
+   "eps_growth": null,
+   "growth_basis": null,
+   "peg": null,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "ABNB",
+   "name": "Airbnb",
+   "group": "consumer-internet",
+   "role": "core",
+   "competitors": [
+    "BKNG",
+    "UBER"
+   ],
+   "price": 164.07,
+   "change_pct": 1.0097,
+   "market_cap": 98242766000.0,
+   "pe": 36.5,
+   "eps_growth": 13.1,
+   "growth_basis": "3y",
+   "peg": 2.79,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "BKNG",
+   "name": "Booking Holdings",
+   "group": "consumer-internet",
+   "role": "peer",
+   "competitors": [
+    "ABNB",
+    "GOOGL"
+   ],
+   "price": 158.33,
+   "change_pct": -0.4339,
+   "market_cap": 118733150000.0,
+   "pe": 16.5,
+   "eps_growth": 158.6,
+   "growth_basis": "5y",
+   "peg": 0.1,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "HOOD",
+   "name": "Robinhood",
+   "group": "smb-fintech",
+   "role": "core",
+   "competitors": [
+    "COIN",
+    "XYZ",
+    "PYPL"
+   ],
+   "price": 114.11,
+   "change_pct": 1.2152,
+   "market_cap": 102594280000.0,
+   "pe": 49.5,
+   "eps_growth": 197.5,
+   "growth_basis": "5y",
+   "peg": 0.25,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "COIN",
+   "name": "Coinbase",
+   "group": "smb-fintech",
+   "role": "core",
+   "competitors": [
+    "HOOD",
+    "XYZ"
+   ],
+   "price": 188.22,
+   "change_pct": 2.8525,
+   "market_cap": 49659400000.0,
+   "pe": 39.4,
+   "eps_growth": 22.1,
+   "growth_basis": "5y",
+   "peg": 1.78,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "AAPL",
+   "name": "Apple",
+   "group": "megacap",
+   "role": "peer",
+   "competitors": [
+    "MSFT",
+    "GOOGL",
+    "META",
+    "NFLX"
+   ],
+   "tags": [
+    "mag7"
+   ],
+   "price": 332.89,
+   "change_pct": -0.2397,
+   "market_cap": 4868618500000.0,
+   "pe": 37.8,
+   "eps_growth": 17.9,
+   "growth_basis": "5y",
+   "peg": 2.11,
+   "fwd_peg": null
+  },
+  {
+   "symbol": "TSLA",
+   "name": "Tesla",
+   "group": "megacap",
+   "role": "core",
+   "competitors": [
+    "NVDA",
+    "GOOGL",
+    "UBER"
+   ],
+   "tags": [
+    "mag7"
+   ],
+   "price": 378.73,
+   "change_pct": 2.1965,
+   "market_cap": 1495812100000.0,
+   "pe": 393.0,
+   "eps_growth": 38.3,
+   "growth_basis": "5y",
+   "peg": 10.26,
    "fwd_peg": null
   }
  ],
@@ -952,6 +1268,42 @@
    "value": 999450.85,
    "owned_after": 18748.0,
    "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000212/xslF345X06/form4.xml"
+  },
+  {
+   "symbol": "UBER",
+   "filed": "2026-09-10",
+   "insider": "KHOSROWSHAHI DARA",
+   "role": "Director, Chief Executive Officer",
+   "date": "2026-09-10",
+   "shares": 141000.0,
+   "price": 70.9642,
+   "value": 10005952.2,
+   "owned_after": 1367100.0,
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000118423726000008/xslF345X06/primarydocument.xml"
+  },
+  {
+   "symbol": "UBER",
+   "filed": "2026-09-08",
+   "insider": "Macdonald Andrew",
+   "role": "See Remarks",
+   "date": "2026-09-04",
+   "shares": 54325.0,
+   "price": 75.6526,
+   "value": 4109827.5,
+   "owned_after": 410645.0,
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000207176126000011/xslF345X06/primarydocument.xml"
+  },
+  {
+   "symbol": "UBER",
+   "filed": "2026-09-08",
+   "insider": "Macdonald Andrew",
+   "role": "See Remarks",
+   "date": "2026-09-04",
+   "shares": 15675.0,
+   "price": 76.4425,
+   "value": 1198236.19,
+   "owned_after": 426320.0,
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000207176126000011/xslF345X06/primarydocument.xml"
   },
   {
    "symbol": "MSCI",
