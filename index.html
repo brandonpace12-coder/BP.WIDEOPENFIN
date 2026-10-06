@@ -25,12 +25,13 @@
 
     <section>
       <h2>PEG vs. competitors</h2>
-      <p class="sub">PEG = P/E ÷ EPS growth. <span id="method"></span> Below 1 is often read as cheap for the growth; compare within a peer group, not across groups. Click a row for its competitor chart.</p>
+      <p class="sub">PEG = P/E ÷ EPS growth. <b>PEG (TTM)</b>: <span id="method"></span> <b>Fwd PEG</b>: <span id="fwdMethod">analyst-estimate based.</span> Values marked <span class="estmark">est.</span> were found by Claude via web search where Alpha Vantage had no value; click to see the source. Below 1 is often read as cheap for the growth; compare within a peer group, not across groups. Click a row for its competitor chart.</p>
 
       <div class="controls">
+        <span class="seglabel" id="basisLabel">Compare peers on</span>
         <div class="seg" id="basis">
-          <button data-b="peg" class="on">Trailing PEG</button>
           <button data-b="fwd_peg">Forward PEG</button>
+          <button data-b="peg" class="on">Trailing PEG</button>
         </div>
         <input type="search" id="q" placeholder="Search ticker or company" aria-label="Search">
         <label class="toggle"><input type="checkbox" id="coreOnly"> Growth/SaaS names only</label>
@@ -43,11 +44,12 @@
             <th class="sortable" data-k="symbol">Company</th>
             <th class="sortable left hide-sm" data-k="group">Peer group</th>
             <th class="sortable hide-sm" data-k="price">Price</th>
-            <th class="sortable hide-sm" data-k="market_cap">Mkt cap</th>
-            <th class="sortable" data-k="pe">P/E</th>
-            <th class="sortable" data-k="basis">PEG</th>
+            <th class="sortable hide-sm hide-md" data-k="market_cap">Mkt cap</th>
+            <th class="sortable hide-sm" data-k="pe">P/E</th>
+            <th class="sortable" data-k="peg" title="Trailing P/E ÷ last-12-months EPS growth">PEG (TTM)</th>
+            <th class="sortable" data-k="fwd_peg" id="fwdHead" title="Forward PEG from analyst estimates (Alpha Vantage)">Fwd PEG</th>
             <th class="sortable" data-k="vs">vs. peers</th>
-            <th class="sortable hide-sm" data-k="buyval">Insider buys 90d</th>
+            <th class="sortable hide-sm" data-k="buyval" title="Open-market insider purchases, last 90 days">Insider 90d</th>
           </tr></thead>
           <tbody></tbody>
         </table>
