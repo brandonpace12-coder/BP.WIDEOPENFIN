@@ -2,7 +2,7 @@
  "sample": false,
  "valuation_source": "Finnhub",
  "peg_method": "Trailing P/E / 5-year EPS growth (3-year if 5-year is unavailable or negative)",
- "generated_at": "2026-10-05T21:07-04:00",
+ "generated_at": "2026-10-05T21:20-04:00",
  "trading_date": "2026-10-05",
  "insider_lookback_days": 90,
  "groups": [
