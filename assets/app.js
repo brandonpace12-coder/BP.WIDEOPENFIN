@@ -55,8 +55,11 @@
 
     $("#sample").hidden = !D.sample;
     // Forward PEG needs analyst estimates; hide the toggle when the data source doesn't provide them.
-    const hasFwd = D.tickers.some((t) => t.fwd_peg != null);
-    if (!hasFwd) $("#basis").hidden = true;
+    const fwdCount = D.tickers.filter((t) => t.fwd_peg != null).length;
+    const hasFwd = fwdCount > 0;
+    state.basis = hasFwd ? "fwd_peg" : "peg";
+    if (!hasFwd) { $("#basis").hidden = true; $("#basisLabel").hidden = true; $("#fwdHead").textContent = "Fwd PEG"; }
+    if (D.fwd_peg_method) $("#fwdMethod").textContent = D.fwd_peg_method + ".";
     [...$("#basis").children].forEach((c) => c.classList.toggle("on", c.dataset.b === state.basis));
     if (D.valuation_source) $("#src").textContent = D.valuation_source;
     if (D.peg_method) $("#method").textContent = D.peg_method + ".";
@@ -88,7 +91,7 @@
       th.onclick = () => {
         const k = th.dataset.k;
         if (state.sortK === k) state.asc = !state.asc;
-        else { state.sortK = k; state.asc = ["symbol", "group", "vs", "basis", "pe"].includes(k); }
+        else { state.sortK = k; state.asc = ["symbol", "group", "vs", "basis", "pe", "peg", "fwd_peg"].includes(k); }
         render();
       };
     });
@@ -150,13 +153,14 @@
         <td><span class="sym">${t.symbol}</span><span class="nm" title="${esc(t.name)}">${esc(t.name)}</span>${t.role === "core" ? '<span class="tag core">growth</span>' : ""}</td>
         <td class="left grp hide-sm">${esc(groupName[t.group])}</td>
         <td class="hide-sm">${fmtMoney(t.price)}${chg}</td>
-        <td class="hide-sm">${fmtBig(t.market_cap)}</td>
-        <td>${fmtNum(t.pe, 1)}</td>
-        <td class="peg">${fmtNum(t.basis)}</td>
+        <td class="hide-sm hide-md">${fmtBig(t.market_cap)}</td>
+        <td class="hide-sm">${fmtNum(t.pe, 1)}</td>
+        <td class="${state.basis === "peg" ? "peg" : "dim"}">${fmtNum(t.peg)}</td>
+        <td class="${state.basis === "fwd_peg" ? "peg" : "dim"}${t.fwd_est ? " est" : ""}" title="${esc(t.fwd_est ? `Estimate found by Claude via web search (${t.fwd_src || "source"}, ${t.fwd_as_of}). Verify before relying on it.` : (t.fwd_as_of ? "Alpha Vantage, as of " + t.fwd_as_of : ""))}">${fmtNum(t.fwd_peg)}${t.fwd_est && t.fwd_peg != null ? (t.fwd_url ? ` <a class="estmark" href="${esc(t.fwd_url)}" target="_blank" rel="noopener">est.</a>` : ' <span class="estmark">est.</span>') : ""}</td>
         <td>${vs}</td>
         <td class="hide-sm">${buys}</td>
       </tr>`;
-    }).join("") : `<tr><td colspan="8" class="na" style="text-align:center;padding:24px">No matches.</td></tr>`;
+    }).join("") : `<tr><td colspan="9" class="na" style="text-align:center;padding:24px">No matches.</td></tr>`;
     renderDetail();
   }
 
