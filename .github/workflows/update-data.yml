@@ -35,7 +35,7 @@ jobs:
       - name: Pull PEG + Form 4 data
         if: github.event_name != 'push'
         env:
-          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
           FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.force && '1' || '0' }}
         run: python scripts/update_data.py
