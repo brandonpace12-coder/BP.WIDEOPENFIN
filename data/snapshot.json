@@ -3,7 +3,7 @@
  "valuation_source": "Finnhub",
  "peg_method": "Trailing P/E / last-12-months EPS growth (year over year)",
  "fwd_peg_method": "Alpha Vantage PEG ratio (based on analyst earnings estimates); refreshed every ~3 days",
- "generated_at": "2026-10-06T13:15-04:00",
+ "generated_at": "2026-10-06T13:43-04:00",
  "trading_date": "2026-10-06",
  "insider_lookback_days": 90,
  "groups": [
@@ -168,33 +168,38 @@
     "WDAY",
     "ADBE"
    ],
-   "price": 226.31,
-   "change_pct": -1.5144,
+   "price": 225.55,
+   "change_pct": -1.8452,
    "market_cap": 192302190000.0,
    "pe": 19.9,
    "eps_growth": 59.3,
    "growth_basis": "1y",
    "peg": 0.34,
-   "fwd_peg": null,
+   "fwd_peg": 0.89,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/crm/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Forter partnership expands Salesforce's AI-first commerce platform capabilities across storefronts and loyalty management.",
+      "text": "Forter partnership expands Salesforce AI-first commerce platform capabilities across storefronts and loyalty programs.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=9f81012c47ed9b54caca762b0a1b33a1986e0637b998386bc4681107f174053a",
       "date": "2026-10-06"
      },
      {
-      "text": "Software sector bounced back in Q3 with Salesforce rising 46%, reversing recent underperformance.",
+      "text": "Software sector bounced back in Q3 2026 with Salesforce rising 46%, reversing prior weakness.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=d8c38b68c9401cee7fa4bdbee5dfecc1ff6e5638c8b020206a0bc8d21c97aaa6",
       "date": "2026-10-06"
      },
      {
-      "text": "Peer ServiceNow crashed 25% in one year amid sector-wide software stock declines and ROI concerns.",
+      "text": "Peer ServiceNow crashed 25% in one year despite AI potential; sector-wide weakness persists.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=30461d8397c4ff58b4d7dbe82e93dc97dbd64c76d1d5a1b5ddddcaa4910e323d",
@@ -215,14 +220,19 @@
     "WDAY",
     "IBM"
    ],
-   "price": 137.66,
-   "change_pct": 1.1611,
+   "price": 137.5,
+   "change_pct": 1.0435,
    "market_cap": 138948920000.0,
    "pe": 83.2,
    "eps_growth": 0.9,
    "growth_basis": "1y",
    "peg": 92.45,
-   "fwd_peg": null,
+   "fwd_peg": 1.23,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/now/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
@@ -234,18 +244,18 @@
       "date": "2026-10-06"
      },
      {
-      "text": "Stock crashed 25% in one year; one analyst projects 82% upside, citing generative AI as catalyst.",
-      "direction": "neutral",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=30461d8397c4ff58b4d7dbe82e93dc97dbd64c76d1d5a1b5ddddcaa4910e323d",
-      "date": "2026-10-06"
-     },
-     {
       "text": "Company crossed $1 billion in AI contract value while stock sits near multi-year low.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=facafd6bf844c22fe0a7566556052e654ac196010457c78a4a98909a97a3dbcd",
       "date": "2026-10-05"
+     },
+     {
+      "text": "Stock has crashed 25% in one year amid sector-wide software selloff despite stable-to-improving demand.",
+      "direction": "down",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=30461d8397c4ff58b4d7dbe82e93dc97dbd64c76d1d5a1b5ddddcaa4910e323d",
+      "date": "2026-10-06"
      }
     ],
     "headline_count": 12
@@ -263,33 +273,38 @@
     "CRM",
     "NOW"
    ],
-   "price": 186.74,
-   "change_pct": -1.1749,
+   "price": 186.48,
+   "change_pct": -1.3124,
    "market_cap": 44301023000.0,
    "pe": 35.4,
    "eps_growth": 127.9,
    "growth_basis": "1y",
    "peg": 0.28,
-   "fwd_peg": null,
+   "fwd_peg": 0.79,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/wday/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Insider selling at Workday raises questions about leadership confidence in near-term prospects.",
+      "text": "Insider selling activity at Workday flagged as noteworthy, though fundamentals and analyst ratings warrant examination.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=1661cf276e3a5be897a2ad7939d604b9d293fd62c8b2144e77593bd7e163a994",
       "date": "2026-10-05"
      },
      {
-      "text": "Needham analyst reiterates Buy rating with $230 price target, supporting bullish case.",
+      "text": "Needham analyst reiterates Buy rating with $230 price target, supporting positive outlook on stock.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=872bd17698fca018cb367fcd6e00322eedfd3ff11129c280d1c904286525d4db",
       "date": "2026-10-05"
      },
      {
-      "text": "Auditoria expands AI-powered finance tools for Workday customers, highlighting product ecosystem growth.",
+      "text": "Auditoria expands AI-powered Cash Cycle autonomy for Workday finance customers, enhancing platform capabilities.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=90398903e618a3739c0d9fb58067de70dc45ebfc23606fa7eee1bfba5d9b2922",
@@ -310,19 +325,24 @@
     "ACN",
     "NOW"
    ],
-   "price": 222.73,
-   "change_pct": 0.519,
+   "price": 222.55,
+   "change_pct": 0.4378,
    "market_cap": 209851020000.0,
    "pe": 19.6,
    "eps_growth": 82.7,
    "growth_basis": "1y",
    "peg": 0.24,
-   "fwd_peg": null,
+   "fwd_peg": 2.57,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/ibm/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "IBM and Red Hat remediated over 400 open source vulnerabilities, strengthening security posture.",
+      "text": "IBM and Red Hat remediated over 400 open source vulnerabilities, strengthening security credentials.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=42fcdb9d16731a5775f5d1af9edc5014dc85000eae041467ba832d2b2d43c212",
@@ -336,10 +356,10 @@
       "date": "2026-10-06"
      },
      {
-      "text": "Commercial quantum computing market projected to grow at 33.2% CAGR with IBM among key players.",
+      "text": "Asset Performance Management market projected to grow 10.3% CAGR through 2032, benefiting enterprise software players.",
       "direction": "up",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=a80bef376b56d4d8d555a2fa7bbbf9c6be87cc149dd0b331df554a540687c2d1",
+      "url": "https://finnhub.io/api/news?id=d8218442dab4c8f39f786ffd09f9b679d30c688791f9b467fc9b516fd3b961b3",
       "date": "2026-10-06"
      }
     ],
@@ -356,33 +376,38 @@
     "FTNT",
     "MSFT"
    ],
-   "price": 279.25,
-   "change_pct": 2.4132,
+   "price": 278.96,
+   "change_pct": 2.3068,
    "market_cap": 278919840000.0,
    "pe": 4771.1,
    "eps_growth": null,
    "growth_basis": null,
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 6.59,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/crwd/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "CrowdStrike launched fourth annual Cybersecurity Startup Accelerator with AWS and NVIDIA focused on agentic AI era security.",
+      "text": "CrowdStrike launched fourth annual cybersecurity accelerator with AWS and NVIDIA targeting agentic AI era, lifting entire sector.",
       "direction": "up",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=27368e5a04e23020282c7c5235d7fd9522a870ab0e3b073c0bb00b1156d85283",
+      "url": "https://finnhub.io/api/news?id=2616689e5fb435a9a7724a0d1116f41feddd550b2384a3cfd9d701a7e0c61053",
       "date": "2026-10-06"
      },
      {
-      "text": "Fal.Con Europe 2026 sold out at record pace with registrations up 60% over prior year, signaling strong demand momentum.",
+      "text": "Fal.Con Europe 2026 conference sold out at record pace with registrations up 60% year-over-year, signaling strong demand.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=603081a0ee6705c6af8e5b2a1b11d84a3426d1eedf79a7b0177b0adc76fa1bc3",
       "date": "2026-10-06"
      },
      {
-      "text": "StoneX analyst raised CrowdStrike price target to $325 from $250, maintaining Buy rating.",
+      "text": "StoneX analyst raised price target to $325 from $250, maintaining Buy rating on the stock.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=21ffe92c2fb7fbf483499456b2eb5031e3aeefe2278d51190020fc61f9257972",
@@ -403,34 +428,39 @@
     "CSCO",
     "AKAM"
    ],
-   "price": 419.48,
-   "change_pct": 3.1272,
+   "price": 417.63,
+   "change_pct": 2.6723,
    "market_cap": 329850300000.0,
    "pe": 1074.4,
    "eps_growth": -68.0,
    "growth_basis": "1y",
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 5.17,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/panw/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Sector-wide gains as agentic AI adoption drives cybersecurity spending and all-time highs across the group.",
+      "text": "Sector-wide rally as agentic AI sparks increased cybersecurity spending and concerns about AI safety.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=b279aebfb2e4320ca91b3938dd41a3730c1d9450345cea12ae43f21e42731fa3",
       "date": "2026-10-06"
      },
      {
-      "text": "CrowdStrike's accelerator launch with Amazon and NVIDIA sparked enthusiasm lifting entire cybersecurity sector.",
+      "text": "CrowdStrike's accelerator launch with Amazon and NVIDIA lifted entire cybersecurity sector including PANW.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=2616689e5fb435a9a7724a0d1116f41feddd550b2384a3cfd9d701a7e0c61053",
       "date": "2026-10-06"
      },
      {
-      "text": "AI safety concerns push customers toward security solutions, supporting growth momentum despite 125% year-to-date rally.",
-      "direction": "up",
+      "text": "Stock valuation has sparked questions about maintaining growth momentum despite 125% year-to-date gain.",
+      "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=0f71fdea695a72af60d8c8fc2ecc6ac48544c065231419e6e2589214f87647e9",
       "date": "2026-10-05"
@@ -449,37 +479,42 @@
     "CSCO",
     "CRWD"
    ],
-   "price": 189.2,
-   "change_pct": 2.7535,
+   "price": 189.16,
+   "change_pct": 2.7318,
    "market_cap": 133653269999.99998,
    "pe": 63.0,
    "eps_growth": 13.3,
    "growth_basis": "1y",
    "peg": 4.74,
-   "fwd_peg": null,
+   "fwd_peg": 3.17,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/ftnt/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Cybersecurity sector at all-time highs amid agentic AI adoption driving security spending surge.",
+      "text": "Cybersecurity sector at all-time highs as agentic AI adoption spurs increased security spending.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=b279aebfb2e4320ca91b3938dd41a3730c1d9450345cea12ae43f21e42731fa3",
       "date": "2026-10-06"
      },
      {
-      "text": "Fortinet raised 2026 guidance with AI-driven product demand and expanding security portfolio supporting growth.",
+      "text": "Fortinet's AI-driven product demand, raised 2026 guidance, and expanding security portfolio support further growth.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=2082929c8c9c517d1b47f03ffe7b8d943a2fc8eea79855f744d8bca1d320a553",
       "date": "2026-10-05"
      },
      {
-      "text": "Rockwell Automation expanding SecureOT services to support Fortinet firewalls, broadening customer infrastructure reach.",
+      "text": "Fortinet meets Minervini Trend Template with strong uptrend, top relative strength, and accelerating EPS/revenue growth.",
       "direction": "up",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=8026f447dfc165692e2ab4a5e4468c651c4a7e65a54399685849387ef5264402",
-      "date": "2026-10-06"
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=4a80b663304f810075448933f0c1fee2ea7c006348053a411bf1748e6202226d",
+      "date": "2026-10-05"
      }
     ],
     "headline_count": 12
@@ -494,8 +529,8 @@
     "MSFT",
     "CRWD"
    ],
-   "price": 22.78,
-   "change_pct": 2.2442,
+   "price": 22.71,
+   "change_pct": 1.93,
    "market_cap": 13348491000.0,
    "pe": 12.7,
    "eps_growth": 79.7,
@@ -506,21 +541,21 @@
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Gen Digital affirmed FY2027 guidance at high end, with EPS and sales tracking above consensus estimates.",
+      "text": "Q1 earnings call completed; company affirmed FY2027 EPS and sales guidance tracking at high end of guidance range.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=6e290c8d73667dbfea6424b1bdb040d440aa4e1cec15aa95c2c6e8f7376577cd",
       "date": "2026-09-29"
      },
      {
-      "text": "Stock was technically oversold with strong analyst agreement on upward earnings estimate revisions, suggesting trend reversal potential.",
+      "text": "Stock surged 5.6% in recent session with higher-than-average volume; Wall Street analysts revising earnings estimates higher.",
       "direction": "up",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=953b117031cf52d3dad94b29498d9411d3edd5b8630a430686a339c23c6a9903",
-      "date": "2026-09-29"
+      "url": "https://finnhub.io/api/news?id=aa8994a1b4c3f829add6418b3ed1c41ecc0aef9b6c72ba2b8801728bac617732",
+      "date": "2026-10-01"
      },
      {
-      "text": "Engine by Gen AI agents platform expanding into insurance shopping, addressing real-world use cases.",
+      "text": "Engine by Gen AI agents platform now enabling insurance shopping, expanding real-world AI application use cases.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=febb9e581c6cf4b30c5d5d005cc89cc2a9dc82e130af9cbf2e13ab02a575682f",
@@ -540,37 +575,42 @@
     "FTNT",
     "DDOG"
    ],
-   "price": 116.44,
-   "change_pct": 3.2087,
+   "price": 116.09,
+   "change_pct": 2.8984,
    "market_cap": 444802620000.0,
    "pe": 33.5,
    "eps_growth": 30.8,
    "growth_basis": "1y",
    "peg": 1.09,
-   "fwd_peg": null,
+   "fwd_peg": 2.23,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/csco/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Webex adds WhatsApp messaging with compliance features through LeapXpert integration, expanding collaboration capabilities.",
+      "text": "Webex adds WhatsApp messaging integration with compliance features, expanding collaboration unit capabilities.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=85efae9d4afd92941ef1ee0f251e0318cb729db14afaa9d7a9db81d2f51a17d7",
       "date": "2026-10-06"
      },
      {
-      "text": "Quantum XChange joins Cisco Networking App Marketplace, bringing post-quantum cryptography security solutions to networks.",
+      "text": "Quantum XChange partnership brings post-quantum cryptography to Cisco networks for enhanced security.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=f9699a6b4da87be7dcc31cf40b0e98d9668eb8575a34adba4824418cecacbf66",
       "date": "2026-10-06"
      },
      {
-      "text": "Cisco sustainability data initiatives informing customer decisions, reflecting strategic business positioning.",
-      "direction": "neutral",
+      "text": "Cisco stock compared unfavorably to Dot-Com Bubble as cautionary example of growth stock risks.",
+      "direction": "down",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=15fda01721271039c1b8cd271877029ec5d288b4fda80ef5bb995961e8843719",
-      "date": "2026-10-06"
+      "url": "https://finnhub.io/api/news?id=0b8c90d019cea41c42226747ad0a10124f9fe322520ad4b36f6f9d7c28b96a13",
+      "date": "2026-10-05"
      }
     ],
     "headline_count": 12
@@ -588,33 +628,38 @@
     "ACN",
     "DDOG"
    ],
-   "price": 192.44,
-   "change_pct": 1.6051,
+   "price": 192.63,
+   "change_pct": 1.7054,
    "market_cap": 455823880000.0,
    "pe": 151.1,
    "eps_growth": 290.0,
    "growth_basis": "1y",
    "peg": 0.52,
-   "fwd_peg": null,
+   "fwd_peg": 1.87,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/pltr/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Strong Q2 results with 93% revenue growth and 47% operating margin fuel investor confidence.",
+      "text": "Strong Q2 results with 93% revenue growth and 47% operating margin; stock up 60% this quarter.",
       "direction": "up",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=04f9bb55742dc6b9bd5973577de898b2fbad9eb614de6191d85e082a365b15b2",
-      "date": "2026-10-06"
-     },
-     {
-      "text": "Stock trades at 116.90x forward earnings versus sector's 23.7x, leaving no cushion if growth stumbles.",
-      "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=2e417989f8912cff39721543994a4e3a6dc7e8f27d658513334f817175c290fc",
       "date": "2026-10-06"
      },
      {
-      "text": "Michael Burry maintains bearish stance on Palantir, citing market denial about end of AI trade.",
+      "text": "Stock trades at 116.90x forward earnings versus sector's 23.7x multiple, demanding flawless execution.",
+      "direction": "down",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=04f9bb55742dc6b9bd5973577de898b2fbad9eb614de6191d85e082a365b15b2",
+      "date": "2026-10-06"
+     },
+     {
+      "text": "Michael Burry maintains bearish view on Palantir, citing market denial about end of AI trade.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=21b6eab87d0856f2f2d5f8dcf15410a571a8dcbd2c012c21a7b085706c887cf7",
@@ -635,36 +680,41 @@
     "AMZN",
     "GOOGL"
    ],
-   "price": 276.92,
-   "change_pct": 0.1827,
+   "price": 277.37,
+   "change_pct": 0.3455,
    "market_cap": 99291430000.0,
    "pe": 559.1,
    "eps_growth": 40.1,
    "growth_basis": "1y",
    "peg": 13.94,
-   "fwd_peg": null,
+   "fwd_peg": 4.2,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/ddog/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "FBN Securities initiated coverage with Outperform rating; stock having best year since 2020.",
+      "text": "FBN Securities initiated coverage with Outperform rating, citing strong year-to-date performance.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=0f4a8ea9181f55413b76bc7a07776d7c881e3f6eb82b4521231c2a34036bddaf",
       "date": "2026-10-02"
      },
      {
-      "text": "Growth expected to slow from 36% to 29% in Q3; CFO focused on protecting margins.",
+      "text": "Q3 revenue growth expected to slow from 36% to 29%, requiring CFO margin protection efforts.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=5e02cea434493a68f6adafada5424105d6eb2bcbc3dadb8d7f0ba11fd5884279",
       "date": "2026-10-05"
      },
      {
-      "text": "Insiders sold shares via 10b5-1 plans in Q3, though analysts and institutions remain bullish.",
-      "direction": "neutral",
+      "text": "Positioned to capture agentic AI growth opportunities, drawing investor optimism.",
+      "direction": "up",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=72037c6978abf92e3e372ed1d008de0964cdf14cbee19f5e8c23742a8a3e5e58",
+      "url": "https://finnhub.io/api/news?id=c859c9cd51d1e138150e98599d55415214137801f6109862bb782c1a9d411c6d",
       "date": "2026-10-05"
      }
     ],
@@ -680,33 +730,38 @@
     "IBM",
     "PLTR"
    ],
-   "price": 194.74,
-   "change_pct": -0.1589,
+   "price": 194.36,
+   "change_pct": -0.3538,
    "market_cap": 119292000000.0,
    "pe": 14.3,
    "eps_growth": 11.7,
    "growth_basis": "1y",
    "peg": 1.22,
-   "fwd_peg": null,
+   "fwd_peg": 2.03,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/acn/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Accenture stock rose 15.8% on October 1 after fiscal Q4 2026 results beat expectations, though revenue and earnings exceeded guidance only slightly.",
-      "direction": "up",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=6bdb3a3625e3c4f8b5a101c97ce58bb38dfe22a919ce8da6e5fcfff3c25597c1",
-      "date": "2026-10-06"
-     },
-     {
-      "text": "Mizuho analyst raised Accenture price target to $241 from $226, maintaining Outperform rating.",
+      "text": "Mizuho analyst raised ACN price target to $241 from $226, maintaining Outperform rating.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=c68c7dd4d6b441826ff45f4302b058fc34f169f6241dbaed2416de51e215248a",
       "date": "2026-10-06"
      },
      {
-      "text": "Accenture remains sector bellwether, but organic growth is weak and AI disruption clouds outlook.",
+      "text": "Stock surged 15.8% after Q4 2026 earnings beat, though remains down 17.5% over past year.",
+      "direction": "up",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=6bdb3a3625e3c4f8b5a101c97ce58bb38dfe22a919ce8da6e5fcfff3c25597c1",
+      "date": "2026-10-06"
+     },
+     {
+      "text": "Analysts cite weak organic growth and AI disruption risks clouding near-term outlook.",
       "direction": "down",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=889c9a9e9d307aab9b488a2a6a969fe35152c7cc8216b20b35693deb2aeb6fff",
@@ -728,34 +783,39 @@
     "CRM",
     "WDAY"
    ],
-   "price": 146.39,
-   "change_pct": 2.7442,
+   "price": 146.3,
+   "change_pct": 2.6811,
    "market_cap": 442009750000.0,
    "pe": 23.4,
    "eps_growth": 49.1,
    "growth_basis": "1y",
    "peg": 0.48,
-   "fwd_peg": null,
+   "fwd_peg": 0.55,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/orcl/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Ember AI launches Oracle Health integration, expanding Oracle's healthcare AI ecosystem partnerships.",
+      "text": "Ember AI launches Oracle Health Integration, expanding Oracle's healthcare ecosystem and AI capabilities.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=9863e93d7e3e274a477f47bb9a3ffb12dcbd028229e24037aaa55a96187185ee",
       "date": "2026-10-06"
      },
      {
-      "text": "UiPath Test Cloud now available on Oracle Marketplace, adding enterprise automation tools to platform.",
+      "text": "UiPath Test Cloud now available on Oracle Marketplace, strengthening Oracle's cloud platform offerings.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=ea410ac68bd8f3316a6e2b0823ea33ee944814c84a608f7e523a993e388218bb",
       "date": "2026-10-06"
      },
      {
-      "text": "Survey finds VMware users seeking alternatives for cost control, potentially benefiting competing cloud providers.",
-      "direction": "neutral",
+      "text": "Survey shows VMware users seeking alternatives for cost control and support, potentially benefiting Oracle competitors.",
+      "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=6ac6ceb018fb2905a43112131afb15eeac7923af91532073bf14fa7606e293af",
       "date": "2026-10-06"
@@ -778,36 +838,41 @@
    "tags": [
     "mag7"
    ],
-   "price": 532.22,
-   "change_pct": 1.3405,
+   "price": 532.39,
+   "change_pct": 1.3729,
    "market_cap": 3944895500000.0,
    "pe": 29.5,
    "eps_growth": 31.6,
    "growth_basis": "1y",
    "peg": 0.93,
-   "fwd_peg": null,
+   "fwd_peg": 1.69,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/msft/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Broad market strength with Dow rising as oil prices and yields fall, benefiting tech stocks.",
+      "text": "Broader cloud infrastructure sector strength as AMD and Nvidia rally amid falling yields and oil prices.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=17e181e56894175d3d48e8234373dbdf984acc756da331e92076e6fc53f1d371",
       "date": "2026-10-06"
      },
      {
-      "text": "Cloud infrastructure peers posting strong results; Google Cloud grew 82% revenue with upside potential noted.",
+      "text": "Google Cloud posted 82% revenue growth with stock trading below 52-week high, showing cloud demand momentum.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=9d7ac2c973d00fe20eb1c5c66aa8cb10add0729027ddf0fcd070b67caa3a27f5",
       "date": "2026-10-06"
      },
      {
-      "text": "Market concerns about valuations and lack of near-term catalysts affecting mega-cap tech stocks.",
-      "direction": "down",
+      "text": "AI compute workload demand accelerating across data center operators with expanding multi-year cloud agreements.",
+      "direction": "up",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=e129d7936852fa8c15d98e38f810202db463580c9f673884f5e202511d8e531a",
+      "url": "https://finnhub.io/api/news?id=b314a62de972c105af24242b87b6ddaff9772c2a6a76754fa12c08d3ee842aa4",
       "date": "2026-10-06"
      }
     ],
@@ -827,34 +892,39 @@
    "tags": [
     "mag7"
    ],
-   "price": 255.59,
-   "change_pct": 1.6667,
+   "price": 255.5,
+   "change_pct": 1.6309,
    "market_cap": 2707850200000.0,
    "pe": 20.0,
    "eps_growth": 89.7,
    "growth_basis": "1y",
    "peg": 0.22,
-   "fwd_peg": null,
+   "fwd_peg": 1.29,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/amzn/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "CrowdStrike launched agentic security accelerator with Amazon and NVIDIA, sending cybersecurity sector surging.",
+      "text": "CrowdStrike launched agentic AI accelerator with Amazon and NVIDIA, sending cybersecurity sector surging.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=2616689e5fb435a9a7724a0d1116f41feddd550b2384a3cfd9d701a7e0c61053",
       "date": "2026-10-06"
      },
      {
-      "text": "Jim Cramer made a shocking call on Amazon stock after recently recommending it on Mad Money.",
-      "direction": "neutral",
+      "text": "Amazon raised spending plan for the year, raising questions about growth costs and valuation.",
+      "direction": "down",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=9f4427dd7fe637cd3d8205dcfa7b00ab448ae1c2449b901292af35cd10226bc9",
+      "url": "https://finnhub.io/api/news?id=c28c633e5f98953af20cd7c01013e9e4f0be1bf41967f67509f04c584469a1cd",
       "date": "2026-10-06"
      },
      {
-      "text": "Amazon's valuation at 20x trailing P/E is lowest since IPO, raising questions about growth costs.",
-      "direction": "down",
+      "text": "Stock trades at lowest valuation since IPO at P/E ~20, trailing other major AI names.",
+      "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=00661d3997282e107ab6da7c4d53538ea542fe7e27ee9e296f47c369974bcd7b",
       "date": "2026-10-06"
@@ -883,26 +953,31 @@
    "eps_growth": 115.3,
    "growth_basis": "1y",
    "peg": 0.15,
-   "fwd_peg": null,
+   "fwd_peg": 2.02,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/googl/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Google secures 20-year nuclear power deal with Constellation Energy to support AI infrastructure needs.",
+      "text": "Google secures 20-year nuclear power deal with Constellation Energy to support AI infrastructure expansion.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=02d9d73cbd74c1736a763339668419b85bb7a58522d8deba1655e94be61318dc",
       "date": "2026-10-06"
      },
      {
-      "text": "Mistral Large 4 model undercuts proprietary AI pricing, intensifying competition in cloud AI services.",
+      "text": "Mistral Large 4 undercuts proprietary AI pricing, potentially pressuring Google's cloud service margins.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=5759d924d361f2f0d1fe14a87c7c71cee0b7ecf7c671a379920616f40d18c6f7",
       "date": "2026-10-06"
      },
      {
-      "text": "Alphabet faces UK class action lawsuit over Play Store fees, creating legal and regulatory headwind.",
+      "text": "Alphabet faces UK class action lawsuit over Play Store fees, adding regulatory headwind.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=5229e551a51237325557ea529fd6fbc8948dd92b2d4d00a4e837446e7a0309a3",
@@ -920,33 +995,38 @@
    "competitors": [
     "SNPS"
    ],
-   "price": 359.82,
-   "change_pct": 1.7936,
+   "price": 360.49,
+   "change_pct": 1.9831,
    "market_cap": 98505330000.0,
    "pe": 71.5,
    "eps_growth": 36.0,
    "growth_basis": "1y",
    "peg": 1.99,
-   "fwd_peg": null,
+   "fwd_peg": 2.73,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/cdns/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Cadence introduced new RTL Generation Agent within ChipStack AI Super Agent to automate chip design workflows from natural language.",
+      "text": "Cadence introduced RTL Generation Agent within ChipStack AI Super Agent to automate chip design workflows from natural language.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=ddc66cfb2b1b40dadce488fbadc708c7cc479871d1500eabbdda0a6bf63d2e64",
       "date": "2026-10-04"
      },
      {
-      "text": "Cadence positioned to outperform market with above-average growth in financials, appealing to growth investors.",
+      "text": "Cadence exhibits above-average growth in financials, positioning it to outperform the market.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=963ac4eae21c0bbc157f59bcd27512ca2e382ab35c6322b7b04306116373b9af",
       "date": "2026-10-02"
      },
      {
-      "text": "Competitor Synopsys surged on Investor Day with OpenAI and AWS partnerships, raising earnings outlook.",
+      "text": "Competitor Synopsys surged on Investor Day announcements of OpenAI and AWS partnerships, raising earnings outlook.",
       "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=00d458189dfee1ad8d236639740ffa19962e7eae4398dd9b656a6a22bf813e31",
@@ -964,14 +1044,19 @@
    "competitors": [
     "CDNS"
    ],
-   "price": 502.4,
-   "change_pct": 2.8518,
+   "price": 503.33,
+   "change_pct": 3.0422,
    "market_cap": 96096195000.0,
    "pe": 89.3,
    "eps_growth": -55.6,
    "growth_basis": "1y",
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 1.21,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/snps/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
@@ -983,14 +1068,14 @@
       "date": "2026-10-05"
      },
      {
-      "text": "Expanded agreement with Amazon provides fresh $1 billion catalyst for the stock.",
+      "text": "Expanded agreement with Amazon provides fresh $1 billion catalyst for stock.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=c971b9e04f5f0e4839295f6953da20c1dd696dd6980b87ddd74fc4058058d63b",
       "date": "2026-10-05"
      },
      {
-      "text": "Company raised long-term growth targets at Investor Day with OpenAI partnerships and earnings beat.",
+      "text": "Company raised earnings outlook at Investor Day with OpenAI partnerships and Amazon deals.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=00d458189dfee1ad8d236639740ffa19962e7eae4398dd9b656a6a22bf813e31",
@@ -1010,33 +1095,38 @@
     "CRM",
     "MSFT"
    ],
-   "price": 237.48,
-   "change_pct": -0.5465,
+   "price": 237.83,
+   "change_pct": -0.3999,
    "market_cap": 92508950000.0,
    "pe": 12.7,
    "eps_growth": 11.7,
    "growth_basis": "1y",
    "peg": 1.09,
-   "fwd_peg": null,
+   "fwd_peg": 0.64,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/adbe/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Stock down 16.4% past month after fiscal Q3 2026 report left Wall Street wanting more on September 10.",
+      "text": "Stock down 16.4% over past month after fiscal Q3 2026 report left Wall Street wanting more.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=4e810fe84e6a7c5b4a040b90980a37dc12d63fd0551402aaf2552c9e96ac884f",
       "date": "2026-10-06"
      },
      {
-      "text": "Goldman Sachs maintains sell rating citing intensifying competition and new entrants gaining ground in Adobe's markets.",
+      "text": "Goldman Sachs maintains 'sell' rating citing intensifying competition and new entrants in Adobe's markets.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=3f93da64a2099b85b3e8985c858c5f511e91054105973ad825e37c484c6f5fd3",
       "date": "2026-10-04"
      },
      {
-      "text": "Adobe expands AI customer experience partnerships with NHL and Jet2 for creative, marketing, and personalization.",
+      "text": "Adobe expanded AI customer experience partnerships with NHL and Jet2 in late September.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=d592fd7fc025d8a1e7394915a1c5262bb09dad19c855b4125e782263d245a1b3",
@@ -1056,33 +1146,38 @@
     "TRMB",
     "ADBE"
    ],
-   "price": 226.16,
-   "change_pct": 2.0762,
+   "price": 226.95,
+   "change_pct": 2.4327,
    "market_cap": 47056350000.0,
    "pe": 28.7,
    "eps_growth": 59.9,
    "growth_basis": "1y",
    "peg": 0.48,
-   "fwd_peg": null,
+   "fwd_peg": 1.05,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/adsk/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Schneider Electric's $22.6B acquisition of competitor PTC at 42.3% premium signals M&A activity in design software sector.",
+      "text": "Schneider Electric's $22.6B acquisition of competitor PTC at 42.3% premium signals strong M&A appetite in design software sector.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=8eafd070ca1f439c134908a5f0aec4f5c2d9fdb4f964fb46a1cab425458520e9",
       "date": "2026-10-05"
      },
      {
-      "text": "Options traders expect ADSK shares to rise through remainder of 2026 following PTC acquisition announcement.",
+      "text": "Options traders expect ADSK shares to rally higher through remainder of 2026 following PTC deal announcement.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=9fc5603c314d7ae31962390b3372e06f38966da0e9f086c8abfc03d5fe2b7afa",
       "date": "2026-10-05"
      },
      {
-      "text": "Stock down 34% in past year despite offering 6.3% free cash flow yield, suggesting investors remain cautious on business outlook.",
+      "text": "Stock down 34% in past year despite offering 6.3% free cash flow yield, suggesting investors remain wary of company prospects.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=1fc49d8d9d6c10174b014a461d10e2665f05a5c7f027a24e430a79ae8efdb011",
@@ -1101,33 +1196,38 @@
     "ADSK",
     "TRMB"
    ],
-   "price": 193.25,
-   "change_pct": 0.5149,
+   "price": 193.27,
+   "change_pct": 0.5253,
    "market_cap": 20941164000.0,
    "pe": 17.1,
    "eps_growth": 142.5,
    "growth_basis": "1y",
    "peg": 0.12,
-   "fwd_peg": null,
+   "fwd_peg": 2.47,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/ptc/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Schneider Electric agreed to acquire PTC for $22.6 billion, driving stock up 37.6% over five sessions.",
+      "text": "Schneider Electric agreed to acquire PTC, driving stock up 37.6% over five sessions.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=ec5176a50c3f99cdb80245d8ec8b523a8f07b2acf6d77539f0ac0e23a1a31029",
       "date": "2026-10-06"
      },
      {
-      "text": "Stock surged 33.5% last session on above-average volume, though earnings estimate revisions don't suggest further strength.",
+      "text": "PTC surged 33.5% last session on above-average volume, though earnings estimate revisions don't suggest further strength.",
       "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=8bc17100141a3e26fe99ba99ad816cd983e6ef5f6268f166eb34ae86a3896e35",
       "date": "2026-10-06"
      },
      {
-      "text": "Mizuho maintains Neutral rating but raises price target from $160 to $205.",
+      "text": "Mizuho maintains Neutral rating but raised price target from $160 to $205.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=0eb8ee2643e03f86e4cf9c9c2d144d6451a85ca07e46e5515399d000c71f209c",
@@ -1146,37 +1246,42 @@
     "ADSK",
     "PTC"
    ],
-   "price": 61.09,
-   "change_pct": 3.8769,
+   "price": 60.91,
+   "change_pct": 3.5708,
    "market_cap": 13693486000.0,
    "pe": 32.3,
    "eps_growth": null,
    "growth_basis": null,
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 1.49,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/trmb/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Peer PTC agreed to acquisition by Schneider Electric, rising 37.6% in five sessions, elevating sector sentiment.",
+      "text": "Peer PTC surged 37.6% on Schneider Electric acquisition, raising sector visibility.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=ec5176a50c3f99cdb80245d8ec8b523a8f07b2acf6d77539f0ac0e23a1a31029",
       "date": "2026-10-06"
      },
      {
-      "text": "Autodesk and Bentley Systems both declined sharply recently; Autodesk down 34% in twelve months signals sector weakness.",
+      "text": "Autodesk fell 34% in twelve months with high cash yield, signaling sector weakness.",
       "direction": "down",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=8d6f166bc4dd310e18345860efad9415b6bd0ca5d718c681c157a908a3a11d09",
-      "date": "2026-09-30"
+      "url": "https://finnhub.io/api/news?id=1fc49d8d9d6c10174b014a461d10e2665f05a5c7f027a24e430a79ae8efdb011",
+      "date": "2026-10-05"
      },
      {
-      "text": "Design software peers trading at high multiples relative to S&P 500, suggesting valuation concerns across segment.",
+      "text": "Design software peers experiencing mixed pressure; Bentley down 16.4%, PTC down 12.5% recently.",
       "direction": "neutral",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=6af19f91d464ae75e2956a67967e580ade384c33f231c6d4e5a1d4d91e4102a2",
-      "date": "2026-10-05"
+      "url": "https://finnhub.io/api/news?id=025ab568f0fc9bb4189f0223d8f7c8cc8cb56eaf4c59325b364ed35b62a67737",
+      "date": "2026-09-30"
      }
     ],
     "headline_count": 5
@@ -1192,8 +1297,8 @@
     "WDAY",
     "INTU"
    ],
-   "price": 262.39,
-   "change_pct": 0.8184,
+   "price": 262.86,
+   "change_pct": 0.999,
    "market_cap": 102434984000.0,
    "pe": 23.2,
    "eps_growth": 9.6,
@@ -1204,21 +1309,21 @@
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "ADP's own payroll data shows cooling labor market with slower pays-per-control growth and weaker client retention outlook.",
+      "text": "ADP's own payroll data shows slower pays-per-control growth at ~1% for fiscal 2026, signaling a cooling labor market.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=274101a8169ae6d31fbcfb04fcf8916fc9d1051a74fc4e7459531aa8ee9d1cb1",
       "date": "2026-10-04"
      },
      {
-      "text": "ADP National Employment Report shows private employers adding average 23,750 jobs weekly for four weeks ending September 19.",
-      "direction": "up",
+      "text": "ADP publishes monthly jobs data; September's weak +29K jobs report contrasts with ADP's own business performance indicators.",
+      "direction": "down",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=d1a6513f85c8c03a5ac0b7f57f40dd17cc7b499de59b8a5bad893dfe84ccc488",
-      "date": "2026-10-06"
+      "url": "https://finnhub.io/api/news?id=11c547889937196db994628d593f2f705b841ac59f655ce67f3e1459de8054e1",
+      "date": "2026-10-03"
      },
      {
-      "text": "ADP compared favorably to Lumentum with steady dividend growth and record client satisfaction across global payroll business.",
+      "text": "Positive peer comparison analysis and dividend growth strategy consideration highlight ADP's competitive positioning in HR & Payroll.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=afad3503a774ab6156387af5314ae3137e4a2288fa1a861a22c7bf87f28d4be3",
@@ -1238,33 +1343,38 @@
     "WDAY",
     "INTU"
    ],
-   "price": 100.56,
-   "change_pct": 0.7817,
+   "price": 100.68,
+   "change_pct": 0.902,
    "market_cap": 35236727000.0,
    "pe": 19.5,
    "eps_growth": 12.9,
    "growth_basis": "1y",
    "peg": 1.51,
-   "fwd_peg": null,
+   "fwd_peg": 2.09,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/payx/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Beat earnings for fourth consecutive quarter and launched AI WISE hire, supporting bull case for stock.",
+      "text": "Beat earnings for fourth straight quarter and launched AI WISE hiring tool, supporting bullish case.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=eb805dba9ecf5c5b6e447aca7acfe90e7aa25ddb35d65723e2af645225418935",
       "date": "2026-10-05"
      },
      {
-      "text": "Stock fell despite earnings beat as investors questioned shareholder payout sustainability relative to actual costs.",
+      "text": "Stock fell despite earnings beat as investors questioned shareholder payout sustainability and balance sheet debt.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=03b68ca3057ec26b2514f8f8e2fed32436387779256172d946d2d386ffc657b0",
       "date": "2026-10-02"
      },
      {
-      "text": "Recent 22% slide and 14% selloff raise questions about dividend sustainability amid billions in acquisition debt.",
+      "text": "Recent 22% slide and 14% selloff raise questions about dividend safety amid acquisition debt concerns.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=05249a3a40893fdaa996c09e3fd28f5f4627624877ca1c0ddf64fdb80162e53c",
@@ -1285,37 +1395,42 @@
     "ADP",
     "PAYX"
    ],
-   "price": 288.61,
-   "change_pct": 1.3805,
+   "price": 288.75,
+   "change_pct": 1.4297,
    "market_cap": 77306020000.0,
    "pe": 16.9,
    "eps_growth": 20.4,
    "growth_basis": "1y",
    "peg": 0.83,
-   "fwd_peg": null,
+   "fwd_peg": 0.9,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/intu/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Intuit expanding QuickBooks ecosystem with SimpleClosure partnership and IDEAS accelerator programs targeting small-business services.",
+      "text": "Intuit expanding QuickBooks ecosystem with SimpleClosure payroll tax partnership and IDEAS accelerator programs.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=8128bbb1a7d472061c7bf0a320b0ecbdfa70a8087ff00316c89e862346141788",
       "date": "2026-10-05"
      },
      {
-      "text": "Intuit trades at lower forward earnings multiple than peer Atlassian despite slower growth profile.",
+      "text": "Intuit trades at lower forward earnings multiple than competitor Atlassian despite slower growth profile.",
       "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=7d77396429d95d894028cda0dbda9f4b59a63a58c6ade16ff1fe0ad4bde55f37",
       "date": "2026-10-05"
      },
      {
-      "text": "Nasdaq concentration rally narrowing with 55 of 100 stocks below 50-day average, suggesting broader weakness.",
+      "text": "Stock declined 1.04% prior session while broader market improved, underperforming peers.",
       "direction": "down",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=d78ffd39021735e4739cfbbd4e7ce2c89bcdbad94ff4f003fc44637d8d221831",
-      "date": "2026-10-05"
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=6f10bf1bdcad69169bc1d20924e678f4d5efdf4664343ff42690648d70b4a844",
+      "date": "2026-10-02"
      }
     ],
     "headline_count": 12
@@ -1330,33 +1445,38 @@
     "PYPL",
     "INTU"
    ],
-   "price": 76.61,
-   "change_pct": 0.4985,
+   "price": 76.44,
+   "change_pct": 0.2755,
    "market_cap": 45476188000.0,
    "pe": 127.3,
    "eps_growth": -88.0,
    "growth_basis": "1y",
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 0.51,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/xyz/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Baird raises Block price target to $106 and calls it a 'bullish fresh pick,' citing analyst confidence.",
+      "text": "Baird raises Block price target to $106 and calls it a 'Bullish Fresh Pick,' signaling analyst confidence.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=f117524a3bfdd8e216a3f4b3d47a0886e52c5243221034232cee1693eb378978",
       "date": "2026-10-02"
      },
      {
-      "text": "Square wins new restaurant clients including Pike Place Fish Market and LA eateries, expanding merchant base.",
+      "text": "Square wins new restaurant clients (Pike Place Fish Market, \u00c8tra, Caf\u00e9 Telegrama) for unified commerce platform.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=cc0158bef6eb2587e5793aba22a367cad9507f276695eac10ca1f10e49613d4f",
       "date": "2026-10-05"
      },
      {
-      "text": "Cash App launches Bitcoin Bonus feature with CEO endorsement, adding new revenue driver for platform.",
+      "text": "Cash App launches Bitcoin Bonus feature with passive yields, expanding crypto revenue opportunities.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=ece5a8568798ac38289377023b4fd224478c38e9576a89c48253769673d4eba4",
@@ -1375,14 +1495,19 @@
     "XYZ",
     "INTU"
    ],
-   "price": 54.73,
-   "change_pct": 0.5881,
+   "price": 54.64,
+   "change_pct": 0.4227,
    "market_cap": 46002406000.0,
    "pe": 9.4,
    "eps_growth": 13.5,
    "growth_basis": "1y",
    "peg": 0.7,
-   "fwd_peg": null,
+   "fwd_peg": 1.39,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/pypl/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
@@ -1394,17 +1519,17 @@
       "date": "2026-10-05"
      },
      {
-      "text": "PayPal exploring AI commerce as potential path to reverse recent decline from former prominence.",
-      "direction": "neutral",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=fabf715a1d05236e78e71664a852396ce9a2a793e22f6559489bf00252fbf05d",
-      "date": "2026-10-05"
-     },
-     {
-      "text": "Venmo Credit Card launches split-to-earn rewards feature offering up to 4% cash back.",
+      "text": "Venmo Credit Card launches split-to-earn rewards feature up to 4% cash back.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=0d20385a0d90140890e935778e812c155b74919e6a31e9fc227a59e5a21497e8",
+      "date": "2026-10-05"
+     },
+     {
+      "text": "PayPal fallen from grace; questioned whether AI commerce can restore its position.",
+      "direction": "down",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=fabf715a1d05236e78e71664a852396ce9a2a793e22f6559489bf00252fbf05d",
       "date": "2026-10-05"
      }
     ],
@@ -1420,33 +1545,38 @@
     "EFX",
     "MCO"
    ],
-   "price": 684.92,
-   "change_pct": -0.6801,
+   "price": 685.59,
+   "change_pct": -0.5829,
    "market_cap": 14735095000.0,
    "pe": 18.1,
    "eps_growth": 35.4,
    "growth_basis": "1y",
    "peg": 0.51,
-   "fwd_peg": null,
+   "fwd_peg": 0.62,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/fico/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Wells Fargo analyst lowered FICO price target from $950 to $800 while maintaining Overweight rating.",
+      "text": "Wells Fargo analyst lowered price target from $950 to $800 while maintaining Overweight rating.",
       "direction": "down",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=0ca7d469b84d1098e38ab7dc1a7c64ed569ed0a41cc47adc5368a6890c424965",
       "date": "2026-10-05"
      },
      {
-      "text": "Mortgage rule change gave FICO its worst day since 1989 as lenders may adopt different credit scoring.",
+      "text": "Mortgage rule change gave FICO its worst day since 1989 as lenders may use different credit scores.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=96fa80e8847484ce8ef79315d3bfa4b6561085b5b700ba6d137e33f526fd5717",
       "date": "2026-10-03"
      },
      {
-      "text": "FICO research shows fraud complexity rising in EMEA with 25%+ increase in attempts, highlighting demand for fraud protection.",
+      "text": "FICO research shows 25%+ rise in fraud attempts in EMEA as AI reshapes fraud threats, increasing demand for solutions.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=8a17b367ec522df0975bc45b89d9dd0fa9f17a5452b433e074dafce556254289",
@@ -1466,34 +1596,39 @@
     "FDS",
     "MCO"
    ],
-   "price": 557.64,
-   "change_pct": 0.9577,
+   "price": 557.62,
+   "change_pct": 0.9541,
    "market_cap": 39100242000.0,
    "pe": 28.8,
    "eps_growth": 21.1,
    "growth_basis": "1y",
    "peg": 1.36,
-   "fwd_peg": null,
+   "fwd_peg": 1.99,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/msci/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "CUSIP Global Services partnership expands MSCI's coverage to private company identifiers, broadening addressable market.",
+      "text": "MSCI expands CUSIP identifier coverage to late-stage private companies, broadening addressable market.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=4eef924bb17919d139c3c49e4abe858c79855daa842d215cf3d62ab537a555dd",
       "date": "2026-10-06"
      },
      {
-      "text": "New AI value chain indexes launched as hedging demand grows, adding product offerings for investors.",
+      "text": "Company launches AI value chain indexes as hedging demand grows among investors.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=34d6eddcab9b6f90fa62df4057e6c8f4a7a3a25c1fe84773cb9364d32e969369",
       "date": "2026-09-28"
      },
      {
-      "text": "Wells Fargo lowers price target to $685 from $690 despite maintaining Overweight rating.",
-      "direction": "down",
+      "text": "Wells Fargo lowers MSCI price target to $685 while maintaining Overweight rating.",
+      "direction": "neutral",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=2a47d590fbb56ec6a7204e1f8b7e94d41df547022a10921f978ca05e80869839",
       "date": "2026-09-29"
@@ -1511,37 +1646,42 @@
     "SPGI",
     "MSCI"
    ],
-   "price": 273.7,
-   "change_pct": -0.9912,
+   "price": 274.35,
+   "change_pct": -0.756,
    "market_cap": 9402285000.0,
    "pe": 17.6,
    "eps_growth": -6.4,
    "growth_basis": "1y",
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 1.39,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/fds/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Strategic partnership with SUBSCRIBE to integrate private markets solutions into FactSet's platform.",
+      "text": "Strategic partnership with SUBSCRIBE to integrate private markets workflow into FactSet's platform announced.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=17618d26967d2ed401871df7de32aaf9ae47ec8a4a90ec185127d90abdf82952",
       "date": "2026-10-06"
      },
      {
-      "text": "Analysts upgraded rating and raised fair value target citing AI progress and execution confidence.",
-      "direction": "up",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=4308125879ed0d7029a0e8084371f5392ed91e03ec8058534f5f1416ef851364",
-      "date": "2026-10-06"
-     },
-     {
-      "text": "Fair value assessment increased from $266.75 to $277.56 as analysts weigh AI adaptation progress.",
+      "text": "Analysts upgraded rating and raised fair value target, citing AI progress and execution confidence.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=cda3ca95b9d5b7fc3078887ece32ee967ae3a5a32aa130434e62e9cac3e83a55",
       "date": "2026-10-04"
+     },
+     {
+      "text": "Analyst commentary highlights strong financial foundation but notes AI adaptation remains key concern.",
+      "direction": "neutral",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=89654dd2843f51992d6e6c0397ed3fadbb5f8efaac33903d4b734dfc267491be",
+      "date": "2026-10-06"
      }
     ],
     "headline_count": 12
@@ -1557,29 +1697,41 @@
     "MSCI",
     "FDS"
    ],
-   "price": 396.61,
-   "change_pct": 1.4555,
+   "price": 397.07,
+   "change_pct": 1.5732,
    "market_cap": 114519480000.0,
    "pe": 23.3,
    "eps_growth": 26.2,
    "growth_basis": "1y",
    "peg": 0.89,
-   "fwd_peg": null,
+   "fwd_peg": 1.66,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/spgi/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Mizuho analyst maintains Outperform rating but lowers price target from $554 to $531.",
+      "text": "Mizuho analyst lowers price target to $531 from $554 while maintaining Outperform rating.",
       "direction": "down",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=fc817b5196204fd83221f86aef1f61ae6b1b08131c4b113aabc40ca17ebcf7ba",
       "date": "2026-10-06"
      },
      {
-      "text": "S&P Global launches tool to assess blockchain-based lending vaults in emerging market.",
+      "text": "S&P Global launching tool to assess blockchain-based lending vaults, expanding into onchain market.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=40d8b5e0f5a1b48055845bcd330fb97fa46525323b3c5df598ff462820f3839d",
+      "date": "2026-10-05"
+     },
+     {
+      "text": "US services sector growth decelerated in September despite continued expansion, per ISM and S&P surveys.",
+      "direction": "neutral",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=0df134f6e19575cc882878874ce9db1b475ebd872e16712af36ca22d9cd67317",
       "date": "2026-10-05"
      }
     ],
@@ -1595,37 +1747,42 @@
     "SPGI",
     "FICO"
    ],
-   "price": 452.83,
-   "change_pct": 1.0443,
+   "price": 453.64,
+   "change_pct": 1.225,
    "market_cap": 76175086000.0,
    "pe": 27.3,
    "eps_growth": 34.0,
    "growth_basis": "1y",
    "peg": 0.8,
-   "fwd_peg": null,
+   "fwd_peg": 1.97,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/mco/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Analyst upgrade to Zacks Rank #2 (Buy) reflects growing optimism about earnings prospects.",
+      "text": "Zacks upgraded MCO to Buy rank, reflecting growing optimism about earnings prospects.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=4ba56f8332e809193c3c4b2eac4bdbdbaa74184bd2f6218eade61c2cc9725df1",
       "date": "2026-10-02"
      },
      {
-      "text": "RSI near 30 signals potentially undervalued buying opportunity among financial stocks this month.",
+      "text": "RSI near 30 signals undervalued buying opportunity among financial stocks this month.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=73f10572c3c70abb9b91aa94b847e0fb016de5f12e251e55ff64ea478a292fd1",
       "date": "2026-10-05"
      },
      {
-      "text": "New Moody's Analytics credit risk model launch with Allvue expands private credit capabilities.",
-      "direction": "up",
+      "text": "Q3 2026 earnings release scheduled for October 21 before market open.",
+      "direction": "neutral",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=268a405069ec88d7c1a08599ab2344ff5f056fb258c0f3db504377181819f208",
-      "date": "2026-10-01"
+      "url": "https://finnhub.io/api/news?id=ac0dd892f768eb262c1df1f088d7908df1bcf8552b01403c3deeae38f2a8c802",
+      "date": "2026-09-30"
      }
     ],
     "headline_count": 12
@@ -1640,14 +1797,19 @@
     "FICO",
     "MCO"
    ],
-   "price": 143.15,
-   "change_pct": 0.3857,
+   "price": 143.59,
+   "change_pct": 0.6942,
    "market_cap": 16624113000.000002,
    "pe": 24.0,
    "eps_growth": 11.2,
    "growth_basis": "1y",
    "peg": 2.15,
-   "fwd_peg": null,
+   "fwd_peg": 1.1,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/efx/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
@@ -1659,14 +1821,14 @@
       "date": "2026-10-06"
      },
      {
-      "text": "Barclays lowered price target to $155 from $200 citing increasingly negative sentiment in business.",
+      "text": "Barclays lowered price target to $155 from $200, maintaining Equal Weight rating citing negative sentiment.",
       "direction": "down",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=b4add2738b78034d98d550348df216ecd3d27c6d37c6654c38befa73def5d6db",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=da4f423430e10a8d234a4ef1554243df2e1ebe0f7ef8b6b117b77babf75b9bb9",
       "date": "2026-10-02"
      },
      {
-      "text": "Fannie Mae and Freddie Mac moving to include VantageScore in mortgage underwriting creates fresh competition.",
+      "text": "Fannie Mae and Freddie Mac adding VantageScore to mortgage underwriting in 2026, increasing competition.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=769652adcb2aef30f2c11508a88b588830cc1f4940adab01c1c2f880220fd18d",
@@ -1685,26 +1847,31 @@
     "IQV",
     "CRM"
    ],
-   "price": 284.68,
-   "change_pct": 0.4339,
+   "price": 283.09,
+   "change_pct": -0.127,
    "market_cap": 45831535000.0,
    "pe": 45.2,
    "eps_growth": 25.6,
    "growth_basis": "1y",
    "peg": 1.76,
-   "fwd_peg": null,
+   "fwd_peg": 0.84,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/veev/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Veeva DQS milestone: cleaned data for 1M+ subjects across 1,000+ studies, accelerating analysis-ready data delivery.",
+      "text": "Veeva DQS milestone: data cleaned for 1M+ subjects across 1,000+ studies, accelerating analysis-ready data delivery.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=993f60c590c69ec51d8644d45af365feef5fd1a40f2306108f24f20eb6d07af1",
       "date": "2026-10-06"
      },
      {
-      "text": "Servier standardizing customer data across 80+ countries with Veeva OpenData to scale AI capabilities.",
+      "text": "Servier standardizing customer reference data across 80+ countries with Veeva OpenData to scale AI capabilities.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=5609ea6f5490815bc02db3fc94db37f340537703bd3386e90aac3fda990f6846",
@@ -1729,26 +1896,31 @@
    "competitors": [
     "ROP"
    ],
-   "price": 332.15,
-   "change_pct": 1.1665,
+   "price": 332.0,
+   "change_pct": 1.1209,
    "market_cap": 13404089000.0,
    "pe": 41.3,
    "eps_growth": 7.8,
    "growth_basis": "1y",
    "peg": 5.29,
-   "fwd_peg": null,
+   "fwd_peg": 1.48,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/tyl/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Zacks Rank upgraded to #2 (Buy) amid growing optimism about earnings prospects.",
+      "text": "Upgraded to Zacks Rank #2 (Buy) on growing optimism about earnings prospects.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=e502a45f2884382df99aab35519933c08aa6a965c810aeb6c529a8d2f92c4adf",
       "date": "2026-10-01"
      },
      {
-      "text": "South Carolina DMV expands e-titling services through existing DGS contract, extending 21-year partnership.",
+      "text": "South Carolina DMV expands 21-year partnership by adding electronic titling services.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=4b94e4028c7aead526760622a057df82f736d3258a25488e63fdf75796decbc1",
@@ -1767,34 +1939,39 @@
     "TYL",
     "CSGP"
    ],
-   "price": 362.37,
-   "change_pct": -0.2779,
+   "price": 361.6,
+   "change_pct": -0.4898,
    "market_cap": 35439645000.0,
    "pe": 14.2,
    "eps_growth": 69.5,
    "growth_basis": "1y",
    "peg": 0.2,
-   "fwd_peg": null,
+   "fwd_peg": 2.07,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/rop/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Valuation compression makes ROP more attractive to investors after recent repricing.",
+      "text": "Valuation compression makes Roper more attractive to investors after recent repricing.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=c7bf6859dde4b6b60fa00382260f27a7b2340fecd2d976dba66075a4fca97db7",
       "date": "2026-10-05"
      },
      {
-      "text": "Q3 2026 earnings expected to show double-digit percentage bottom-line growth.",
+      "text": "Q3 2026 earnings expected soon with analysts forecasting double-digit bottom-line growth.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=4f2eb937cf93a144574fcaeb586131c1c604cb69e0bed81403e896e6e8a65f8b",
       "date": "2026-10-01"
      },
      {
-      "text": "NTT DATA CEO Abhijit Dubey joins board, bringing AI and technology expertise.",
-      "direction": "up",
+      "text": "NTT DATA CEO joins board, signaling leadership addition amid AI industry focus.",
+      "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=9442475477b2bca52522c378719c3231cb8ff1f8480065ee740907f1356ab997",
       "date": "2026-10-01"
@@ -1811,33 +1988,38 @@
    "competitors": [
     "ROP"
    ],
-   "price": 28.11,
-   "change_pct": 1.6269,
+   "price": 28.04,
+   "change_pct": 1.3738,
    "market_cap": 11106466000.0,
    "pe": 150.9,
    "eps_growth": -30.5,
    "growth_basis": "1y",
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 0.49,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/csgp/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Needham analyst reiterates Buy rating and maintains $40 price target on CoStar.",
+      "text": "Needham analyst reiterates Buy rating with $40 price target on CoStar Group.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=0bac7484e8d8415cacedee9ed7ada272a8082324447b2b9215d4f911a952c71b",
       "date": "2026-10-06"
      },
      {
-      "text": "Every major commercial real estate brokerage in Canada now subscribes to CoStar.",
+      "text": "SeekingAlpha rates CoStar an undervalued buy, citing revenue growth and AI-driven platform gains.",
       "direction": "up",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=b1b95e472f09c6d6921a49d1434fea59f4284db1bd48318835a6d965b6bb8c6a",
-      "date": "2026-09-30"
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=8632b2a58a8c8b3e1a8c693600feb9b2a3ad02ab58fc53f4fb2e9148313dd289",
+      "date": "2026-10-05"
      },
      {
-      "text": "Commercial property delivery projections show sharp drop from last cycle peak, signaling softer demand.",
+      "text": "Commercial property deliveries projected to drop sharply, signaling softer demand for real estate data.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=353d9f993e459d2e3267b5e039fc6e28dd55614ff0cd366d3c5b45cb0022249a",
@@ -1855,33 +2037,38 @@
    "competitors": [
     "VEEV"
    ],
-   "price": 264.2,
-   "change_pct": -0.7103,
+   "price": 263.19,
+   "change_pct": -1.0899,
    "market_cap": 43313254000.0,
    "pe": 31.5,
    "eps_growth": 16.8,
    "growth_basis": "1y",
    "peg": 1.88,
-   "fwd_peg": null,
+   "fwd_peg": 1.65,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/iqv/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "UBS reinstates Buy rating with $345 price target, signaling analyst confidence in stock valuation.",
+      "text": "UBS reinstates Buy rating with $345 price target, signaling analyst confidence in the stock.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=2d6d5a1edbb15d562b40bfbcd9735d10a249ceb0ee104e464a712878614ac742",
       "date": "2026-09-30"
      },
      {
-      "text": "RBC raises price target to $319 and maintains Outperform rating on strong fundamentals.",
+      "text": "RBC Capital raises price target to $319 and maintains Outperform rating on strong fundamentals.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=40ddb97867da73cc4a66cafc2f245654c55f10dd57883217e6ecfe8ec11744cc",
       "date": "2026-09-29"
      },
      {
-      "text": "Extensive database, AI capabilities, and strong bookings offset concerns about low liquidity and high debt.",
+      "text": "Extensive database and strong R&D bookings offset concerns about low liquidity and high debt.",
       "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=1c6f74d4856686304c0cb41d752634381ae64c2aee0d8c7f7427d612ef5f72f6",
@@ -1900,26 +2087,31 @@
     "VRSN",
     "AKAM"
    ],
-   "price": 98.35,
-   "change_pct": -1.3936,
+   "price": 98.03,
+   "change_pct": -1.7145,
    "market_cap": 12462134000.0,
    "pe": 13.7,
    "eps_growth": 20.1,
    "growth_basis": "1y",
    "peg": 0.68,
-   "fwd_peg": null,
+   "fwd_peg": 0.66,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/gddy/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "GoDaddy launched Node.js Hosting with API for AI coding tools, offering customers web app hosting with HTTPS, CDN and firewall.",
+      "text": "GoDaddy launched Node.js Hosting with API for AI coding tools, offering customers simpler web app deployment with HTTPS, CDN and firewall.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=007dcda805d83ec54059a73d69fba19944003506980d9bb9e4d095956f8be2a9",
       "date": "2026-09-29"
      },
      {
-      "text": "Stock characterized as low-volatility with concerns about slower growth and limited upside potential versus more dynamic companies.",
+      "text": "Stock characterized as low-volatility with concerns about slower growth and limited upside potential compared to more dynamic companies.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=9f3e66b74fb7fec72306f86e596f56594e1b0cb1887229cc1c7dfa697db4d559",
@@ -1939,33 +2131,38 @@
     "AMZN",
     "PANW"
    ],
-   "price": 107.98,
-   "change_pct": -0.0093,
+   "price": 107.78,
+   "change_pct": -0.1945,
    "market_cap": 15468219000.0,
    "pe": 37.6,
    "eps_growth": -1.7,
    "growth_basis": "1y",
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 2.64,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/akam/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Akamai's $11.6 billion AI infrastructure deal with Anthropic and distributed computing plans attracting investor attention.",
+      "text": "Massive $11.6 billion AI infrastructure deal with Anthropic and Jim Cramer's bargain call drawing investor attention.",
       "direction": "up",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=36b6b9fbc1b65c97e41e19aae80f402524a96410c883f530d11fedcd16dc44c6",
-      "date": "2026-10-05"
+      "url": "https://finnhub.io/api/news?id=42f3819d2f06c68495c5f5352af1508f2e6648eaa572a7203e5abe5e5b1e1a81",
+      "date": "2026-10-02"
      },
      {
-      "text": "AI agents and bots driving 57% of web traffic, lifting internet infrastructure stocks including Akamai.",
+      "text": "AI agents and bots generating 57% of web traffic, lifting infrastructure stocks including Akamai.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=4103e53f9451fa774515d96378457b0c40eae2f7412193202049d8cb541344a0",
       "date": "2026-10-01"
      },
      {
-      "text": "Margin pressure, delivery weakness, and heavy capex spending warrant caution despite AI cloud momentum.",
+      "text": "Margin pressure, delivery weakness, and heavy capex spending warrant investor caution despite AI cloud momentum.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=497c3669735dcf5f1f517502388a15d6abb8ce6822eab866cbdb081e091329a6",
@@ -1983,8 +2180,8 @@
    "competitors": [
     "GDDY"
    ],
-   "price": 290.72,
-   "change_pct": -0.5269,
+   "price": 292.02,
+   "change_pct": -0.0821,
    "market_cap": 25699277000.0,
    "pe": 30.2,
    "eps_growth": 9.8,
@@ -1995,14 +2192,14 @@
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Q3 earnings expected with single-digit bottom-line growth, raising questions about valuation at current price levels.",
+      "text": "Q3 earnings report scheduled for Oct. 22; analysts expect only single-digit bottom-line growth.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=2b19251bbebdcf7aca8fe8001f1e7aab541c0bc3a30ceb319f0257f1dcbaee3b",
       "date": "2026-10-05"
      },
      {
-      "text": "Stock may be fully priced based on steady cash flow generation, with recent pullback prompting valuation reassessment.",
+      "text": "Stock may be fully priced given steady cash flow generation; recent pullback raises valuation questions.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=1c85807a1b82ee4f2801b495fb3d2e01bfccde6aa5c831ea1e471bd74c892a74",
@@ -2028,37 +2225,42 @@
     "META",
     "GOOGL"
    ],
-   "price": 277.1,
-   "change_pct": -1.7271,
+   "price": 278.32,
+   "change_pct": -1.2945,
    "market_cap": 94361540000.0,
    "pe": 21.4,
    "eps_growth": 84.7,
    "growth_basis": "1y",
    "peg": 0.25,
-   "fwd_peg": null,
+   "fwd_peg": 0.49,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/app/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Securities fraud lawsuit filed over AI tool delays and slower advertising model improvements.",
+      "text": "Securities fraud lawsuit filed after AI tool delays and slower advertising model improvements raised questions about past statements.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=b3d8a4ec02b3eaaef73518b8fe20fbde19ce0e967ea0e47a899a6a1596583248",
       "date": "2026-10-06"
      },
      {
-      "text": "San Diego County launched consumer protection lawsuits against AppLovin involving children's safety.",
-      "direction": "down",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=70c4943413bb59cf351407a32c2f4d58aa80b1257ab170465edc64bc4f2a39c5",
-      "date": "2026-10-05"
-     },
-     {
-      "text": "Needham analyst reiterates Buy rating and maintains $475 price target.",
+      "text": "Needham analyst reiterates Buy rating and maintains $475 price target on AppLovin stock.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=5f49b12c0c853f98fb24a5dbb422820da16eceea10645ede3e11330d51d49689",
       "date": "2026-10-06"
+     },
+     {
+      "text": "San Diego County launched lawsuits against AppLovin involving children's safety concerns.",
+      "direction": "down",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=70c4943413bb59cf351407a32c2f4d58aa80b1257ab170465edc64bc4f2a39c5",
+      "date": "2026-10-05"
      }
     ],
     "headline_count": 12
@@ -2076,34 +2278,39 @@
    "tags": [
     "mag7"
    ],
-   "price": 741.51,
-   "change_pct": -0.0526,
+   "price": 743.24,
+   "change_pct": 0.1806,
    "market_cap": 1854788200000.0,
    "pe": 27.2,
    "eps_growth": -3.7,
    "growth_basis": "1y",
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 1.18,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/meta/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Wells Fargo sets $1,000 price target, citing warranted enthusiasm around Muse AI product cycle.",
+      "text": "Wells Fargo issued $1,000 price target citing justified enthusiasm around Muse AI product cycle.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=3b97791f870a9d10a8781a091289ee541e0bc33fd91c1a22814faea3d4506710",
       "date": "2026-10-06"
      },
      {
-      "text": "Record launch of Muse personal AI agent drives positive investor sentiment.",
+      "text": "Meta's Muse personal AI agent achieved record launch, driving large-cap growth stock leadership shift.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=f7037cf4f126ed44e530f9ccfb5819c3dec82fae4969693bc531e1ef4d2d0a71",
       "date": "2026-10-06"
      },
      {
-      "text": "Nvidia's $5.841 trillion valuation now exceeds Meta, Amazon, and AMD combined.",
-      "direction": "down",
+      "text": "Nvidia's valuation now exceeds Meta, Amazon, and AMD combined, reflecting relative market positioning.",
+      "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=b9529dca6e4824815ee500cd6a6583b7f277837e4544253a394e20d59645c87b",
       "date": "2026-10-06"
@@ -2125,33 +2332,38 @@
    "tags": [
     "mag7"
    ],
-   "price": 240.11,
-   "change_pct": 0.5065,
+   "price": 239.84,
+   "change_pct": 0.3935,
    "market_cap": 5725557500000.0,
    "pe": 29.7,
    "eps_growth": 125.2,
    "growth_basis": "1y",
    "peg": 0.24,
-   "fwd_peg": null,
+   "fwd_peg": 0.4,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/nvda/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "NVIDIA's $5.841 trillion valuation now exceeds Meta, Amazon, and AMD combined, highlighting its massive market dominance.",
+      "text": "NVIDIA's $5.841 trillion valuation now exceeds META, AMZN, and AMD combined, highlighting dominant market position.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=b9529dca6e4824815ee500cd6a6583b7f277837e4544253a394e20d59645c87b",
       "date": "2026-10-06"
      },
      {
-      "text": "Broader stock market trading near record highs shows underlying weakness when examined closely, creating headwinds for tech stocks.",
+      "text": "Broader market concern: chart circulating on X suggests potential warning sign for stocks near record highs.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=e129d7936852fa8c15d98e38f810202db463580c9f673884f5e202511d8e531a",
       "date": "2026-10-06"
      },
      {
-      "text": "Peer Marvell raised fiscal 2028 revenue outlook to $20 billion, signaling strength in the AI semiconductor sector.",
+      "text": "Peer Marvell raises 2028 revenue outlook to $20 billion, signaling strength in AI semiconductor demand.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=df6316b6758364baf8495c30d9238996ae06ed35ee620c33df8b718e35ba5dfa",
@@ -2172,33 +2384,38 @@
     "ANET",
     "MU"
    ],
-   "price": 377.53,
-   "change_pct": 4.1433,
+   "price": 379.96,
+   "change_pct": 4.8137,
    "market_cap": 1736002100000.0,
    "pe": 45.4,
    "eps_growth": 100.1,
    "growth_basis": "1y",
    "peg": 0.45,
-   "fwd_peg": null,
+   "fwd_peg": 0.38,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/avgo/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Peer Marvell's investor day raised 2028 revenue outlook, lifting custom AI silicon sector broadly.",
+      "text": "Peer Marvell's strong investor day and custom AI silicon outlook lifted sentiment across the semiconductor category.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=ec358978f9e029c30d882aa27459f91cf6ceb70b07640d6d92384416921cb4a2",
       "date": "2026-10-06"
      },
      {
-      "text": "Broadcom's AI chip revenue surged 221% last quarter with forecasts exceeding investor expectations.",
+      "text": "Broadcom's AI chip revenue grew 221% last quarter, with forecasts exceeding investor expectations.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=4cf5783bcf7119527bb2f19977592f8565ef00b3cde9a3061df259aaff4914e7",
       "date": "2026-10-06"
      },
      {
-      "text": "Chipmakers gained as S&P 500 hit record high amid oil price and yield declines.",
+      "text": "Chipmakers rallied as S&P 500 hit record high amid broader market gains.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=b8cd7fccabd6e184a8c44f72057626f015647c9398e0eb2bda6725829350528f",
@@ -2217,36 +2434,41 @@
     "NVDA",
     "AVGO"
    ],
-   "price": 654.66,
-   "change_pct": 3.6264,
+   "price": 654.58,
+   "change_pct": 3.6138,
    "market_cap": 1031748600000.0,
    "pe": 160.4,
    "eps_growth": 124.3,
    "growth_basis": "1y",
    "peg": 1.29,
-   "fwd_peg": null,
+   "fwd_peg": 0.88,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/amd/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "BNP Paribas raised AMD price target 60% to $960, citing AI chips and an overlooked market.",
+      "text": "BNP Paribas raised AMD price target 60% to $960, citing growth opportunities beyond AI chips.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=4468cf47251281c961494b5e6447fd4cae7259bfda0ef351be946efdc54eb7fb",
       "date": "2026-10-06"
      },
      {
-      "text": "Citi raised AMD price target due to Meta Muse opportunity.",
+      "text": "Citi raised AMD price target due to Meta Muse opportunity, supporting stock momentum.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=bae8bf453afe73724bd1da670abde0f92cf2b5f89f1523f01a567266704a584e",
       "date": "2026-10-06"
      },
      {
-      "text": "Stock rallied on two fresh price-target hikes for AI hardware sales.",
-      "direction": "up",
+      "text": "Stock up 272% over past year, raising questions about current valuation sustainability.",
+      "direction": "neutral",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=fa002e18867993b97fed9feefa95a3c27c46c9d3cf868a2d74694b7ba3147ab0",
+      "url": "https://finnhub.io/api/news?id=c463ed0afb6bdb54f639ff0ad8d2b67ae6ee74488718a62903f85d5536ae1039",
       "date": "2026-10-06"
      }
     ],
@@ -2263,37 +2485,42 @@
     "AVGO",
     "NVDA"
    ],
-   "price": 212.93,
-   "change_pct": 2.9145,
+   "price": 213.1,
+   "change_pct": 2.9966,
    "market_cap": 261514940000.0,
    "pe": 64.7,
    "eps_growth": 24.7,
    "growth_basis": "1y",
    "peg": 2.62,
-   "fwd_peg": null,
+   "fwd_peg": 1.81,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/anet/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Strong Q2 fiscal 2026 results with 37.7% YoY revenue growth and raised full-year guidance to $12.6B.",
+      "text": "Arista positioned as central nervous system for AI data centers, gaining from every facility built.",
+      "direction": "up",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=744446f2cfe6aa541d9e190fd20562edde6befe37fe6c2eb4ccf20eeace3d261",
+      "date": "2026-10-06"
+     },
+     {
+      "text": "Strong Q2 fiscal 2026 results with 37.7% YoY revenue growth and raised full-year guidance to $12.60B.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=d62b0968c2776b6f5a6fcb5b0958e541f788fd424deebdbaaf77a66e817ca05b",
       "date": "2026-10-04"
      },
      {
-      "text": "Wall Street analysts rate ANET as a Buy with positive average brokerage recommendation.",
-      "direction": "up",
+      "text": "Stock trades at 64.5x trailing earnings versus 48.1x three-year average, raising valuation concerns.",
+      "direction": "down",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=ef4b52ef3bdd4144029e0be3219e4e6981a2a44a240e00733bedec815b64ead3",
-      "date": "2026-10-06"
-     },
-     {
-      "text": "Company positioned as central nervous system for AI data centers, benefiting from every AI infrastructure build.",
-      "direction": "up",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=744446f2cfe6aa541d9e190fd20562edde6befe37fe6c2eb4ccf20eeace3d261",
-      "date": "2026-10-06"
+      "url": "https://finnhub.io/api/news?id=86d61a1986eeb4be7d6b25137059d7d262c1e466657f24e8845437dededaf4b2",
+      "date": "2026-10-05"
      }
     ],
     "headline_count": 12
@@ -2308,36 +2535,41 @@
     "NVDA",
     "AMD"
    ],
-   "price": 1062.23,
-   "change_pct": -0.1626,
+   "price": 1063.85,
+   "change_pct": -0.0103,
    "market_cap": 1201821000000.0,
    "pe": 14.1,
    "eps_growth": 878.8,
    "growth_basis": "1y",
    "peg": 0.02,
-   "fwd_peg": null,
+   "fwd_peg": 0.03,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/mu/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Micron's record Q4 earnings and AI-driven memory demand support a hold stance, though 272.8% YTD rally raises profit-taking risks.",
+      "text": "Memory chip stocks unaffected as storage rivals Western Digital and Seagate decline on Toshiba expansion.",
+      "direction": "neutral",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=11074b2fd5407e2ce70b7bff5652619813f1de40dd70c8785403a1e2e28b9b79",
+      "date": "2026-10-06"
+     },
+     {
+      "text": "Record Q4 earnings and AI-driven memory demand support hold stance, but 272.8% YTD rally raises profit-taking risks.",
       "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=a113c2d062c89617cdf6b04112fdaab0d11e41446814c93bc2895ee040d7a1e4",
       "date": "2026-10-06"
      },
      {
-      "text": "Investors wary of memory-chip production increases; stock valuation depends on upcoming pricing test in the sector.",
-      "direction": "down",
+      "text": "Netlist settlement and $600 million patent license agreement reached with Micron.",
+      "direction": "up",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=0ea6eaf72458fbee5a24aeb6b0cda611b74bec51e1f01b178a45faf1f8bb2282",
-      "date": "2026-10-06"
-     },
-     {
-      "text": "Company's strategic priorities have shifted since December 2024, changing what shareholders are buying into.",
-      "direction": "neutral",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=2652b5cf850cfb57140300c68c70290a4e51fe6407e284558d2242db6e904f54",
+      "url": "https://finnhub.io/api/news?id=c61980235bcca7db2cf0726fa2824b88be294a375078daaf961f7c034a491f13",
       "date": "2026-10-06"
      }
     ],
@@ -2355,14 +2587,19 @@
     "AAPL",
     "META"
    ],
-   "price": 68.11,
-   "change_pct": 0.9037,
+   "price": 68.15,
+   "change_pct": 0.963,
    "market_cap": 279462800000.0,
    "pe": 20.5,
    "eps_growth": 35.3,
    "growth_basis": "1y",
    "peg": 0.58,
-   "fwd_peg": null,
+   "fwd_peg": 0.92,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/nflx/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
@@ -2374,14 +2611,14 @@
       "date": "2026-10-06"
      },
      {
-      "text": "Paramount-Warner merger closes; analysts view Netflix as better positioned than combined rival.",
+      "text": "Positioned as better stock alternative than Paramount post-Warner merger due to lower debt.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=90d85eb0be79de7a046ec65626311df78ad3796a26f979c89c9bac223a67589b",
       "date": "2026-10-06"
      },
      {
-      "text": "Disney licensing major movie and TV show franchises to Netflix.",
+      "text": "Disney licensing major movie and show franchises to Netflix expands content offerings.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=caa89d7d0f29ef599af518a22eb836e4c8a4cd2e019e170f12525d4c2cd96753",
@@ -2401,26 +2638,31 @@
     "ABNB",
     "TSLA"
    ],
-   "price": 69.09,
-   "change_pct": -0.5613,
+   "price": 68.97,
+   "change_pct": -0.734,
    "market_cap": 142489000000.0,
    "pe": 14.9,
    "eps_growth": -22.8,
    "growth_basis": "1y",
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 0.63,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/uber/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Uber agreed to acquire ezCater for $2.3B in all-cash deal to expand Uber Eats into corporate catering segment.",
+      "text": "Uber acquires ezCater for $2.3B in all-cash deal to expand Uber Eats into high-margin catering with 140,000+ restaurants.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=b640c6550af75e19524574c328d507b4b81867f366d2ab9b0c8cc2b1576c838e",
       "date": "2026-10-06"
      },
      {
-      "text": "ezCater acquisition expected to boost Uber Eats profit margins with average orders exceeding $400.",
+      "text": "ezCater's average orders exceeding $400 expected to boost Uber's profit margins in food-delivery expansion.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=7104411e21be2a3aa29034af854181a1738553166983165b11d0799910d572ff",
@@ -2446,37 +2688,42 @@
     "UBER",
     "AMZN"
    ],
-   "price": 193.22,
-   "change_pct": 0.7561,
+   "price": 192.57,
+   "change_pct": 0.4172,
    "market_cap": 83098520000.0,
    "pe": 98.8,
    "eps_growth": 8.3,
    "growth_basis": "1y",
    "peg": 11.9,
-   "fwd_peg": null,
+   "fwd_peg": 0.65,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/dash/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Wells Fargo raised DoorDash price target to $230 while maintaining Equal-Weight rating.",
+      "text": "Wells Fargo raises price target to $230 while maintaining Equal-Weight rating on the stock.",
       "direction": "up",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=f8d567686355dc6a93b7fba773760390f693c807755c34deebb9a2fad7101183",
       "date": "2026-10-05"
      },
      {
-      "text": "DoorDash's Deliveroo partnering with Coco Robotics to scale robot deliveries across UK.",
+      "text": "DoorDash's Deliveroo brand expanding robot deliveries across UK with Coco Robotics partnership.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=d99390db976c228ea8bf2a3321b841b954684462aa0900f9cabd078b41b3a1e1",
       "date": "2026-10-05"
      },
      {
-      "text": "DoorDash expanding into retail with Macy's, Anthropologie, Vans and launching return pickup service.",
+      "text": "Company testing new ordering methods and expanding retail partnerships including Macy's and Vans.",
       "direction": "up",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=3622d32cdc0c78f8450fcdab0147e9967eb7a2701a9637fc609f1176f9bf6542",
-      "date": "2026-10-01"
+      "url": "https://finnhub.io/api/news?id=307ac66fc85e921902a49b1a36c38848272764ebfedd181d3f56f8b03e884881",
+      "date": "2026-10-06"
      }
     ],
     "headline_count": 12
@@ -2491,33 +2738,38 @@
     "BKNG",
     "UBER"
    ],
-   "price": 159.56,
-   "change_pct": -2.7488,
+   "price": 159.67,
+   "change_pct": -2.6818,
    "market_cap": 98242766000.0,
    "pe": 36.5,
    "eps_growth": 6.6,
    "growth_basis": "1y",
    "peg": 5.53,
-   "fwd_peg": null,
+   "fwd_peg": 1.44,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/abnb/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "CEO highlights AI assistant traffic converting better than Google, signaling emerging competitive advantage in bookings.",
+      "text": "CEO highlights AI assistant traffic converts better than Google, signaling new growth channel potential.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=87e571fdbc88cba377c5694db4d9693eeda62a58ade7f30d386b2629a69c0abc",
       "date": "2026-10-05"
      },
      {
-      "text": "KeyBanc upgraded stock to Overweight citing hotel growth ambitions as complement to core home-sharing business.",
+      "text": "KeyBanc upgraded stock to Overweight citing hotel business growth prospects complementing core marketplace.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=198cb2ea3589b5a6e9cb1a1dbd40a66ee4467ade6477609cbc292a07810fa499",
       "date": "2026-10-04"
      },
      {
-      "text": "Nasdaq breadth narrowing with 55 of 101 stocks below 50-day average, suggesting broader market weakness.",
+      "text": "Nasdaq 100 market breadth narrowing with 55 stocks below 50-day average, limiting sector momentum.",
       "direction": "down",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=d78ffd39021735e4739cfbbd4e7ce2c89bcdbad94ff4f003fc44637d8d221831",
@@ -2536,34 +2788,39 @@
     "ABNB",
     "GOOGL"
    ],
-   "price": 155.94,
-   "change_pct": -1.5095,
+   "price": 156.07,
+   "change_pct": -1.4274,
    "market_cap": 118733150000.0,
    "pe": 16.5,
    "eps_growth": 57.2,
    "growth_basis": "1y",
    "peg": 0.29,
-   "fwd_peg": null,
+   "fwd_peg": 0.82,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/bkng/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "AI agents reshaping online travel pose greater long-term risk to Booking than Airbnb, per Bernstein analysts.",
+      "text": "AI agents threaten online travel booking economics; Booking faces greater long-term risk than competitors.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=1f48d0bfeb6ca3ef5bec86c9b02c9ad1d8e33ac062489a74b261c800b2b041cd",
       "date": "2026-10-04"
      },
      {
-      "text": "OpenTable-Visa agreement renewal expands dining services across U.S., Mexico, Canada.",
+      "text": "OpenTable-Visa partnership expansion broadens dining collection in Mexico and Canada.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=666b956dd0b87e70141ad7a8fc1bbfcdb806e88c2ee4491df6c6af4dda940c45",
       "date": "2026-10-06"
      },
      {
-      "text": "Booking CFO notes LLMs send less than 1% of room nights despite AI cost-cutting efforts.",
-      "direction": "down",
+      "text": "CFO notes AI LLMs currently send less than 1% of room nights despite cost benefits.",
+      "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=45633a757a053c3bcba05789c0e950f02e8b716db9040f9669001d145416d785",
       "date": "2026-10-02"
@@ -2582,33 +2839,38 @@
     "XYZ",
     "PYPL"
    ],
-   "price": 113.05,
-   "change_pct": -0.9289,
+   "price": 112.63,
+   "change_pct": -1.297,
    "market_cap": 102594280000.0,
    "pe": 49.5,
    "eps_growth": 15.3,
    "growth_basis": "1y",
    "peg": 3.24,
-   "fwd_peg": null,
+   "fwd_peg": 2.26,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/hood/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Bank of America raised price target to $156, citing potential 84% total return from current levels.",
+      "text": "Bank of America raised HOOD price target to $156, citing potential for significant upside performance.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=93672eb68e54e6708f45895f221059fefeb151cb2026d824b96e4540a16002e8",
       "date": "2026-10-06"
      },
      {
-      "text": "Event contracts traded surged over 10x in Q2 2026 to record 13.6 billion, fastest-growing product.",
+      "text": "Event contracts traded over 10x in Q2 2026 to record 13.6 billion, fastest-growing product at Robinhood.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=91717d6d922a8a703a0f177b2f2e1e0a81857121ea789b218c4b0519d0790eb1",
       "date": "2026-10-05"
      },
      {
-      "text": "Robinhood and Coinbase received price target hikes from BofA ahead of upcoming earnings.",
+      "text": "Robinhood has not missed EPS estimates in last 11 quarters, outperforming peers like Coinbase.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=f8e54947d5a8b5f884a616132e1479bd30d93de560606dea33d0fe9b15787f93",
@@ -2627,24 +2889,22 @@
     "HOOD",
     "XYZ"
    ],
-   "price": 187.5,
-   "change_pct": -0.3825,
+   "price": 187.24,
+   "change_pct": -0.5207,
    "market_cap": 49659400000.0,
    "pe": 39.4,
    "eps_growth": null,
    "growth_basis": null,
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 13.29,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/coin/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
-     {
-      "text": "Bank of America raised price target on peer Robinhood, signaling analyst confidence in fintech sector.",
-      "direction": "up",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=f8e54947d5a8b5f884a616132e1479bd30d93de560606dea33d0fe9b15787f93",
-      "date": "2026-10-05"
-     },
      {
       "text": "Coinbase CAO retiring amid ongoing leadership shuffle following recent 14% workforce layoffs.",
       "direction": "down",
@@ -2653,11 +2913,18 @@
       "date": "2026-10-05"
      },
      {
-      "text": "Coinbase included in ICE-OKX joint venture plans for 24/7 tokenized stock trading.",
+      "text": "Bank of America raised price target on peer Robinhood, signaling analyst confidence in fintech sector.",
       "direction": "up",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=024cc7fd88e0b9feb64b3ecdab7c0e6fedc483d1b2b08083cb52c51d48b838ff",
+      "url": "https://finnhub.io/api/news?id=f8e54947d5a8b5f884a616132e1479bd30d93de560606dea33d0fe9b15787f93",
       "date": "2026-10-05"
+     },
+     {
+      "text": "Citigroup expanding token services and crypto collaboration, supporting broader crypto infrastructure adoption.",
+      "direction": "up",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=8da91547e0cb6d2f129ceeb289ca884615a6e6afddfe1e6cf218b9d897e6a976",
+      "date": "2026-10-06"
      }
     ],
     "headline_count": 12
@@ -2677,33 +2944,38 @@
    "tags": [
     "mag7"
    ],
-   "price": 332.8,
-   "change_pct": -0.027,
+   "price": 333.02,
+   "change_pct": 0.0391,
    "market_cap": 4868618500000.0,
    "pe": 37.8,
    "eps_growth": 32.6,
    "growth_basis": "1y",
    "peg": 1.16,
-   "fwd_peg": null,
+   "fwd_peg": 3.26,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/aapl/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "App Store growth rebounded in September with solid iPhone demand expected to support Services revenue.",
+      "text": "App Store growth rebounded in September with solid iPhone demand, per UBS analysis.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=2e600632fd1af1fc12fb56f1fa01de552851b126169a47255380ab989aeb519c",
       "date": "2026-10-06"
      },
      {
-      "text": "Stock trades at 37.8x earnings versus 21.5x for S&P 500; analysts cite lack of clear catalyst for higher prices.",
+      "text": "Stock trades at 37.8x earnings versus 21.5x for S&P 500; analysts question catalysts for higher prices.",
       "direction": "down",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=0c1b5781b2f8b76825c537cb1a0d0e86eec9f8a1a4ee37bbf175ee0e1f723edb",
       "date": "2026-10-06"
      },
      {
-      "text": "Apple, Microsoft, and Nvidia account for over 20% of S&P 500, keeping market afloat amid concentration concerns.",
+      "text": "Apple is one of three stocks now accounting for over 20% of S&P 500, driving index to record levels.",
       "direction": "neutral",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=3d326daf75089ffe0e4205ba217ec16a736bb7bf3ceb461a1dd65b77ca8140d0",
@@ -2726,36 +2998,41 @@
    "tags": [
     "mag7"
    ],
-   "price": 380.91,
-   "change_pct": 0.5756,
+   "price": 380.75,
+   "change_pct": 0.5334,
    "market_cap": 1495812100000.0,
    "pe": 393.0,
    "eps_growth": -37.7,
    "growth_basis": "1y",
    "peg": null,
-   "fwd_peg": null,
+   "fwd_peg": 9.36,
+   "fwd_est": true,
+   "fwd_as_of": "2026-10-06",
+   "fwd_src": "stockanalysis.com (data: S&P Global Market Intelligence)",
+   "fwd_url": "https://stockanalysis.com/stocks/tsla/statistics/",
+   "fwd_tag": "manual",
    "news": {
     "as_of": "2026-10-06",
     "bullets": [
      {
-      "text": "Q3 delivery beat of 486,532 vehicles signals EV business recovery after 2025 revenue decline.",
+      "text": "Q3 vehicle delivery beat of 486,532 units signals EV market recovery and revenue momentum.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=6f01a7715b8d53b8a95e1df5588b6befc51c44ec576da14aff29e46258d95c54",
       "date": "2026-10-06"
      },
      {
-      "text": "Robotaxi, FSD, and Optimus developments seen as key value drivers despite near-term cost headwinds.",
+      "text": "Robotaxi, FSD, and Optimus developments viewed as key value drivers versus near-term earnings.",
       "direction": "up",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=00292a10c6aeb5b3720091a97fe8ddfa2d8f190bd5ccb3b702350f3dc854841c",
       "date": "2026-10-06"
      },
      {
-      "text": "Broader market rally as Treasury yields ease; mega-cap tech stocks including Tesla gaining momentum.",
+      "text": "Broader market rally as Treasury yields ease; mega-cap tech stocks including Tesla gain.",
       "direction": "up",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=7ce0dd7d0847484c3b29b0e8949033699f01d6090d2a82cf927c075099f472e6",
+      "url": "https://finnhub.io/api/news?id=17e181e56894175d3d48e8234373dbdf984acc756da331e92076e6fc53f1d371",
       "date": "2026-10-06"
      }
     ],
