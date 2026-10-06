@@ -193,6 +193,20 @@
       return `<div class="s">${x.symbol}</div><div class="track">${fill}${ref}</div><div class="v">${v != null ? v.toFixed(2) : '<span class="na">n/a</span>'}</div>`;
     }).join("");
 
+    // What's moving it (AI summary of recent headlines)
+    const nw = t.news;
+    const mv = $("#dMoves");
+    if (!nw) { mv.hidden = true; } else {
+      mv.hidden = false;
+      $("#dMovesTitle").textContent = `What's moving ${t.symbol} · ${t.name}`;
+      const arrow = { up: "▲", down: "▼", neutral: "●" };
+      $("#dMovesList").innerHTML = nw.bullets && nw.bullets.length
+        ? nw.bullets.map((b) => `<li><span class="arrow ${b.direction}" aria-label="${b.direction}">${arrow[b.direction] || "●"}</span>
+            <span>${esc(b.text)} ${b.url ? `<a class="src" href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.source || "source")} ↗</a>` : ""}</span></li>`).join("")
+        : `<li><span class="arrow neutral">●</span><span>No major news in the past week.</span></li>`;
+      $("#dMovesNote").textContent = `AI-generated summary of recent headlines (as of ${fmtDate(nw.as_of)}${nw.stale ? ", not refreshed today" : ""}). May contain errors — check the linked sources.`;
+    }
+
     const buys = buysBySym[t.symbol] || [];
     $("#dBuySub").textContent = buys.length ? `${buys.length} purchase${buys.length > 1 ? "s" : ""} · ${fmtBig(t.buyval)} in the last ${D.insider_lookback_days || 90} days` : `None in the last ${D.insider_lookback_days || 90} days.`;
     $("#dBuys").innerHTML = buys.slice(0, 8).map((b) => `<li><span class="who">${esc(b.insider || "Unknown")}</span>${b.role ? ` <span class="meta">· ${esc(b.role)}</span>` : ""}<br>
