@@ -1,8 +1,8 @@
 {
  "sample": false,
  "valuation_source": "Finnhub",
- "peg_method": "Trailing P/E / 5-year EPS growth (3-year if 5-year unavailable)",
- "generated_at": "2026-10-05T20:25-04:00",
+ "peg_method": "Trailing P/E / 5-year EPS growth (3-year if 5-year is unavailable or negative)",
+ "generated_at": "2026-10-05T20:44-04:00",
  "trading_date": "2026-10-05",
  "insider_lookback_days": 90,
  "groups": [
@@ -505,9 +505,9 @@
    "change_pct": 4.5094,
    "market_cap": 47056350000.0,
    "pe": 28.7,
-   "eps_growth": -0.8,
-   "growth_basis": "5y",
-   "peg": null,
+   "eps_growth": 11.5,
+   "growth_basis": "3y",
+   "peg": 2.49,
    "fwd_peg": null
   },
   {
@@ -541,9 +541,9 @@
    "change_pct": 2.2427,
    "market_cap": 13693486000.0,
    "pe": 32.3,
-   "eps_growth": -1.9,
-   "growth_basis": "5y",
-   "peg": null,
+   "eps_growth": 12.0,
+   "growth_basis": "3y",
+   "peg": 2.69,
    "fwd_peg": null
   },
   {
