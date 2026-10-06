@@ -67,7 +67,8 @@
     $("#insSub").textContent += ` Last ${D.insider_lookback_days || 90} days.`;
 
     // chips
-    const chips = [{ id: "all", name: "All" }, ...D.groups];
+    const hasMag7 = D.tickers.some((t) => (t.tags || []).includes("mag7"));
+    const chips = [{ id: "all", name: "All" }, ...(hasMag7 ? [{ id: "mag7", name: "Mag 7" }] : []), ...D.groups];
     $("#chips").innerHTML = chips.map((g) => `<button class="chip${g.id === "all" ? " on" : ""}" data-g="${g.id}">${esc(g.name)}</button>`).join("");
     $("#chips").onclick = (e) => {
       const b = e.target.closest(".chip"); if (!b) return;
@@ -116,7 +117,7 @@
 
   function rows() {
     let r = D.tickers.filter((t) =>
-      (state.group === "all" || t.group === state.group) &&
+      (state.group === "all" || t.group === state.group || (state.group === "mag7" && (t.tags || []).includes("mag7"))) &&
       (!state.coreOnly || t.role === "core") &&
       (!state.q || t.symbol.toLowerCase().includes(state.q) || t.name.toLowerCase().includes(state.q)));
     const k = state.sortK, dir = state.asc ? 1 : -1;

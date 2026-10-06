@@ -4,7 +4,8 @@
   "notes": [
     "role 'core' = growth/SaaS names the site focuses on; 'peer' = in-index competitor or benchmark",
     "Look up each ticker's SEC CIK at runtime from https://www.sec.gov/files/company_tickers.json for Form 4 queries",
-    "Re-check membership each quarter: S&P rebalances in Mar/Jun/Sep/Dec"
+    "Re-check membership each quarter: S&P rebalances in Mar/Jun/Sep/Dec",
+    "tags: ['mag7'] marks the Magnificent 7 for the site's Mag 7 filter; it does not change peer groups"
   ],
   "recently_removed": {
     "TTD": "2026-09-21",
@@ -56,6 +57,17 @@
       ]
     },
     {
+      "id": "ai-semis",
+      "name": "AI Semis & Networking",
+      "tickers": [
+        "NVDA",
+        "AVGO",
+        "AMD",
+        "ANET",
+        "MU"
+      ]
+    },
+    {
       "id": "eda",
       "name": "Chip Design Software (EDA)",
       "tickers": [
@@ -83,11 +95,13 @@
     },
     {
       "id": "smb-fintech",
-      "name": "SMB & Consumer Finance Software",
+      "name": "Fintech & SMB Software",
       "tickers": [
         "INTU",
         "XYZ",
-        "PYPL"
+        "PYPL",
+        "HOOD",
+        "COIN"
       ]
     },
     {
@@ -128,6 +142,25 @@
       "tickers": [
         "APP",
         "META"
+      ]
+    },
+    {
+      "id": "consumer-internet",
+      "name": "Consumer Internet",
+      "tickers": [
+        "NFLX",
+        "UBER",
+        "DASH",
+        "ABNB",
+        "BKNG"
+      ]
+    },
+    {
+      "id": "megacap",
+      "name": "Mega-cap Platforms",
+      "tickers": [
+        "AAPL",
+        "TSLA"
       ]
     }
   ],
@@ -295,6 +328,9 @@
         "GOOGL",
         "ORCL",
         "CRM"
+      ],
+      "tags": [
+        "mag7"
       ]
     },
     {
@@ -306,6 +342,9 @@
         "MSFT",
         "GOOGL",
         "ORCL"
+      ],
+      "tags": [
+        "mag7"
       ]
     },
     {
@@ -317,6 +356,9 @@
         "MSFT",
         "AMZN",
         "META"
+      ],
+      "tags": [
+        "mag7"
       ]
     },
     {
@@ -590,6 +632,169 @@
       "competitors": [
         "GOOGL",
         "APP"
+      ],
+      "tags": [
+        "mag7"
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "group": "ai-semis",
+      "role": "core",
+      "competitors": [
+        "AMD",
+        "AVGO",
+        "MU"
+      ],
+      "tags": [
+        "mag7"
+      ]
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "group": "ai-semis",
+      "role": "core",
+      "competitors": [
+        "NVDA",
+        "AMD",
+        "ANET",
+        "MU"
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices",
+      "group": "ai-semis",
+      "role": "core",
+      "competitors": [
+        "NVDA",
+        "AVGO"
+      ]
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "group": "ai-semis",
+      "role": "core",
+      "competitors": [
+        "CSCO",
+        "AVGO",
+        "NVDA"
+      ]
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron Technology",
+      "group": "ai-semis",
+      "role": "core",
+      "competitors": [
+        "NVDA",
+        "AMD"
+      ]
+    },
+    {
+      "symbol": "NFLX",
+      "name": "Netflix",
+      "group": "consumer-internet",
+      "role": "core",
+      "competitors": [
+        "GOOGL",
+        "AMZN",
+        "AAPL",
+        "META"
+      ]
+    },
+    {
+      "symbol": "UBER",
+      "name": "Uber",
+      "group": "consumer-internet",
+      "role": "core",
+      "competitors": [
+        "DASH",
+        "ABNB",
+        "TSLA"
+      ]
+    },
+    {
+      "symbol": "DASH",
+      "name": "DoorDash",
+      "group": "consumer-internet",
+      "role": "core",
+      "competitors": [
+        "UBER",
+        "AMZN"
+      ]
+    },
+    {
+      "symbol": "ABNB",
+      "name": "Airbnb",
+      "group": "consumer-internet",
+      "role": "core",
+      "competitors": [
+        "BKNG",
+        "UBER"
+      ]
+    },
+    {
+      "symbol": "BKNG",
+      "name": "Booking Holdings",
+      "group": "consumer-internet",
+      "role": "peer",
+      "competitors": [
+        "ABNB",
+        "GOOGL"
+      ]
+    },
+    {
+      "symbol": "HOOD",
+      "name": "Robinhood",
+      "group": "smb-fintech",
+      "role": "core",
+      "competitors": [
+        "COIN",
+        "XYZ",
+        "PYPL"
+      ]
+    },
+    {
+      "symbol": "COIN",
+      "name": "Coinbase",
+      "group": "smb-fintech",
+      "role": "core",
+      "competitors": [
+        "HOOD",
+        "XYZ"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "group": "megacap",
+      "role": "peer",
+      "competitors": [
+        "MSFT",
+        "GOOGL",
+        "META",
+        "NFLX"
+      ],
+      "tags": [
+        "mag7"
+      ]
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "group": "megacap",
+      "role": "core",
+      "competitors": [
+        "NVDA",
+        "GOOGL",
+        "UBER"
+      ],
+      "tags": [
+        "mag7"
       ]
     }
   ]
