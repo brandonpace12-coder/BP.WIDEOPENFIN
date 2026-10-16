@@ -3,8 +3,8 @@
  "valuation_source": "Finnhub",
  "peg_method": "Trailing P/E / last-12-months EPS growth (year over year)",
  "fwd_peg_method": "Alpha Vantage PEG ratio (based on analyst earnings estimates); refreshed every ~3 days",
- "generated_at": "2026-10-15T10:20-04:00",
- "trading_date": "2026-10-15",
+ "generated_at": "2026-10-16T10:15-04:00",
+ "trading_date": "2026-10-16",
  "insider_lookback_days": 90,
  "groups": [
   {
@@ -168,13 +168,13 @@
     "WDAY",
     "ADBE"
    ],
-   "price": 245.35,
-   "change_pct": 3.9839,
-   "market_cap": 196931550000.0,
-   "pe": 20.4,
+   "price": 242.08,
+   "change_pct": -1.8886,
+   "market_cap": 197836860000.0,
+   "pe": 20.5,
    "eps_growth": 59.3,
    "growth_basis": "1y",
-   "peg": 0.34,
+   "peg": 0.35,
    "fwd_peg": 0.89,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -199,7 +199,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -213,13 +214,13 @@
     "WDAY",
     "IBM"
    ],
-   "price": 146.63,
-   "change_pct": 4.7507,
-   "market_cap": 143322730000.0,
-   "pe": 85.8,
+   "price": 146.06,
+   "change_pct": -1.6894,
+   "market_cap": 144739310000.0,
+   "pe": 86.7,
    "eps_growth": 0.9,
    "growth_basis": "1y",
-   "peg": 95.36,
+   "peg": 96.3,
    "fwd_peg": 1.23,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -251,7 +252,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -266,13 +268,13 @@
     "CRM",
     "NOW"
    ],
-   "price": 199.58,
-   "change_pct": 5.7265,
-   "market_cap": 45108780000.0,
-   "pe": 36.1,
+   "price": 191.6,
+   "change_pct": -2.5581,
+   "market_cap": 47190137000.0,
+   "pe": 37.7,
    "eps_growth": 127.9,
    "growth_basis": "1y",
-   "peg": 0.28,
+   "peg": 0.29,
    "fwd_peg": 0.79,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -304,7 +306,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -318,13 +321,13 @@
     "ACN",
     "NOW"
    ],
-   "price": 230.96,
-   "change_pct": 1.3516,
-   "market_cap": 217025380000.0,
-   "pe": 20.2,
+   "price": 233.85,
+   "change_pct": -0.1153,
+   "market_cap": 218725920000.0,
+   "pe": 20.4,
    "eps_growth": 82.7,
    "growth_basis": "1y",
-   "peg": 0.24,
+   "peg": 0.25,
    "fwd_peg": 2.57,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -356,7 +359,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -369,10 +373,10 @@
     "FTNT",
     "MSFT"
    ],
-   "price": 243.2,
-   "change_pct": -2.4429,
-   "market_cap": 256280640000.0,
-   "pe": 4383.9,
+   "price": 234.53,
+   "change_pct": -4.1052,
+   "market_cap": 249486830000.0,
+   "pe": 4267.7,
    "eps_growth": null,
    "growth_basis": null,
    "peg": null,
@@ -407,7 +411,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -421,10 +426,10 @@
     "CSCO",
     "AKAM"
    ],
-   "price": 369.27,
-   "change_pct": -1.5385,
-   "market_cap": 324770530000.0,
-   "pe": 1057.9,
+   "price": 352.65,
+   "change_pct": -4.7587,
+   "market_cap": 306782720000.0,
+   "pe": 999.3,
    "eps_growth": -68.0,
    "growth_basis": "1y",
    "peg": null,
@@ -459,7 +464,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -472,13 +478,13 @@
     "CSCO",
     "CRWD"
    ],
-   "price": 181.32,
-   "change_pct": -1.4833,
-   "market_cap": 138283000000.0,
-   "pe": 65.2,
+   "price": 174.29,
+   "change_pct": -4.1889,
+   "market_cap": 134108170000.00002,
+   "pe": 63.2,
    "eps_growth": 13.3,
    "growth_basis": "1y",
-   "peg": 4.9,
+   "peg": 4.75,
    "fwd_peg": 3.17,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -510,7 +516,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -522,13 +529,13 @@
     "MSFT",
     "CRWD"
    ],
-   "price": 24.42,
-   "change_pct": 2.605,
-   "market_cap": 14198484000.0,
-   "pe": 13.5,
+   "price": 24.87,
+   "change_pct": 0.2015,
+   "market_cap": 14752177000.0,
+   "pe": 14.0,
    "eps_growth": 79.7,
    "growth_basis": "1y",
-   "peg": 0.17,
+   "peg": 0.18,
    "fwd_peg": null,
    "news": {
     "as_of": "2026-10-15",
@@ -555,7 +562,8 @@
       "date": "2026-10-10"
      }
     ],
-    "headline_count": 9
+    "headline_count": 9,
+    "stale": true
    }
   },
   {
@@ -568,13 +576,13 @@
     "FTNT",
     "DDOG"
    ],
-   "price": 110.18,
-   "change_pct": -3.0447,
-   "market_cap": 448035560000.0,
-   "pe": 33.8,
+   "price": 107.99,
+   "change_pct": -1.6932,
+   "market_cap": 433093160000.0,
+   "pe": 32.6,
    "eps_growth": 30.8,
    "growth_basis": "1y",
-   "peg": 1.1,
+   "peg": 1.06,
    "fwd_peg": 2.23,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -606,7 +614,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -621,10 +630,10 @@
     "ACN",
     "DDOG"
    ],
-   "price": 195.97,
-   "change_pct": -2.4879,
-   "market_cap": 481500780000.0,
-   "pe": 159.6,
+   "price": 194.91,
+   "change_pct": -2.788,
+   "market_cap": 480996160000.0,
+   "pe": 159.4,
    "eps_growth": 290.0,
    "growth_basis": "1y",
    "peg": 0.55,
@@ -659,7 +668,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -673,13 +683,13 @@
     "AMZN",
     "GOOGL"
    ],
-   "price": 264.55,
-   "change_pct": -1.7748,
-   "market_cap": 97282410000.0,
-   "pe": 547.8,
+   "price": 250.96,
+   "change_pct": -5.7427,
+   "market_cap": 95411620000.0,
+   "pe": 537.3,
    "eps_growth": 40.1,
    "growth_basis": "1y",
-   "peg": 13.66,
+   "peg": 13.4,
    "fwd_peg": 4.2,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -711,7 +721,8 @@
       "date": "2026-10-13"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -723,13 +734,13 @@
     "IBM",
     "PLTR"
    ],
-   "price": 225.36,
-   "change_pct": 4.8381,
-   "market_cap": 133648160000.0,
-   "pe": 16.0,
+   "price": 226.56,
+   "change_pct": 0.7291,
+   "market_cap": 136481450000.00002,
+   "pe": 16.3,
    "eps_growth": 11.7,
    "growth_basis": "1y",
-   "peg": 1.37,
+   "peg": 1.39,
    "fwd_peg": 2.03,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -761,7 +772,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -776,13 +788,13 @@
     "CRM",
     "WDAY"
    ],
-   "price": 131.16,
-   "change_pct": 0.4673,
-   "market_cap": 402791880000.0,
-   "pe": 21.3,
+   "price": 131.76,
+   "change_pct": -2.0153,
+   "market_cap": 393273160000.0,
+   "pe": 20.8,
    "eps_growth": 49.1,
    "growth_basis": "1y",
-   "peg": 0.43,
+   "peg": 0.42,
    "fwd_peg": 0.55,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -814,7 +826,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -831,13 +844,13 @@
    "tags": [
     "mag7"
    ],
-   "price": 535.37,
-   "change_pct": 0.3148,
-   "market_cap": 4035152800000.0,
-   "pe": 30.2,
+   "price": 536.18,
+   "change_pct": -0.6043,
+   "market_cap": 3980408000000.0,
+   "pe": 29.8,
    "eps_growth": 31.6,
    "growth_basis": "1y",
-   "peg": 0.95,
+   "peg": 0.94,
    "fwd_peg": 1.69,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -869,7 +882,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -885,10 +899,10 @@
    "tags": [
     "mag7"
    ],
-   "price": 251.73,
-   "change_pct": -0.9249,
-   "market_cap": 2797107000000.0,
-   "pe": 20.7,
+   "price": 253.14,
+   "change_pct": -0.6359,
+   "market_cap": 2740586800000.0,
+   "pe": 20.3,
    "eps_growth": 89.7,
    "growth_basis": "1y",
    "peg": 0.23,
@@ -923,7 +937,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -939,10 +954,10 @@
    "tags": [
     "mag7"
    ],
-   "price": 351.23,
-   "change_pct": 1.0327,
-   "market_cap": 4259831500000.0,
-   "pe": 17.4,
+   "price": 343.94,
+   "change_pct": -1.5119,
+   "market_cap": 4286370500000.0,
+   "pe": 17.6,
    "eps_growth": 115.3,
    "growth_basis": "1y",
    "peg": 0.15,
@@ -977,7 +992,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -988,13 +1004,13 @@
    "competitors": [
     "SNPS"
    ],
-   "price": 322.83,
-   "change_pct": -2.0124,
-   "market_cap": 91915170000.0,
-   "pe": 66.7,
+   "price": 323.09,
+   "change_pct": -0.3977,
+   "market_cap": 90730980000.0,
+   "pe": 65.8,
    "eps_growth": 36.0,
    "growth_basis": "1y",
-   "peg": 1.85,
+   "peg": 1.83,
    "fwd_peg": 2.73,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1026,7 +1042,8 @@
       "date": "2026-10-09"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1037,10 +1054,10 @@
    "competitors": [
     "CDNS"
    ],
-   "price": 465.39,
-   "change_pct": -3.0296,
-   "market_cap": 94089760000.0,
-   "pe": 87.4,
+   "price": 456.67,
+   "change_pct": -2.4439,
+   "market_cap": 88437440000.0,
+   "pe": 82.1,
    "eps_growth": -55.6,
    "growth_basis": "1y",
    "peg": null,
@@ -1075,7 +1092,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1088,13 +1106,13 @@
     "CRM",
     "MSFT"
    ],
-   "price": 252.91,
-   "change_pct": 5.0814,
-   "market_cap": 91960180000.0,
-   "pe": 12.6,
+   "price": 249.44,
+   "change_pct": -0.8861,
+   "market_cap": 93672660000.0,
+   "pe": 12.9,
    "eps_growth": 11.7,
    "growth_basis": "1y",
-   "peg": 1.08,
+   "peg": 1.1,
    "fwd_peg": 0.64,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1126,7 +1144,8 @@
       "date": "2026-10-13"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1139,13 +1158,13 @@
     "TRMB",
     "ADBE"
    ],
-   "price": 244.48,
-   "change_pct": 5.7714,
-   "market_cap": 48365797000.0,
-   "pe": 29.5,
+   "price": 243.93,
+   "change_pct": -0.5017,
+   "market_cap": 50477680000.0,
+   "pe": 30.7,
    "eps_growth": 59.9,
    "growth_basis": "1y",
-   "peg": 0.49,
+   "peg": 0.51,
    "fwd_peg": 1.05,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1177,7 +1196,8 @@
       "date": "2026-10-08"
      }
     ],
-    "headline_count": 10
+    "headline_count": 10,
+    "stale": true
    }
   },
   {
@@ -1189,9 +1209,9 @@
     "ADSK",
     "TRMB"
    ],
-   "price": 193.48,
-   "change_pct": -0.0826,
-   "market_cap": 21040977000.0,
+   "price": 193.21,
+   "change_pct": 0.0311,
+   "market_cap": 21006213000.0,
    "pe": 17.2,
    "eps_growth": 142.5,
    "growth_basis": "1y",
@@ -1227,7 +1247,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1239,10 +1260,10 @@
     "ADSK",
     "PTC"
    ],
-   "price": 60.73,
-   "change_pct": 2.758,
-   "market_cap": 13782095000.0,
-   "pe": 32.5,
+   "price": 60.74,
+   "change_pct": -0.3772,
+   "market_cap": 14084062000.0,
+   "pe": 33.2,
    "eps_growth": null,
    "growth_basis": null,
    "peg": null,
@@ -1270,7 +1291,8 @@
       "date": "2026-10-08"
      }
     ],
-    "headline_count": 5
+    "headline_count": 5,
+    "stale": true
    }
   },
   {
@@ -1283,13 +1305,13 @@
     "WDAY",
     "INTU"
    ],
-   "price": 289.76,
-   "change_pct": 3.3676,
-   "market_cap": 110455120000.0,
-   "pe": 25.0,
+   "price": 287.68,
+   "change_pct": 0.7107,
+   "market_cap": 113928266000.0,
+   "pe": 25.8,
    "eps_growth": 9.6,
    "growth_basis": "1y",
-   "peg": 2.61,
+   "peg": 2.69,
    "fwd_peg": null,
    "news": {
     "as_of": "2026-10-15",
@@ -1316,7 +1338,8 @@
       "date": "2026-10-13"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1329,13 +1352,13 @@
     "WDAY",
     "INTU"
    ],
-   "price": 112.18,
-   "change_pct": 3.5157,
-   "market_cap": 38267902000.0,
-   "pe": 21.2,
+   "price": 111.02,
+   "change_pct": 0.2166,
+   "market_cap": 39542312000.0,
+   "pe": 21.9,
    "eps_growth": 12.9,
    "growth_basis": "1y",
-   "peg": 1.64,
+   "peg": 1.7,
    "fwd_peg": 2.09,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1367,7 +1390,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1381,13 +1405,13 @@
     "ADP",
     "PAYX"
    ],
-   "price": 331.56,
-   "change_pct": 6.8032,
-   "market_cap": 82267266000.0,
-   "pe": 18.0,
+   "price": 326.93,
+   "change_pct": -0.9813,
+   "market_cap": 86977300000.0,
+   "pe": 19.0,
    "eps_growth": 20.4,
    "growth_basis": "1y",
-   "peg": 0.88,
+   "peg": 0.93,
    "fwd_peg": 0.9,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1419,7 +1443,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1431,10 +1456,10 @@
     "PYPL",
     "INTU"
    ],
-   "price": 77.49,
-   "change_pct": 2.1622,
-   "market_cap": 44439348000.0,
-   "pe": 124.4,
+   "price": 80.43,
+   "change_pct": 0.7516,
+   "market_cap": 46114977000.0,
+   "pe": 129.1,
    "eps_growth": -88.0,
    "growth_basis": "1y",
    "peg": null,
@@ -1469,7 +1494,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1481,13 +1507,13 @@
     "XYZ",
     "INTU"
    ],
-   "price": 56.35,
-   "change_pct": 0.4456,
-   "market_cap": 47670555000.0,
-   "pe": 9.7,
+   "price": 57.49,
+   "change_pct": 0.5773,
+   "market_cap": 48590176000.0,
+   "pe": 9.9,
    "eps_growth": 13.5,
    "growth_basis": "1y",
-   "peg": 0.72,
+   "peg": 0.73,
    "fwd_peg": 1.39,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1519,7 +1545,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1531,13 +1558,13 @@
     "EFX",
     "MCO"
    ],
-   "price": 751.12,
-   "change_pct": 4.3759,
-   "market_cap": 15362183000.0,
-   "pe": 18.8,
+   "price": 772.23,
+   "change_pct": 0.2987,
+   "market_cap": 16298224000.0,
+   "pe": 20.0,
    "eps_growth": 35.4,
    "growth_basis": "1y",
-   "peg": 0.53,
+   "peg": 0.56,
    "fwd_peg": 0.62,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1569,7 +1596,8 @@
       "date": "2026-10-13"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1582,13 +1610,13 @@
     "FDS",
     "MCO"
    ],
-   "price": 570.69,
-   "change_pct": 1.8144,
-   "market_cap": 40839950000.0,
-   "pe": 30.1,
+   "price": 573.59,
+   "change_pct": -0.2608,
+   "market_cap": 41204180000.0,
+   "pe": 30.3,
    "eps_growth": 21.1,
    "growth_basis": "1y",
-   "peg": 1.43,
+   "peg": 1.44,
    "fwd_peg": 1.99,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1620,7 +1648,8 @@
       "date": "2026-10-13"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1632,10 +1661,10 @@
     "SPGI",
     "MSCI"
    ],
-   "price": 301.61,
-   "change_pct": 4.0968,
-   "market_cap": 10395809000.0,
-   "pe": 19.5,
+   "price": 304.0,
+   "change_pct": 0.7189,
+   "market_cap": 10581460000.0,
+   "pe": 19.8,
    "eps_growth": -6.4,
    "growth_basis": "1y",
    "peg": null,
@@ -1670,7 +1699,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1683,13 +1713,13 @@
     "MSCI",
     "FDS"
    ],
-   "price": 418.02,
-   "change_pct": 2.3129,
-   "market_cap": 119918734000.0,
-   "pe": 24.4,
+   "price": 430.18,
+   "change_pct": 1.2641,
+   "market_cap": 124871380000.0,
+   "pe": 25.4,
    "eps_growth": 26.2,
    "growth_basis": "1y",
-   "peg": 0.93,
+   "peg": 0.97,
    "fwd_peg": 1.66,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1714,7 +1744,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1726,10 +1757,10 @@
     "SPGI",
     "FICO"
    ],
-   "price": 475.17,
-   "change_pct": 2.6795,
-   "market_cap": 80609875000.0,
-   "pe": 28.8,
+   "price": 486.5,
+   "change_pct": 0.581,
+   "market_cap": 81190960000.0,
+   "pe": 29.0,
    "eps_growth": 34.0,
    "growth_basis": "1y",
    "peg": 0.85,
@@ -1764,7 +1795,8 @@
       "date": "2026-10-09"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1776,13 +1808,13 @@
     "FICO",
     "MCO"
    ],
-   "price": 158.45,
-   "change_pct": 5.3804,
-   "market_cap": 17434172000.0,
-   "pe": 25.2,
+   "price": 161.75,
+   "change_pct": 0.3039,
+   "market_cap": 18799934000.0,
+   "pe": 27.2,
    "eps_growth": 11.2,
    "growth_basis": "1y",
-   "peg": 2.25,
+   "peg": 2.43,
    "fwd_peg": 1.1,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1814,7 +1846,8 @@
       "date": "2026-10-13"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1826,13 +1859,13 @@
     "IQV",
     "CRM"
    ],
-   "price": 308.71,
-   "change_pct": 3.8204,
-   "market_cap": 48057785000.0,
-   "pe": 47.4,
+   "price": 311.72,
+   "change_pct": -0.4185,
+   "market_cap": 50883094000.0,
+   "pe": 50.1,
    "eps_growth": 25.6,
    "growth_basis": "1y",
-   "peg": 1.85,
+   "peg": 1.96,
    "fwd_peg": 0.84,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1864,7 +1897,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1875,13 +1909,13 @@
    "competitors": [
     "ROP"
    ],
-   "price": 365.55,
-   "change_pct": 4.41,
-   "market_cap": 14280672000.0,
-   "pe": 44.0,
+   "price": 361.12,
+   "change_pct": -0.6875,
+   "market_cap": 14841513000.0,
+   "pe": 45.7,
    "eps_growth": 7.8,
    "growth_basis": "1y",
-   "peg": 5.64,
+   "peg": 5.86,
    "fwd_peg": 1.48,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1913,7 +1947,8 @@
       "date": "2026-10-08"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -1925,13 +1960,13 @@
     "TYL",
     "CSGP"
    ],
-   "price": 385.74,
-   "change_pct": 3.5016,
-   "market_cap": 36648210000.0,
-   "pe": 14.6,
+   "price": 385.7,
+   "change_pct": 0.8498,
+   "market_cap": 37858758000.0,
+   "pe": 15.1,
    "eps_growth": 69.5,
    "growth_basis": "1y",
-   "peg": 0.21,
+   "peg": 0.22,
    "fwd_peg": 2.07,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -1963,7 +1998,8 @@
       "date": "2026-10-09"
      }
     ],
-    "headline_count": 9
+    "headline_count": 9,
+    "stale": true
    }
   },
   {
@@ -1974,10 +2010,10 @@
    "competitors": [
     "ROP"
    ],
-   "price": 31.84,
-   "change_pct": 5.7456,
-   "market_cap": 11995875000.0,
-   "pe": 163.0,
+   "price": 32.05,
+   "change_pct": 0.1562,
+   "market_cap": 12899466000.0,
+   "pe": 175.3,
    "eps_growth": -30.5,
    "growth_basis": "1y",
    "peg": null,
@@ -2005,7 +2041,8 @@
       "date": "2026-10-09"
      }
     ],
-    "headline_count": 7
+    "headline_count": 7,
+    "stale": true
    }
   },
   {
@@ -2016,13 +2053,13 @@
    "competitors": [
     "VEEV"
    ],
-   "price": 266.95,
-   "change_pct": 1.8854,
-   "market_cap": 43144953000.0,
-   "pe": 31.4,
+   "price": 269.46,
+   "change_pct": -0.5829,
+   "market_cap": 44443650000.0,
+   "pe": 32.3,
    "eps_growth": 16.8,
    "growth_basis": "1y",
-   "peg": 1.87,
+   "peg": 1.92,
    "fwd_peg": 1.65,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2054,7 +2091,8 @@
       "date": "2026-10-09"
      }
     ],
-    "headline_count": 6
+    "headline_count": 6,
+    "stale": true
    }
   },
   {
@@ -2066,13 +2104,13 @@
     "VRSN",
     "AKAM"
    ],
-   "price": 107.74,
-   "change_pct": 4.2376,
-   "market_cap": 13035848000.0,
-   "pe": 14.3,
+   "price": 106.95,
+   "change_pct": -0.3169,
+   "market_cap": 13523442000.0,
+   "pe": 14.9,
    "eps_growth": 20.1,
    "growth_basis": "1y",
-   "peg": 0.71,
+   "peg": 0.74,
    "fwd_peg": 0.66,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2104,7 +2142,8 @@
       "date": "2026-10-12"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2117,10 +2156,10 @@
     "AMZN",
     "PANW"
    ],
-   "price": 87.42,
-   "change_pct": -4.6778,
-   "market_cap": 14005184000.0,
-   "pe": 34.1,
+   "price": 88.12,
+   "change_pct": -4.5494,
+   "market_cap": 13180251000.0,
+   "pe": 32.1,
    "eps_growth": -1.7,
    "growth_basis": "1y",
    "peg": null,
@@ -2155,7 +2194,8 @@
       "date": "2026-10-12"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2166,13 +2206,13 @@
    "competitors": [
     "GDDY"
    ],
-   "price": 308.27,
-   "change_pct": 2.276,
-   "market_cap": 27393861000.0,
-   "pe": 32.2,
+   "price": 301.89,
+   "change_pct": -0.7235,
+   "market_cap": 27626383000.0,
+   "pe": 32.5,
    "eps_growth": 9.8,
    "growth_basis": "1y",
-   "peg": 3.29,
+   "peg": 3.32,
    "fwd_peg": null,
    "news": {
     "as_of": "2026-10-15",
@@ -2199,7 +2239,8 @@
       "date": "2026-10-12"
      }
     ],
-    "headline_count": 1
+    "headline_count": 1,
+    "stale": true
    }
   },
   {
@@ -2211,13 +2252,13 @@
     "META",
     "GOOGL"
    ],
-   "price": 275.76,
-   "change_pct": 5.1756,
-   "market_cap": 87742140000.0,
-   "pe": 19.9,
+   "price": 276.66,
+   "change_pct": -0.9417,
+   "market_cap": 93464680000.0,
+   "pe": 21.2,
    "eps_growth": 84.7,
    "growth_basis": "1y",
-   "peg": 0.23,
+   "peg": 0.25,
    "fwd_peg": 0.49,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2249,7 +2290,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2264,10 +2306,10 @@
    "tags": [
     "mag7"
    ],
-   "price": 733.4,
-   "change_pct": -0.5613,
-   "market_cap": 1942473400000.0,
-   "pe": 28.5,
+   "price": 724.93,
+   "change_pct": -1.6003,
+   "market_cap": 1878887600000.0,
+   "pe": 27.6,
    "eps_growth": -3.7,
    "growth_basis": "1y",
    "peg": null,
@@ -2302,7 +2344,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2318,13 +2361,13 @@
    "tags": [
     "mag7"
    ],
-   "price": 215.57,
-   "change_pct": -2.5892,
-   "market_cap": 5428284000000.0,
-   "pe": 28.1,
+   "price": 216.36,
+   "change_pct": -0.4005,
+   "market_cap": 5185115000000.0,
+   "pe": 26.9,
    "eps_growth": 125.2,
    "growth_basis": "1y",
-   "peg": 0.22,
+   "peg": 0.21,
    "fwd_peg": 0.4,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2356,7 +2399,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2370,13 +2414,13 @@
     "ANET",
     "MU"
    ],
-   "price": 338.01,
-   "change_pct": -2.3798,
-   "market_cap": 1652988600000.0,
-   "pe": 43.2,
+   "price": 338.2,
+   "change_pct": -1.7803,
+   "market_cap": 1622986400000.0,
+   "pe": 42.4,
    "eps_growth": 100.1,
    "growth_basis": "1y",
-   "peg": 0.43,
+   "peg": 0.42,
    "fwd_peg": 0.38,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2408,7 +2452,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2420,13 +2465,13 @@
     "NVDA",
     "AVGO"
    ],
-   "price": 535.97,
-   "change_pct": -6.1053,
-   "market_cap": 934045060000.0,
-   "pe": 145.2,
+   "price": 543.79,
+   "change_pct": -3.2798,
+   "market_cap": 922854440000.0,
+   "pe": 143.4,
    "eps_growth": 124.3,
    "growth_basis": "1y",
-   "peg": 1.17,
+   "peg": 1.15,
    "fwd_peg": 0.88,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2458,7 +2503,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2471,13 +2517,13 @@
     "AVGO",
     "NVDA"
    ],
-   "price": 180.68,
-   "change_pct": -7.5427,
-   "market_cap": 257945660000.0,
-   "pe": 63.8,
+   "price": 182.17,
+   "change_pct": -1.8375,
+   "market_cap": 246468520000.0,
+   "pe": 60.9,
    "eps_growth": 24.7,
    "growth_basis": "1y",
-   "peg": 2.58,
+   "peg": 2.47,
    "fwd_peg": 1.81,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2509,7 +2555,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2521,10 +2568,10 @@
     "NVDA",
     "AMD"
    ],
-   "price": 882.41,
-   "change_pct": -3.47,
-   "market_cap": 1051403399999.9999,
-   "pe": 12.4,
+   "price": 893.78,
+   "change_pct": -4.0226,
+   "market_cap": 1030619060000.0,
+   "pe": 12.1,
    "eps_growth": 878.8,
    "growth_basis": "1y",
    "peg": 0.01,
@@ -2559,7 +2606,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2573,13 +2621,13 @@
     "AAPL",
     "META"
    ],
-   "price": 72.18,
-   "change_pct": 2.2814,
-   "market_cap": 289581200000.0,
-   "pe": 21.2,
+   "price": 71.09,
+   "change_pct": -2.0934,
+   "market_cap": 301968940000.0,
+   "pe": 22.1,
    "eps_growth": 35.3,
    "growth_basis": "1y",
-   "peg": 0.6,
+   "peg": 0.63,
    "fwd_peg": 0.92,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2611,7 +2659,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2624,10 +2673,10 @@
     "ABNB",
     "TSLA"
    ],
-   "price": 70.05,
-   "change_pct": 1.0968,
-   "market_cap": 141467720000.0,
-   "pe": 14.8,
+   "price": 71.22,
+   "change_pct": -0.0702,
+   "market_cap": 145777310000.0,
+   "pe": 15.2,
    "eps_growth": -22.8,
    "growth_basis": "1y",
    "peg": null,
@@ -2662,7 +2711,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2674,13 +2724,13 @@
     "UBER",
     "AMZN"
    ],
-   "price": 189.86,
-   "change_pct": 3.1792,
-   "market_cap": 79735930000.0,
-   "pe": 94.8,
+   "price": 193.25,
+   "change_pct": 0.1036,
+   "market_cap": 83653180000.0,
+   "pe": 99.5,
    "eps_growth": 8.3,
    "growth_basis": "1y",
-   "peg": 11.42,
+   "peg": 11.98,
    "fwd_peg": 0.65,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2712,7 +2762,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2724,13 +2775,13 @@
     "BKNG",
     "UBER"
    ],
-   "price": 170.01,
-   "change_pct": 1.7658,
-   "market_cap": 100033140000.0,
-   "pe": 37.2,
+   "price": 174.67,
+   "change_pct": 0.2238,
+   "market_cap": 104356370000.0,
+   "pe": 38.8,
    "eps_growth": 6.6,
    "growth_basis": "1y",
-   "peg": 5.63,
+   "peg": 5.88,
    "fwd_peg": 1.44,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2762,7 +2813,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2774,13 +2826,13 @@
     "ABNB",
     "GOOGL"
    ],
-   "price": 166.42,
-   "change_pct": 3.5723,
-   "market_cap": 119117090000.0,
-   "pe": 16.5,
+   "price": 165.99,
+   "change_pct": 0.1146,
+   "market_cap": 125448600000.0,
+   "pe": 17.4,
    "eps_growth": 57.2,
    "growth_basis": "1y",
-   "peg": 0.29,
+   "peg": 0.3,
    "fwd_peg": 0.82,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2812,7 +2864,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2825,13 +2878,13 @@
     "XYZ",
     "PYPL"
    ],
-   "price": 97.63,
-   "change_pct": -3.4131,
-   "market_cap": 90879234000.0,
-   "pe": 43.9,
+   "price": 103.76,
+   "change_pct": -0.2212,
+   "market_cap": 93495570000.0,
+   "pe": 45.1,
    "eps_growth": 15.3,
    "growth_basis": "1y",
-   "peg": 2.87,
+   "peg": 2.95,
    "fwd_peg": 2.26,
    "fwd_est": true,
    "fwd_as_of": "2026-10-06",
@@ -2863,7 +2916,8 @@
       "date": "2026-10-14"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2875,10 +2929,10 @@
     "HOOD",
     "XYZ"
    ],
-   "price": 170.09,
-   "change_pct": -1.6195,
-   "market_cap": 45614777000.0,
-   "pe": 36.2,
+   "price": 181.97,
+   "change_pct": -1.001,
+   "market_cap": 48495880000.0,
+   "pe": 38.5,
    "eps_growth": null,
    "growth_basis": null,
    "peg": null,
@@ -2913,7 +2967,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2930,10 +2985,10 @@
    "tags": [
     "mag7"
    ],
-   "price": 345.17,
-   "change_pct": 0.6444,
-   "market_cap": 4993033500000.0,
-   "pe": 38.7,
+   "price": 344.92,
+   "change_pct": 0.8538,
+   "market_cap": 5005949500000.0,
+   "pe": 38.8,
    "eps_growth": 32.6,
    "growth_basis": "1y",
    "peg": 1.19,
@@ -2968,7 +3023,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   },
   {
@@ -2984,10 +3040,10 @@
    "tags": [
     "mag7"
    ],
-   "price": 355.98,
-   "change_pct": -3.045,
-   "market_cap": 1481988800000.0,
-   "pe": 389.4,
+   "price": 367.7,
+   "change_pct": 1.4513,
+   "market_cap": 1431474000000.0,
+   "pe": 376.1,
    "eps_growth": -37.7,
    "growth_basis": "1y",
    "peg": null,
@@ -3022,7 +3078,8 @@
       "date": "2026-10-15"
      }
     ],
-    "headline_count": 12
+    "headline_count": 12,
+    "stale": true
    }
   }
  ],
